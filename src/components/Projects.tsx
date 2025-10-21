@@ -11,28 +11,28 @@ const Projects = () => {
       role: "Lead UX Researcher",
       description: "Developed gesture-based interactions for autonomous driving, combining human behavior insights with interface innovation.",
       image: bmwImage,
-      link: "#bmw-details"
+      link: "/projects/bmw"
     },
     {
       title: "USAA Financial Tools",
       role: "UX/UI Designer",
       description: "Enhanced usability for military families by simplifying financial management workflows and improving accessibility.",
       image: usaaImage,
-      link: "#usaa-details"
+      link: "/projects/usaa"
     },
     {
       title: "Booz Allen Hamilton — FTD Project",
       role: "Research Lead",
       description: "Redesigned a government platform with improved data visualization and accessibility, increasing engagement by 15%.",
       image: boozAllenImage,
-      link: "#booz-allen-details"
+      link: "/projects/booz-allen"
     },
     {
       title: "Trader Joe's Supply Redesign",
       role: "UX Researcher",
       description: "Optimized the in-store supply layout using design thinking principles, improving workflow efficiency and customer satisfaction.",
       image: traderJoesImage,
-      link: "#trader-joes-details"
+      link: "/projects/trader-joes"
     }
   ];
 
