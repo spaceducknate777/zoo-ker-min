@@ -117,3 +117,100 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Print styles for ATS-friendly PDF export */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  /* Remove all gradients and fancy backgrounds for ATS */
+  .bg-gradient-to-br,
+  .bg-gradient-to-r,
+  [class*="gradient"] {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  /* Simplify cards to plain sections */
+  [class*="Card"] {
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+
+  /* Remove all shadows */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Make badges plain text */
+  [class*="Badge"],
+  [class*="badge"] {
+    border: 1px solid #333 !important;
+    background: white !important;
+    color: black !important;
+    padding: 2px 6px !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+  }
+
+  /* Ensure all text is black for ATS scanning */
+  h1, h2, h3, h4, h5, h6, p, span, li, a, div {
+    color: black !important;
+  }
+
+  /* Make links look like text with underline */
+  a {
+    text-decoration: underline !important;
+  }
+
+  /* Remove icons in print for cleaner ATS parsing */
+  svg {
+    display: none !important;
+  }
+
+  /* Ensure proper spacing */
+  section {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  ul, ol {
+    page-break-inside: avoid;
+  }
+
+  /* Header styling */
+  header {
+    margin-bottom: 1.5rem !important;
+    padding: 1rem 0 !important;
+    border-bottom: 2px solid #333 !important;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+    border-top: 1px solid #333 !important;
+    font-size: 9pt !important;
+  }
+}

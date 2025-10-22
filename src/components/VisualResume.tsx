@@ -1,8 +1,15 @@
-import { Mail, MapPin, Globe, Briefcase, GraduationCap, Award, TrendingUp } from "lucide-react";
+import { Mail, MapPin, Globe, Briefcase, GraduationCap, Award, TrendingUp, Download } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const VisualResume = () => {
+  const handleExportPDF = () => {
+    toast.info("Opening print dialog - save as PDF for best ATS compatibility");
+    window.print();
+  };
+
   const experiences = [
     {
       title: "Senior Interaction Designer",
@@ -68,9 +75,20 @@ const VisualResume = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Export Buttons */}
+      <div className="fixed top-4 right-4 z-50 print:hidden flex flex-col gap-2">
+        <Button onClick={handleExportPDF} className="shadow-lg gap-2">
+          <Download className="h-4 w-4" />
+          Export Visual PDF
+        </Button>
+        <Button onClick={() => window.location.href = '/ats'} variant="outline" className="shadow-lg gap-2">
+          ATS Version
+        </Button>
+      </div>
+
       {/* Header */}
-      <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary opacity-10" />
+      <header className="relative overflow-hidden print:overflow-visible">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary opacity-10 print:hidden" />
         <div className="relative max-w-6xl mx-auto px-6 py-12">
           <div className="space-y-6">
             <div>
