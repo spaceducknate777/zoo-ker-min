@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -16,6 +17,12 @@ const Index = () => {
       <Footer />
     </div>
   );
+=======
+import VisualResume from "@/components/VisualResume";
+
+const Index = () => {
+  return <VisualResume />;
+>>>>>>> glowup/main
 };
 
 export default Index;

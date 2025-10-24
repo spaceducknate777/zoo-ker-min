@@ -8,6 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+<<<<<<< HEAD
     --background: 0 0% 100%;
     --foreground: 215 25% 15%;
 
@@ -37,6 +38,44 @@ All colors MUST be HSL.
     --ring: 217 91% 60%;
 
     --radius: 0.5rem;
+=======
+    --background: 210 20% 98%;
+    --foreground: 222.2 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 83% 63%;
+
+    --secondary: 262 52% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 262 52% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(262 52% 47%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --shadow-soft: 0 4px 20px -2px hsl(221 83% 53% / 0.08);
+    --shadow-medium: 0 8px 30px -4px hsl(221 83% 53% / 0.12);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> glowup/main
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,6 +95,7 @@ All colors MUST be HSL.
   }
 
   .dark {
+<<<<<<< HEAD
     --background: 215 30% 8%;
     --foreground: 0 0% 98%;
 
@@ -83,6 +123,42 @@ All colors MUST be HSL.
     --border: 215 25% 18%;
     --input: 215 25% 18%;
     --ring: 217 91% 60%;
+=======
+    --background: 222 47% 11%;
+    --foreground: 210 20% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 83% 63%;
+
+    --secondary: 262 52% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 262 52% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 217 33% 24%;
+    --input: 217 33% 24%;
+    --ring: 221 83% 53%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(262 52% 47%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(217 33% 17%) 0%, hsl(217 33% 20%) 100%);
+    --shadow-soft: 0 4px 20px -2px hsl(221 83% 53% / 0.15);
+    --shadow-medium: 0 8px 30px -4px hsl(221 83% 53% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+>>>>>>> glowup/main
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -103,3 +179,103 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Print styles for ATS-friendly PDF export */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  /* Remove all gradients and fancy backgrounds for ATS */
+  .bg-gradient-to-br,
+  .bg-gradient-to-r,
+  [class*="gradient"] {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  /* Simplify cards to plain sections */
+  [class*="Card"] {
+    border: none !important;
+    box-shadow: none !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+
+  /* Remove all shadows */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Make badges plain text */
+  [class*="Badge"],
+  [class*="badge"] {
+    border: 1px solid #333 !important;
+    background: white !important;
+    color: black !important;
+    padding: 2px 6px !important;
+    border-radius: 3px !important;
+    display: inline-block !important;
+  }
+
+  /* Ensure all text is black for ATS scanning */
+  h1, h2, h3, h4, h5, h6, p, span, li, a, div {
+    color: black !important;
+  }
+
+  /* Make links look like text with underline */
+  a {
+    text-decoration: underline !important;
+  }
+
+  /* Remove icons in print for cleaner ATS parsing */
+  svg {
+    display: none !important;
+  }
+
+  /* Ensure proper spacing */
+  section {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  ul, ol {
+    page-break-inside: avoid;
+  }
+
+  /* Header styling */
+  header {
+    margin-bottom: 1.5rem !important;
+    padding: 1rem 0 !important;
+    border-bottom: 2px solid #333 !important;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+    border-top: 1px solid #333 !important;
+    font-size: 9pt !important;
+  }
+}
+>>>>>>> glowup/main
