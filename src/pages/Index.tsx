@@ -16,14 +16,21 @@ const Index = () => {
 
       {/* Resume button */}
       <section className="flex justify-center my-12">
-        <a
-          href="https://resume-ux-glow-up-vseh.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg shadow-md hover:bg-primary-glow transition-colors"
-        >
-          View My Resume
-        </a>
+        <Button 
+  variant="outline" 
+  size="lg" 
+  asChild
+>
+  <a 
+    href="https://resume-ux-glow-up-vseh.vercel.app/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Download className="mr-2 h-4 w-4" />
+    View Resume
+  </a>
+</Button>
+
       </section>
 
       <Footer />
