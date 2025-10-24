@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -14,15 +13,23 @@ const Index = () => {
       <About />
       <Projects />
       <Contact />
+
+      {/* Resume button */}
+      <section className="flex justify-center my-12">
+        <a
+          href="https://resume-ux-glow-up-vseh.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg shadow-md hover:bg-primary-glow transition-colors"
+        >
+          View My Resume
+        </a>
+      </section>
+
       <Footer />
     </div>
   );
-=======
-import VisualResume from "@/components/VisualResume";
-
-const Index = () => {
-  return <VisualResume />;
->>>>>>> glowup/main
 };
 
 export default Index;
+
