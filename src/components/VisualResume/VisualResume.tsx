@@ -76,15 +76,28 @@ const VisualResume = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Export Buttons */}
-      <div className="fixed top-4 right-4 z-50 print:hidden flex flex-col gap-2">
-        <Button onClick={handleExportPDF} className="shadow-lg gap-2">
-          <Download className="h-4 w-4" />
-          Export Visual PDF
-        </Button>
-        <Button onClick={() => window.location.href = '/ats'} variant="outline" className="shadow-lg gap-2">
-          ATS Version
-        </Button>
-      </div>
+<div className="fixed top-4 right-4 z-50 print:hidden flex flex-col gap-3">
+  {/* Visual PDF (print) */}
+  <Button onClick={handleExportPDF} className="shadow-lg gap-2 bg-primary hover:bg-accent">
+    <Download className="h-4 w-4" />
+    Print/Visual PDF
+  </Button>
+
+  {/* ATS Version */}
+  <Button onClick={() => window.location.href = '/ats'} variant="outline" className="shadow-lg gap-2">
+    <Briefcase className="h-4 w-4" />
+    ATS Version
+  </Button>
+
+  {/* Direct PDF download */}
+  <Button asChild className="shadow-lg gap-2 bg-secondary hover:bg-accent/80">
+    <a href="/nathan-zukerman-resume.pdf" target="_blank" rel="noopener noreferrer">
+      <Download className="h-4 w-4" />
+      Download PDF
+    </a>
+  </Button>
+</div>
+
 
       {/* Header */}
       <header className="relative overflow-hidden print:overflow-visible">
