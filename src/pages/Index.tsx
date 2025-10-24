@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import VisualResume from "@/resume/components/VisualResume"; // ✅ local import
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -16,20 +17,24 @@ const Index = () => {
       <Projects />
       <Contact />
 
-      {/* Resume button */}
+      {/* Interactive Resume Section */}
+      <section className="my-12">
+        <h2 className="text-3xl font-bold text-center mb-6">Interactive Resume</h2>
+        <div className="max-w-7xl mx-auto">
+          <VisualResume />
+        </div>
+      </section>
+
+      {/* Optional Button to Download PDF version */}
       <section className="flex justify-center my-12">
-        <Button 
-          variant="outline" 
-          size="lg" 
-          asChild
-        >
-          <a 
-            href="/Resume" // 👈 Opens the local resume page instead of external link
-            target="_blank" 
+        <Button variant="outline" size="lg" asChild>
+          <a
+            href="/nathan-zukerman-resume.pdf"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <Download className="mr-2 h-4 w-4" />
-            View Resume
+            Download PDF
           </a>
         </Button>
       </section>
