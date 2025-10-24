@@ -26,7 +26,7 @@ const Index = () => {
   asChild
 >
   <a 
-    href="https://resume-ux-glow-up-vseh.vercel.app/" 
+    href="https://resume-ux-glow-up-vseh-3z2p4dk0a-spaceducknate777s-projects.vercel.app" 
     target="_blank" 
     rel="noopener noreferrer"
   >
