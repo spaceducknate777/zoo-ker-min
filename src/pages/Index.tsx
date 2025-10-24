@@ -4,6 +4,10 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+
+
 
 const Index = () => {
   return (
