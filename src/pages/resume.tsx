@@ -1,7 +1,6 @@
+// pages/resume.tsx
 import VisualResume from "@/components/VisualResume";
 
-const Resume = () => {
+export default function ResumePage() {
   return <VisualResume />;
-};
-
-export default Resume;
+}
