@@ -91,11 +91,11 @@ const VisualResume = () => {
 
   {/* Direct PDF download */}
   <Button asChild className="shadow-lg gap-2 bg-secondary hover:bg-accent/80">
-    <a href="/nathan-zukerman-resume.pdf" target="_blank" rel="noopener noreferrer">
-      <Download className="h-4 w-4" />
-      Download PDF
-    </a>
-  </Button>
+  <a href="/nathan-zukerman-resume.pdf" target="_blank" rel="noopener noreferrer">
+    <Download className="h-4 w-4" />
+    Download PDF
+  </a>
+</Button>
 </div>
 
 
