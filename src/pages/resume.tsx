@@ -1,7 +1,7 @@
 import VisualResume from "@/components/VisualResume";
 
-const Index = () => {
+const Resume = () => {
   return <VisualResume />;
 };
 
-export default Index;
+export default Resume;
