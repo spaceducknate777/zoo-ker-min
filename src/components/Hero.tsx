@@ -1,6 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portraitImage from "/assets/nathan-profile.jpeg"; 
+import portraitImage from "@/assets/nathan-portrait.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -43,7 +43,7 @@ const Hero = () => {
                 size="lg"
                 asChild
               >
-                <a href="https://resume-ux-glow-up-vseh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <a href="/nathan-zukerman-resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" />
                   View Resume
                 </a>

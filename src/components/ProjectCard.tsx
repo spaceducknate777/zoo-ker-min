@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useNavigate } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -12,13 +11,6 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, role, description, image, link }: ProjectCardProps) => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    if (link) {
-      navigate(link);
-    }
-  };
   return (
     <Card className="group overflow-hidden border-border hover:border-accent transition-all duration-300 hover:shadow-xl">
       <div className="relative h-64 overflow-hidden">
@@ -48,10 +40,12 @@ const ProjectCard = ({ title, role, description, image, link }: ProjectCardProps
           <Button 
             variant="ghost" 
             className="group/button p-0 h-auto font-medium text-accent hover:text-accent/80"
-            onClick={handleClick}
+            asChild
           >
-            View Project
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/button:translate-x-1" />
+            <a href={link}>
+              View Project
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/button:translate-x-1" />
+            </a>
           </Button>
         )}
       </div>
