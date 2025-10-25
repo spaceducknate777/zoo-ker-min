@@ -1,44 +1,55 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-<<<<<<< HEAD
-import NotFound from "./pages/NotFound";
-import BMWProject from "./pages/BMWProject";
-import USAAProject from "./pages/USAAProject";
-import BoozAllenProject from "./pages/BoozAllenProject";
-import TraderJoesProject from "./pages/TraderJoesProject";
-=======
-import ATS from "./pages/ATS";
-import NotFound from "./pages/NotFound";
->>>>>>> glowup/main
+import dynamic from "next/dynamic";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-<<<<<<< HEAD
-          <Route path="/projects/bmw" element={<BMWProject />} />
-          <Route path="/projects/usaa" element={<USAAProject />} />
-          <Route path="/projects/booz-allen" element={<BoozAllenProject />} />
-          <Route path="/projects/trader-joes" element={<TraderJoesProject />} />
-=======
-          <Route path="/ats" element={<ATS />} />
->>>>>>> glowup/main
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+// Dynamically import VisualResume to avoid SSR issues
+const VisualResume = dynamic(
+  () => import("@/resume/components/VisualResume"),
+  { ssr: false }
 );
+
+function App() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+
+      {/* Interactive Resume Section */}
+      <section className="my-12">
+        <h2 className="text-3xl font-bold text-center mb-6">
+          Interactive Resume
+        </h2>
+        <div className="max-w-7xl mx-auto">
+          <VisualResume />
+        </div>
+      </section>
+
+      {/* Download PDF Button */}
+      <section className="flex justify-center my-12">
+        <a
+          href="/nathan-zukerman-resume.pdf" // Make sure this is in public/
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="outline" size="lg" className="flex items-center">
+            <Download className="mr-2 h-4 w-4" />
+            Download PDF
+          </Button>
+        </a>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
