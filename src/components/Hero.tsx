@@ -28,7 +28,9 @@ const Hero = () => {
               Designing intuitive, research-driven interfaces for BMW, USAA, Booz Allen Hamilton, and Trader Joe's — creating experiences that bridge strategy, empathy, and innovation.
             </p>
 
+            {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
+              {/* Contact Me Button */}
               <Button 
                 variant="accent" 
                 size="lg"
@@ -38,12 +40,18 @@ const Hero = () => {
                 Contact Me
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
+
+              {/* View Resume Button */}
               <Button 
                 variant="outline" 
                 size="lg"
                 asChild
               >
-                <a href="/resume/nathan-zukerman-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a 
+                  href="/resume/nathan-zukerman-resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Download className="mr-2 h-4 w-4" />
                   View Resume
                 </a>
@@ -51,6 +59,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Portrait Image */}
           <div className="relative animate-scale-in">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
