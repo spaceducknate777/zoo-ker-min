@@ -19,7 +19,7 @@ const Index = () => {
       {/* Resume Button Section */}
       <section className="flex justify-center my-12">
         <a
-          href="/resume/nathan-zukerman-resume.pdf"  // <-- Correct path
+          href="/resume/nathan-zukerman-resume.pdf" // PDF must be in public/resume/
           target="_blank"
           rel="noopener noreferrer"
         >
