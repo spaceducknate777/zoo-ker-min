@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Designing intuitive, research-driven interfaces for BMW, USAA, Booz Allen Hamilton, and Trader Joe's — creating experiences that bridge strategy, empathy, and innovation.
+              Designing intuitive, research-driven interfaces for BMW, USAA, Booz Allen Hamilton, and innovative consumer apps — creating experiences that bridge strategy, empathy, and innovation.
             </p>
 
             {/* Buttons */}

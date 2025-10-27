@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-project.jpg";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
-import traderJoesImage from "@/assets/trader-joes-project.jpg";
+import monsterAisleImage from "@/assets/monster-aisle-project.jpg";
 
 const Projects = () => {
   const projects = [
@@ -28,11 +28,11 @@ const Projects = () => {
       link: "#booz-allen-details"
     },
     {
-      title: "Trader Joe's Supply Redesign",
-      role: "UX Researcher",
-      description: "Optimized the in-store supply layout using design thinking principles, improving workflow efficiency and customer satisfaction.",
-      image: traderJoesImage,
-      link: "#trader-joes-details"
+      title: "Monster Aisle",
+      role: "UX Researcher & Designer",
+      description: "Created an interactive grocery app where kids use art supplies to battle monsters in store aisles, leveraging ethnographic research to design around eye-level interaction and reward-based engagement.",
+      image: monsterAisleImage,
+      link: "#monster-aisle-details"
     }
   ];
 
