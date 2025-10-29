@@ -31,7 +31,7 @@ const BoozAllenCaseStudy = () => {
             <img 
               src={boozAllenImage} 
               alt="Booz Allen Hamilton Government Design Projects"
-              className="w-full h-96 object-cover rounded-lg shadow-xl"
+              className="w-full h-96 object-cover object-right rounded-lg shadow-xl"
             />
           </div>
 
