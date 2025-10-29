@@ -21,9 +21,9 @@ const Projects = () => {
       link: "/case-studies/usaa"
     },
     {
-      title: "Booz Allen Hamilton — FTD Project",
+      title: "Booz Allen Hamilton — Government Design Projects",
       role: "Research Lead",
-      description: "Redesigned a government platform with improved data visualization and accessibility, increasing engagement by 15%.",
+      description: "Led UX research for three major government platform redesigns (DOT, NIH/NLM CDE, FDG Calendar), achieving 100% WCAG compliance and improved efficiency across all platforms.",
       image: boozAllenImage,
       link: "/case-studies/booz-allen"
     },
