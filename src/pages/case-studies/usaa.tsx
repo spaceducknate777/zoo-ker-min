@@ -28,10 +28,10 @@ const USAACaseStudy = () => {
             <p className="text-xl text-muted-foreground mb-6">
               UX Designer — Mobile-First Financial Tools & Icon Design for Military Families
             </p>
-            <img
+            <img 
               src={usaaImage} 
-              alt="USAA Financial Tools Project"
-              className="w-full h-96 object-cover rounded-lg shadow-xl"
+              alt="USAA Storyboard showcasing icon design for automotive categories"
+              className="w-full h-auto object-contain rounded-lg shadow-xl bg-muted/20 p-8"
             />
           </div>
 
@@ -139,12 +139,24 @@ const USAACaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Icon System Design</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Icon System Design & Storyboarding</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Designed cohesive set of high-fidelity icons for car, truck, and SUV categories</li>
-                      <li>Ensured icons were scalable, intuitive, and accessible</li>
-                      <li>Aligned iconography with company brand guidelines and visual identity</li>
-                      <li>Created comprehensive icon design specifications and documentation</li>
+                      <li>Created detailed storyboards illustrating user scenarios with automotive services</li>
+                      <li>Designed cohesive icon set for car, truck, and SUV categories with clear visual hierarchy</li>
+                      <li>Developed storytelling through visual narratives showing real-world use cases</li>
+                      <li>Ensured icons were scalable, intuitive, and accessible across all touchpoints</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-4 bg-muted/30 rounded-lg border border-border">
+                    <h4 className="font-semibold text-foreground mb-2">Design Artifacts</h4>
+                    <p className="text-muted-foreground text-sm mb-3">
+                      The storyboard above showcases the narrative approach to icon design, illustrating how users interact with automotive features through mobile devices. Each frame represents a key touchpoint in the customer journey, from vehicle selection to financial transactions.
+                    </p>
+                    <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
+                      <li>7 distinct scenarios covering user journey from browsing to purchase</li>
+                      <li>Consistent visual language connecting physical and digital interactions</li>
+                      <li>Clear iconography for immediate recognition and understanding</li>
                     </ul>
                   </div>
 
@@ -181,10 +193,12 @@ const USAACaseStudy = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Icon Design System</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li><strong>Automotive Categories:</strong> Clear icons for car, truck, and SUV sections</li>
-                      <li><strong>Scalable Design:</strong> Icons work across different sizes and contexts</li>
-                      <li><strong>Brand Alignment:</strong> Consistent with USAA visual identity and guidelines</li>
-                      <li><strong>Improved Navigation:</strong> Enhanced site usability through intuitive iconography</li>
+                      <li><strong>Visual Storytelling:</strong> Storyboards illustrating real-world customer scenarios</li>
+                      <li><strong>Automotive Categories:</strong> Distinctive icons for car, truck, and SUV with unique personalities</li>
+                      <li><strong>User Journey Mapping:</strong> Visual narratives from browsing to financial decisions</li>
+                      <li><strong>Scalable Design:</strong> Icons optimized for multiple sizes and contexts</li>
+                      <li><strong>Brand Alignment:</strong> Consistent with USAA visual identity and trust-building elements</li>
+                      <li><strong>Improved Navigation:</strong> Enhanced site usability through intuitive, recognizable iconography</li>
                     </ul>
                   </div>
 
