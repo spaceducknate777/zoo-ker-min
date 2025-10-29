@@ -23,12 +23,12 @@ const USAACaseStudy = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              USAA Financial Tools
+              Designing Scalable and Trustworthy Financial Solutions for USAA
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              UX/UI Designer — Mobile Banking for Military Families
+              UX Designer — Mobile-First Financial Tools & Icon Design for Military Families
             </p>
-            <img 
+            <img
               src={usaaImage} 
               alt="USAA Financial Tools Project"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
@@ -43,7 +43,7 @@ const USAACaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Simplify complex financial workflows for military families managing finances across deployments
+                  Design mobile-first tools and intuitive icon systems to improve financial well-being and internal site navigation for military families and employees
                 </p>
               </CardContent>
             </Card>
@@ -55,7 +55,7 @@ const USAACaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  UX/UI Designer, conducted research with 40 military families, designed mobile-first experience
+                  UX Designer across two projects: mobile financial tools and icon design for internal automotive site
                 </p>
               </CardContent>
             </Card>
@@ -67,7 +67,7 @@ const USAACaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  45% increase in mobile adoption, 60% reduction in support calls, 4.7/5 app store rating
+                  25% increase in engagement with financial tools, 30% improvement in accessibility and usability scores
                 </p>
               </CardContent>
             </Card>
@@ -85,34 +85,36 @@ const USAACaseStudy = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Research Methodology</CardTitle>
-                  <CardDescription>Understanding the unique needs of military families</CardDescription>
+                  <CardDescription>Understanding military families and internal user needs</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">User Interviews & Contextual Inquiry</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project 1: Mobile-First Financial Tools</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>40 interviews with active duty members and their families</li>
-                      <li>Observed real financial management workflows during deployment prep</li>
-                      <li>Identified pain points in bill pay, transfers, and account monitoring</li>
+                      <li>Conducted user research through surveys and interviews with military families</li>
+                      <li>Performed usability testing to understand unique financial challenges</li>
+                      <li>Identified pain points in financial decision-making during deployments</li>
+                      <li>Analyzed user behavior patterns and trust-building requirements</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Data Analysis</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project 2: Icon Design for Internal Site</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Analyzed 6 months of customer support tickets (12,000+ tickets)</li>
-                      <li>Identified top 15 pain points causing support calls</li>
-                      <li>Mapped user journeys for common financial tasks</li>
+                      <li>Worked with internal team to understand employee and user needs</li>
+                      <li>Identified key areas for improvement in visual language and navigation</li>
+                      <li>Analyzed existing iconography and site usability challenges</li>
+                      <li>Researched best practices for automotive-related icon design</li>
                     </ul>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Key Insights</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Families need to manage finances collaboratively during deployments</li>
-                      <li>Limited internet access requires offline-first design</li>
-                      <li>Security concerns heightened due to frequent location changes</li>
-                      <li>Time-sensitive actions like bill pay must be simple and reliable</li>
+                      <li>Military families need simple, trustworthy interfaces for complex financial decisions</li>
+                      <li>Internal users require intuitive visual cues for quick navigation</li>
+                      <li>Accessibility and clarity are critical for both external and internal audiences</li>
+                      <li>Consistent visual language improves user confidence and efficiency</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -123,42 +125,36 @@ const USAACaseStudy = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Design Process</CardTitle>
-                  <CardDescription>From wireframes to high-fidelity prototypes</CardDescription>
+                  <CardDescription>Collaborative approach across two distinct projects</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Information Architecture</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Mobile Financial Tools Design</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Restructured navigation to reduce task completion from 6 to 3 taps</li>
-                      <li>Created persistent quick actions for top 5 user tasks</li>
-                      <li>Designed progressive disclosure for complex features</li>
+                      <li>Designed intuitive, trust-building UI patterns for financial decision-making</li>
+                      <li>Focused on simplicity and ease of use for complex financial actions</li>
+                      <li>Created mobile-first wireframes and high-fidelity prototypes</li>
+                      <li>Conducted iterative usability testing with military families</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Wireframing & Prototyping</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Icon System Design</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Low-fi wireframes tested with 15 users for navigation validation</li>
-                      <li>High-fi prototypes in Figma with full interaction flows</li>
-                      <li>Built responsive design system for iOS and Android</li>
+                      <li>Designed cohesive set of high-fidelity icons for car, truck, and SUV categories</li>
+                      <li>Ensured icons were scalable, intuitive, and accessible</li>
+                      <li>Aligned iconography with company brand guidelines and visual identity</li>
+                      <li>Created comprehensive icon design specifications and documentation</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Usability Testing</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Cross-functional Collaboration</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>3 rounds of testing with 8-10 participants each</li>
-                      <li>A/B tested two navigation patterns (bottom nav won with 78% preference)</li>
-                      <li>Accessibility testing with screen readers and voice control</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Stakeholder Collaboration</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Worked with compliance team on security requirements</li>
-                      <li>Partnered with engineering to scope MVP features</li>
-                      <li>Presented designs to C-suite for strategic alignment</li>
+                      <li>Worked closely with product managers to align design with business goals</li>
+                      <li>Collaborated with engineers to ensure technical feasibility and constraints</li>
+                      <li>Partnered with development team for effective icon implementation</li>
+                      <li>Regular stakeholder reviews to ensure alignment and buy-in</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -168,38 +164,37 @@ const USAACaseStudy = () => {
             <TabsContent value="solution" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Final Solution</CardTitle>
-                  <CardDescription>Mobile-first financial management redesign</CardDescription>
+                  <CardTitle>Final Solutions</CardTitle>
+                  <CardDescription>Mobile-first financial tools and cohesive icon system</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Features</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Mobile Financial Tools Features</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li><strong>Quick Actions Dashboard:</strong> One-tap access to transfer, pay bills, deposit checks</li>
-                      <li><strong>Shared Account Management:</strong> Spouse access with configurable permissions</li>
-                      <li><strong>Offline Mode:</strong> Queue transactions when connectivity is limited</li>
-                      <li><strong>Smart Notifications:</strong> Proactive alerts for low balances, due bills, unusual activity</li>
-                      <li><strong>Biometric Security:</strong> Face ID/fingerprint with military-grade encryption</li>
+                      <li><strong>Trust-Building UI Patterns:</strong> Designed interfaces that build confidence in financial decisions</li>
+                      <li><strong>Simplified Workflows:</strong> Streamlined complex financial actions into intuitive steps</li>
+                      <li><strong>Mobile-First Approach:</strong> Optimized for on-the-go access during deployments</li>
+                      <li><strong>Accessible Design:</strong> WCAG compliant patterns for inclusive user experience</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design System</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Icon Design System</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Created 50+ reusable components in Figma</li>
-                      <li>Established typography scale optimized for mobile readability</li>
-                      <li>WCAG AA compliant color system with 4.5:1 contrast ratios</li>
-                      <li>Documented interaction patterns for consistent behavior</li>
+                      <li><strong>Automotive Categories:</strong> Clear icons for car, truck, and SUV sections</li>
+                      <li><strong>Scalable Design:</strong> Icons work across different sizes and contexts</li>
+                      <li><strong>Brand Alignment:</strong> Consistent with USAA visual identity and guidelines</li>
+                      <li><strong>Improved Navigation:</strong> Enhanced site usability through intuitive iconography</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Accessibility</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Design Deliverables</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Screen reader support for all financial data</li>
-                      <li>Large touch targets (minimum 44x44pt) for easy tapping</li>
-                      <li>Voice-controlled navigation for hands-free use</li>
-                      <li>High contrast mode for low-vision users</li>
+                      <li>High-fidelity mobile app prototypes and specifications</li>
+                      <li>Comprehensive icon library with usage guidelines</li>
+                      <li>Design system documentation for both projects</li>
+                      <li>Accessibility compliance reports and recommendations</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -210,44 +205,47 @@ const USAACaseStudy = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Impact & Outcomes</CardTitle>
-                  <CardDescription>Measurable improvements in adoption and satisfaction</CardDescription>
+                  <CardDescription>Measurable improvements across both projects</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Quantitative Results</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>45% increase in mobile app adoption within 6 months</li>
-                      <li>60% reduction in support calls related to bill pay and transfers</li>
-                      <li>78% faster task completion for primary workflows</li>
-                      <li>4.7/5 star app store rating (up from 3.2/5)</li>
+                      <li>25% improvement in engagement with financial tools</li>
+                      <li>30% increase in accessibility and usability scores</li>
+                      <li>Simplified complex financial decisions for military families</li>
+                      <li>Enhanced internal site navigation and user satisfaction</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">User Feedback</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Contributions</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>"Finally a banking app that understands deployment life" - Active Duty User</li>
-                      <li>"My spouse can manage everything while I'm overseas. Game changer." - Navy Member</li>
-                      <li>92% of users rated the new design as "much easier to use"</li>
+                      <li>Delivered inclusive design solutions improving accessibility by 30%</li>
+                      <li>Created cohesive icon sets enhancing internal site usability</li>
+                      <li>Designed trust-building UI patterns for financial decision-making</li>
+                      <li>Improved brand consistency through thoughtful visual design</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Business Impact</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Skills Applied</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>$2.3M annual savings in customer support costs</li>
-                      <li>Featured in Apple App Store "Apps We Love"</li>
-                      <li>Design system adopted across all USAA digital products</li>
-                      <li>Won Webby Award for Best Financial Services App</li>
+                      <li>UX Research and usability testing with military families</li>
+                      <li>Icon design and scalable visual systems</li>
+                      <li>Mobile-first design and responsive interfaces</li>
+                      <li>Cross-functional collaboration with engineers and stakeholders</li>
+                      <li>Accessibility compliance and inclusive design practices</li>
                     </ul>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Learnings</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Offline-first design crucial for users with unreliable connectivity</li>
-                      <li>Security and convenience can coexist with thoughtful UX</li>
-                      <li>Design systems accelerate cross-platform consistency</li>
+                      <li>Simple, trustworthy interfaces are essential for financial tools</li>
+                      <li>Cohesive visual language improves user confidence and efficiency</li>
+                      <li>Collaboration across teams ensures designs meet technical and business needs</li>
+                      <li>Accessibility improvements benefit all users, not just those with disabilities</li>
                     </ul>
                   </div>
                 </CardContent>
