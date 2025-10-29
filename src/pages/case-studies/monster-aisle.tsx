@@ -23,14 +23,14 @@ const MonsterAisleCaseStudy = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              Monster Aisle
+              FINAV Fire Management System
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              UX Researcher & Designer — Gamified Grocery Experience for Kids
+              UX Designer & Research Lead — Firefighter Navigation & Communication System
             </p>
             <img 
               src={monsterAisleImage} 
-              alt="Monster Aisle Project"
+              alt="FINAV Fire Management System"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
             />
           </div>
@@ -43,7 +43,7 @@ const MonsterAisleCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Transform grocery shopping into an engaging experience for kids ages 6-10 using AR and gamification
+                  Address critical safety challenges firefighters face: poor visibility in smoke, communication failures, and lack of situational awareness
                 </p>
               </CardContent>
             </Card>
@@ -55,7 +55,7 @@ const MonsterAisleCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  UX Researcher & Designer, conducted ethnographic research with 20 families, designed full experience
+                  UX Designer & Research Lead, managed team through primary/secondary research, interviews, and stakeholder presentations
                 </p>
               </CardContent>
             </Card>
@@ -67,115 +67,88 @@ const MonsterAisleCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  92% child engagement rate, 78% of parents reported more positive shopping experiences
+                  Recognized by stakeholders with strong investment interest for potential to save firefighter lives
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          <Tabs defaultValue="research" className="w-full">
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Project Details</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm">
+                <p><strong>Duration:</strong> September 6, 2019 - November 15, 2019 (10 Weeks)</p>
+                <p><strong>Course:</strong> UX Design Senior Studio I & II</p>
+                <p><strong>Instructor:</strong> Byeong Cheol (BC) Hwang</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Team Members</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-1 text-sm">
+                <p>Dylan Jackson</p>
+                <p>Sherry Wu</p>
+                <p>Nathan Zukerman</p>
+                <p>Chris Bailey</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Tabs defaultValue="problem" className="w-full">
             <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="research">Research</TabsTrigger>
-              <TabsTrigger value="process">Process</TabsTrigger>
+              <TabsTrigger value="problem">Problem</TabsTrigger>
               <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="results">Results</TabsTrigger>
+              <TabsTrigger value="features">Features</TabsTrigger>
+              <TabsTrigger value="outcome">Outcome</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="research" className="space-y-6">
+            <TabsContent value="problem" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Research Methodology</CardTitle>
-                  <CardDescription>Deep ethnographic study of children's grocery store behavior</CardDescription>
+                  <CardTitle>What's the Problem</CardTitle>
+                  <CardDescription>Critical challenges identified through interviews with Savannah, GA firefighters</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Ethnographic Field Research</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Observed 20 families (kids ages 6-10) during grocery shopping trips</li>
-                      <li>Documented child behaviors, engagement patterns, and pain points</li>
-                      <li>Noted eye-level interactions and shelf-height preferences</li>
-                      <li>Recorded parent-child dynamics around product selection</li>
+                    <h4 className="font-semibold text-foreground mb-2">Research Approach</h4>
+                    <p className="text-muted-foreground mb-3">
+                      Through comprehensive interviews with local firefighters in Savannah, GA, we identified four critical insights 
+                      that underscore the magnitude of the challenges they face in their life-saving work.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Critical Safety Challenges</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                      <li>
+                        <strong>Lack of Visibility & Navigation:</strong> Firefighters face extreme difficulty navigating inside burning 
+                        buildings due to dense smoke and poor navigation tools, putting their lives at risk
+                      </li>
+                      <li>
+                        <strong>Health Hazards in Hoarded Homes:</strong> Scattered medical needles, toxic substances, and cluttered 
+                        environments create additional dangers that are invisible until encountered
+                      </li>
+                      <li>
+                        <strong>Communication Failures:</strong> Poor walkie-talkie reception hampers team communication, especially 
+                        in attics and basements where reception is weakest
+                      </li>
+                      <li>
+                        <strong>Equipment Limitations:</strong> Infrared blockages and non-puncture proof suits compromise firefighters' 
+                        safety and ability to detect and respond to fires effectively
+                      </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Child-Centered Design Research</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Co-design sessions with 15 children using art supplies and storyboards</li>
-                      <li>Play-tested early concepts in simulated grocery store environment</li>
-                      <li>Interviewed parents about grocery shopping challenges with kids</li>
-                      <li>Analyzed successful gamification patterns in kids' apps (Pokémon GO, Duolingo Kids)</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Competitive Analysis</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Evaluated 8 gamified shopping and AR experiences for kids</li>
-                      <li>Analyzed reward systems from popular kids' mobile games</li>
-                      <li>Studied educational apps that successfully teach through play</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Insights</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Kids naturally interact with products at their eye level (3-4 feet high)</li>
-                      <li>Engagement peaks with immediate, tangible rewards (stickers, points, unlockables)</li>
-                      <li>Children prefer collaborative games they can play with parents or siblings</li>
-                      <li>Attention span limited to 2-3 minute interactions per aisle</li>
-                      <li>Bright colors and monster characters resonate with target age group</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="process" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Design Process</CardTitle>
-                  <CardDescription>From concept sketches to interactive prototype</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Concept Development</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Brainstormed 15+ gamification concepts with team and kids</li>
-                      <li>Developed "monster battle" mechanic aligned with natural kid behaviors</li>
-                      <li>Created narrative framework: defeat shelf monsters by finding items</li>
-                      <li>Designed 8 unique monster characters representing different aisles</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Character & UI Design</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Illustrated monster characters with distinct personalities</li>
-                      <li>Designed AR overlays that work at kid eye-level height</li>
-                      <li>Created reward system: virtual art supplies to customize monsters</li>
-                      <li>Built simple, icon-based UI requiring minimal reading</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Prototyping & Testing</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Paper prototype testing with 10 kids to validate game mechanics</li>
-                      <li>Interactive Figma prototype with animated monster interactions</li>
-                      <li>AR prototype built in Unity for in-store testing</li>
-                      <li>3 rounds of testing with 8-12 kids per round in grocery store setting</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Iterative Refinements</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Simplified monster battles from 5 steps to 2 steps based on testing</li>
-                      <li>Added parent notification system after safety concerns emerged</li>
-                      <li>Increased monster size by 30% for better visibility in busy aisles</li>
-                      <li>Added audio cues for non-readers</li>
-                    </ul>
+                    <h4 className="font-semibold text-foreground mb-2">The Urgency</h4>
+                    <p className="text-muted-foreground">
+                      These challenges require urgent attention to ensure firefighters' safety and effectiveness in saving lives and 
+                      properties. Every second counts in a fire emergency, and current tools are not providing the support teams need.
+                    </p>
                   </div>
                 </CardContent>
               </Card>
@@ -184,108 +157,162 @@ const MonsterAisleCaseStudy = () => {
             <TabsContent value="solution" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Final Solution</CardTitle>
-                  <CardDescription>AR-powered gamified grocery app for kids</CardDescription>
+                  <CardTitle>Why Use FINAV?</CardTitle>
+                  <CardDescription>A state-of-the-art fire management system enhancing communication, navigation, and coordination</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Core Game Mechanics</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li><strong>Monster Discovery:</strong> Kids scan aisles to find AR monsters hiding on shelves</li>
-                      <li><strong>Battle System:</strong> Defeat monsters by finding the correct grocery item (e.g., cereal monster wants Cheerios)</li>
-                      <li><strong>Reward Collection:</strong> Earn virtual art supplies (crayons, stickers, paints) for each victory</li>
-                      <li><strong>Monster Customization:</strong> Use art supplies to decorate and personalize monsters in collection</li>
-                      <li><strong>Shopping List Integration:</strong> Parents add items to list, monsters request those items</li>
+                    <h4 className="font-semibold text-foreground mb-2">System Overview</h4>
+                    <p className="text-muted-foreground mb-3">
+                      The FINAV Fire Management System allows firefighting chiefs to coordinate their team's efforts with a higher 
+                      level of situational awareness. Our system provides high-fidelity audio transmission, clear mapping and navigation, 
+                      and real-time monitoring of team members' vitals and locations.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Core System Components</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                      <li>
+                        <strong>Hub Boost:</strong> Digital communication methods ensure high-quality audio transmission and personalized 
+                        one-on-one communication. The firetruck's wireless communication hub boosts signal strength and prevents disconnects
+                      </li>
+                      <li>
+                        <strong>Behind the Mask:</strong> Augmented Reality lenses and heat sensor wireless antenna provide enhanced 
+                        visibility and thermal detection capabilities
+                      </li>
+                      <li>
+                        <strong>Navigate:</strong> Clear mapping and navigation using modern GPS, mapping software, and publicly available 
+                        housing data gives firefighters better awareness of their surroundings
+                      </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design Features</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>8 unique monsters, each themed to grocery aisle (produce, dairy, cereal, etc.)</li>
-                      <li>Eye-level AR placement optimized for 3.5-4 foot height</li>
-                      <li>Simple two-button UI: "Scan Aisle" and "Battle Monster"</li>
-                      <li>Vibrant color palette with high contrast for visibility</li>
-                      <li>Haptic feedback and sound effects for tactile engagement</li>
-                    </ul>
+                    <h4 className="font-semibold text-foreground mb-2">SAGIS Integration</h4>
+                    <p className="text-muted-foreground">
+                      Leveraging the Savannah Area Geographic Information System (SAGIS) to access geospatial data, floor plans, and 
+                      property information on a standardized platform, enabling firefighters to plan ahead and assess situations accurately.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+
+            <TabsContent value="features" className="space-y-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Features</CardTitle>
+                  <CardDescription>Comprehensive tools for enhanced firefighter safety and coordination</CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Dispatch Call Assistance</h4>
+                    <p className="text-muted-foreground">
+                      Services designed to help those in need with efficient emergency response coordination.
+                    </p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Parent Controls</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Easy Access Control</h4>
+                    <p className="text-muted-foreground mb-2">
+                      Experience complete control with a quick menu providing:
+                    </p>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Shopping list manager to control which items kids search for</li>
-                      <li>Time limits per shopping trip to prevent overstimulation</li>
-                      <li>Location tracking to monitor child position in store</li>
-                      <li>Progress reports showing items found and engagement metrics</li>
+                      <li>Real-time floor plans</li>
+                      <li>Live camera feeds</li>
+                      <li>Firefighter information and vitals</li>
+                      <li>Communication tools</li>
                     </ul>
+                    <p className="text-muted-foreground mt-2">
+                      Empowering chiefs and crews to respond swiftly and effectively to emergencies.
+                    </p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Educational Elements</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Less Guesswork</h4>
+                    <p className="text-muted-foreground">
+                      By providing real-time visual information before arriving at the dispatch scene, our system enables the chief 
+                      and crew to accurately assess the situation and avoid guesswork and delays.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Enhanced Communication</h4>
+                    <p className="text-muted-foreground">
+                      The system provides the firefighter chief with full access to the team's thermal feeds, house locations, and 
+                      vitals for efficient coordination during intense situations. This gives the chief a higher situational awareness 
+                      level and tools to minimize missteps that could shorten the operability window.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Plan Ahead with Data</h4>
+                    <p className="text-muted-foreground mb-2">
+                      Through SAGIS integration, firefighters can:
+                    </p>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Product recognition teaches reading and item categorization</li>
-                      <li>Nutritional fun facts appear after finding healthy items</li>
-                      <li>Counting mechanics for quantity-based shopping list items</li>
+                      <li>Access complete data history on local properties</li>
+                      <li>View detailed floor plans before entering buildings</li>
+                      <li>Review property hazards and structural information</li>
+                      <li>Utilize geospatial data on a standardized platform</li>
                     </ul>
                   </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="results" className="space-y-6">
+            <TabsContent value="outcome" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Impact & Outcomes</CardTitle>
-                  <CardDescription>Strong engagement and positive family experiences</CardDescription>
+                  <CardTitle>Outcome & Impact</CardTitle>
+                  <CardDescription>Strong stakeholder recognition and investment interest</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Quantitative Results</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Final Presentation</h4>
+                    <p className="text-muted-foreground">
+                      After several weeks of dedicated effort, I had the honor of presenting our team's final deliverable. The concept 
+                      we presented received great recognition from future stakeholders who expressed a strong interest in investing in it.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Stakeholder Response</h4>
+                    <p className="text-muted-foreground">
+                      Stakeholders recognized the significant benefits FINAV could offer to their organization and were enthusiastic 
+                      about its potential to assist firefighters in life-saving situations. The system's comprehensive approach to 
+                      addressing critical safety challenges resonated strongly with decision-makers.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Key Achievements</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>92% child engagement rate during pilot testing (n=50 families)</li>
-                      <li>78% of parents reported more positive shopping experiences</li>
-                      <li>65% reduction in parent-reported "child tantrums" during shopping</li>
-                      <li>Average 12 minutes of active app usage per shopping trip</li>
-                      <li>85% of kids asked to use app on repeat shopping trips</li>
+                      <li>Successfully completed 10-week design studio project</li>
+                      <li>Conducted comprehensive primary research with active firefighters</li>
+                      <li>Developed innovative AR and communication solutions</li>
+                      <li>Integrated existing geospatial data systems (SAGIS)</li>
+                      <li>Created concept with real investment potential</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">User Feedback</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>"My daughter actually ASKS to go grocery shopping now!" - Parent, Pilot Study</li>
-                      <li>"I love finding the purple monster in the cereal aisle!" - 7-year-old user</li>
-                      <li>"Makes my kid helpful instead of pulling things off shelves" - Parent feedback</li>
-                    </ul>
+                    <h4 className="font-semibold text-foreground mb-2">Design Leadership</h4>
+                    <p className="text-muted-foreground">
+                      As UX Designer and Research Lead, I managed the team through all phases of the project—from initial firefighter 
+                      interviews and problem identification, through concept exploration and design iterations, to final stakeholder 
+                      presentations. This experience demonstrated the power of user-centered design in addressing real-world safety challenges.
+                    </p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design Recognition</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Won UXPA Student Design Competition, Best Innovative Experience</li>
-                      <li>Featured in UX Magazine's "Designing for Children" issue</li>
-                      <li>Presented at ACM CHI Conference on child-computer interaction</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Business Potential</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Interest from 2 major grocery chains for pilot programs</li>
-                      <li>Potential for branded monsters partnering with healthy food companies</li>
-                      <li>Data shows increased dwell time in-store by average 8 minutes</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Learnings</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Ethnographic research revealed eye-level insight no other method would</li>
-                      <li>Co-design with kids leads to more authentic, engaging experiences</li>
-                      <li>Gamification must align with natural behaviors, not force new ones</li>
-                      <li>Parent controls essential for trust and safety in kids' apps</li>
-                      <li>Immediate rewards more effective than delayed gratification for young users</li>
-                    </ul>
+                    <h4 className="font-semibold text-foreground mb-2">Vision for the Future</h4>
+                    <p className="text-muted-foreground">
+                      FINAV represents a vision for the future of firefighter safety—where technology enhances human capabilities, 
+                      improves communication, and ultimately saves more lives. The positive stakeholder response validates the potential 
+                      impact of thoughtfully designed emergency response systems.
+                    </p>
                   </div>
                 </CardContent>
               </Card>

@@ -28,9 +28,9 @@ const Projects = () => {
       link: "/case-studies/booz-allen"
     },
     {
-      title: "Monster Aisle",
-      role: "UX Researcher & Designer",
-      description: "Created an interactive grocery app where kids use art supplies to battle monsters in store aisles, leveraging ethnographic research to design around eye-level interaction and reward-based engagement.",
+      title: "FINAV Fire Management System",
+      role: "UX Designer & Research Lead",
+      description: "Designed firefighter navigation and communication system with AR lenses, GPS mapping, and real-time vitals monitoring to enhance safety and coordination during emergencies.",
       image: monsterAisleImage,
       link: "/case-studies/monster-aisle"
     }
