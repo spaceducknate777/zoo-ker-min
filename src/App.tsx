@@ -5,10 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import BMWCaseStudy from "./pages/case-studies/BMWCaseStudy";
-import USAACaseStudy from "./pages/case-studies/USAACaseStudy";
-import BoozAllenCaseStudy from "./pages/case-studies/BoozAllenCaseStudy";
-import MonsterAisleCaseStudy from "./pages/case-studies/MonsterAisleCaseStudy";
+import BMWCaseStudy from "./pages/case-studies/bmw";
+import USAACaseStudy from "./pages/case-studies/usaa";
+import BoozAllenCaseStudy from "./pages/case-studies/booz-allen";
+import MonsterAisleCaseStudy from "./pages/case-studies/monster-aisle";
 
 const queryClient = new QueryClient();
 
