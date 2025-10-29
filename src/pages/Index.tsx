@@ -15,21 +15,6 @@ const Index = () => {
       <About />
       <Projects />
       <Contact />
-
-      {/* Resume Button Section */}
-      <section className="flex justify-center my-12">
-        <a
-          href="/resume/nathan-zukerman-resume.pdf" // PDF must be in public/resume/
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline" size="lg" className="flex items-center">
-            <Download className="mr-2 h-4 w-4" />
-            View Resume
-          </Button>
-        </a>
-      </section>
-
       <Footer />
     </div>
   );
