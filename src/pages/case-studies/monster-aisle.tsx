@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
-import monsterAisleImage from "@/assets/monster-aisle-project.jpg";
+import finavImage from "@/assets/finav-project.jpg";
 
 const MonsterAisleCaseStudy = () => {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const MonsterAisleCaseStudy = () => {
               UX Designer & Research Lead — Firefighter Navigation & Communication System
             </p>
             <img 
-              src={monsterAisleImage} 
+              src={finavImage} 
               alt="FINAV Fire Management System"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
             />

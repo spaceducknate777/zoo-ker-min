@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-storyboard.png";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
-import monsterAisleImage from "@/assets/monster-aisle-project.jpg";
+import finavImage from "@/assets/finav-project.jpg";
 
 const Projects = () => {
   const projects = [
@@ -31,7 +31,7 @@ const Projects = () => {
       title: "FINAV Fire Management System",
       role: "UX Designer & Research Lead",
       description: "Designed firefighter navigation and communication system with AR lenses, GPS mapping, and real-time vitals monitoring to enhance safety and coordination during emergencies.",
-      image: monsterAisleImage,
+      image: finavImage,
       link: "/case-studies/monster-aisle"
     }
   ];
