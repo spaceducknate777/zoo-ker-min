@@ -45,7 +45,7 @@ const Projects = () => {
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore my recent work across automotive, finance, government, and retail sectors
+            Designing innovative experiences for BMW, USAA, government agencies, and emergency response systems
           </p>
         </div>
 
