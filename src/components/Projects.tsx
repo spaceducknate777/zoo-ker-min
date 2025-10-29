@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import bmwImage from "@/assets/bmw-project.jpg";
-import usaaImage from "@/assets/usaa-project.jpg";
+import usaaImage from "@/assets/usaa-storyboard.png";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
 import monsterAisleImage from "@/assets/monster-aisle-project.jpg";
 

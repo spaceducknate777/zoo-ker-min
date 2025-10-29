@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
-import usaaImage from "@/assets/usaa-project.jpg";
+import usaaImage from "@/assets/usaa-storyboard.png";
 
 const USAACaseStudy = () => {
   const navigate = useNavigate();
