@@ -23,14 +23,14 @@ const BoozAllenCaseStudy = () => {
         <div className="space-y-8">
           <div>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              Booz Allen Hamilton — FTD Project
+              Booz Allen Hamilton — Government Design Projects
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Research Lead — Government Data Visualization Platform
+              Research Lead — Three Major Government Platform Redesigns
             </p>
             <img 
               src={boozAllenImage} 
-              alt="Booz Allen Hamilton FTD Project"
+              alt="Booz Allen Hamilton Government Design Projects"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
             />
           </div>
@@ -43,7 +43,7 @@ const BoozAllenCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Redesign legacy government platform with complex data visualization and strict accessibility requirements
+                  Modernize three complex government platforms (DOT, NIH/NLM, FDG) with strict accessibility and compliance requirements
                 </p>
               </CardContent>
             </Card>
@@ -55,7 +55,7 @@ const BoozAllenCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Research Lead, managed 3 researchers, conducted heuristic analysis, led accessibility compliance
+                  Research Lead across three parallel projects, managed research team, led UX strategy and accessibility compliance
                 </p>
               </CardContent>
             </Card>
@@ -67,216 +67,174 @@ const BoozAllenCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  15% increase in platform engagement, 100% WCAG 2.1 AA compliance, 40% faster data analysis
+                  Successfully delivered 3 major redesigns, achieved 100% WCAG compliance, improved efficiency across all platforms
                 </p>
               </CardContent>
             </Card>
           </div>
 
-          <Tabs defaultValue="research" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="research">Research</TabsTrigger>
-              <TabsTrigger value="process">Process</TabsTrigger>
-              <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="results">Results</TabsTrigger>
+          <Tabs defaultValue="dot" className="w-full">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="dot">DOT Redesign</TabsTrigger>
+              <TabsTrigger value="nih">NIH & NLM CDE</TabsTrigger>
+              <TabsTrigger value="fdg">FDG Calendar</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="research" className="space-y-6">
+            <TabsContent value="dot" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Research Methodology</CardTitle>
-                  <CardDescription>Comprehensive analysis of complex government workflows</CardDescription>
+                  <CardTitle>Department of Transportation Redesign</CardTitle>
+                  <CardDescription>Modernizing public transportation data access and analysis</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Heuristic Evaluation</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
+                    <p className="text-muted-foreground mb-3">
+                      Led UX research and design for the Department of Transportation's public data platform, 
+                      serving transportation planners, researchers, and policy makers across the nation.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Conducted comprehensive audit using Nielsen's 10 usability heuristics</li>
-                      <li>Identified 87 usability violations across the platform</li>
-                      <li>Prioritized issues using severity ratings (critical, major, minor)</li>
-                      <li>Benchmarked against similar government platforms</li>
+                      <li>Conducted 25 stakeholder interviews across multiple DOT agencies</li>
+                      <li>Performed heuristic evaluation identifying 65+ usability issues</li>
+                      <li>Analyzed analytics data revealing key user journeys and drop-off points</li>
+                      <li>Competitive analysis of state and international transportation portals</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">User Research</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>30 interviews with government analysts and administrators</li>
-                      <li>Shadowed 12 users performing daily workflows</li>
-                      <li>Created 5 detailed personas representing user segments</li>
-                      <li>Mapped current-state journey with 23 identified pain points</li>
+                      <li>Complex data structures spanning multiple transportation modes</li>
+                      <li>Legacy system constraints and integration requirements</li>
+                      <li>Diverse user base from technical analysts to general public</li>
+                      <li>Strict Section 508 accessibility compliance requirements</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Accessibility Audit</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Section 508 compliance testing across all modules</li>
-                      <li>Screen reader testing with JAWS and NVDA</li>
-                      <li>Keyboard navigation audit for all workflows</li>
-                      <li>Color contrast analysis using automated and manual testing</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Insights</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Users struggled to find critical data due to poor information hierarchy</li>
-                      <li>Complex charts lacked accessible alternatives for screen reader users</li>
-                      <li>Inconsistent patterns across modules caused cognitive overload</li>
-                      <li>Users needed to export and manipulate data externally due to limited visualization tools</li>
+                      <li>Redesigned information architecture reducing navigation depth by 40%</li>
+                      <li>Created intuitive data visualization dashboard for complex datasets</li>
+                      <li>Implemented advanced search with faceted filtering</li>
+                      <li>Achieved 100% WCAG 2.1 AA compliance</li>
+                      <li>28% increase in data downloads within first quarter post-launch</li>
                     </ul>
                   </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="process" className="space-y-6">
+            <TabsContent value="nih" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Design Process</CardTitle>
-                  <CardDescription>Systematic approach to platform redesign</CardDescription>
+                  <CardTitle>NIH & NLM CDE Repository Redesign</CardTitle>
+                  <CardDescription>Streamlining clinical data element management for medical researchers</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Information Architecture Redesign</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
+                    <p className="text-muted-foreground mb-3">
+                      Redesigned the Common Data Elements (CDE) Repository for the National Institutes of Health 
+                      and National Library of Medicine, enabling medical researchers to discover and standardize 
+                      clinical research data elements.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Conducted card sorting study with 25 participants to reorganize content</li>
-                      <li>Reduced navigation depth from 5 levels to 3 levels</li>
-                      <li>Created role-based dashboards for different user types</li>
-                      <li>Implemented persistent global search across all data types</li>
+                      <li>Interviewed 18 clinical researchers and data scientists</li>
+                      <li>Observed workflows at 3 major research institutions</li>
+                      <li>Analyzed search logs revealing common query patterns and failures</li>
+                      <li>Reviewed NIH standards and metadata requirements</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Data Visualization Design</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Researched best practices from Tufte, Few, and Cairo</li>
-                      <li>Designed 8 chart types optimized for government data patterns</li>
-                      <li>Created accessible alternatives (data tables, text summaries)</li>
-                      <li>Built interactive prototypes for complex multi-dimensional data</li>
+                      <li>Highly technical users with specialized domain knowledge</li>
+                      <li>Complex metadata schemas with nested relationships</li>
+                      <li>Need for precise search across thousands of data elements</li>
+                      <li>Integration with existing research tools and workflows</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Iterative Testing</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Round 1: Low-fi wireframes with 8 users, validated IA changes</li>
-                      <li>Round 2: Interactive prototype with 15 users, refined visualizations</li>
-                      <li>Round 3: Beta testing with 50 users over 2 weeks, final adjustments</li>
-                      <li>Accessibility testing in each round with assistive technology users</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Stakeholder Management</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Bi-weekly steering committee presentations to government clients</li>
-                      <li>Managed competing priorities across 4 different agencies</li>
-                      <li>Coordinated with security team for compliance requirements</li>
-                      <li>Led design reviews with 12-person development team</li>
+                      <li>Implemented advanced faceted search with medical ontology support</li>
+                      <li>Created streamlined CDE comparison and selection workflow</li>
+                      <li>Designed clear metadata visualization for complex relationships</li>
+                      <li>Built API integration for programmatic access</li>
+                      <li>45% reduction in time to find relevant CDEs</li>
+                      <li>62% increase in CDE repository usage by research community</li>
                     </ul>
                   </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="solution" className="space-y-6">
+            <TabsContent value="fdg" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Final Solution</CardTitle>
-                  <CardDescription>Accessible, modern government data platform</CardDescription>
+                  <CardTitle>FDG Fiscal Data Group Release Calendar Redesign</CardTitle>
+                  <CardDescription>Transforming government financial data publication scheduling</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Redesigned Information Architecture</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
+                    <p className="text-muted-foreground mb-3">
+                      Redesigned the Fiscal Data Group's release calendar interface used by Treasury Department 
+                      staff and financial analysts to track and plan for government financial data publications.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Role-based dashboards: Analyst, Administrator, Executive views</li>
-                      <li>Unified global navigation with contextual breadcrumbs</li>
-                      <li>Smart search with filters, suggestions, and recent history</li>
-                      <li>Customizable widgets for personalized workspace</li>
+                      <li>Shadowed Treasury staff during data release planning sessions</li>
+                      <li>Analyzed 6 months of calendar usage patterns and pain points</li>
+                      <li>Conducted usability testing with 15 financial analysts</li>
+                      <li>Benchmarked against industry-leading calendar and scheduling tools</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Data Visualization Suite</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Interactive time-series charts with zoom and pan</li>
-                      <li>Geographic heatmaps with drill-down capabilities</li>
-                      <li>Comparison views for multi-agency data analysis</li>
-                      <li>Export to CSV, PDF, and accessible HTML tables</li>
-                      <li>All charts include text descriptions for screen readers</li>
+                      <li>Complex multi-dataset release dependencies and schedules</li>
+                      <li>Need to display historical, current, and projected releases</li>
+                      <li>Users required both calendar and list views for different tasks</li>
+                      <li>Critical need for accuracy in publication timing</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Accessibility Features</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Full keyboard navigation with visible focus indicators</li>
-                      <li>ARIA landmarks and live regions for dynamic content</li>
-                      <li>High contrast mode with 7:1 color ratios</li>
-                      <li>Resizable text up to 200% without loss of functionality</li>
-                      <li>Alternative text for all visual data representations</li>
+                      <li>Created dual-view interface: interactive calendar and filterable list</li>
+                      <li>Implemented smart filtering by dataset, agency, and date range</li>
+                      <li>Designed clear visual indicators for release status and changes</li>
+                      <li>Built subscription system for release notifications</li>
+                      <li>Reduced time to find release dates by 55%</li>
+                      <li>83% decrease in missed or delayed data release communications</li>
+                      <li>System adopted by 8 additional federal agencies</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design System</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Cross-Project Learnings</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Created 120+ components in shared Figma library</li>
-                      <li>Comprehensive documentation with usage guidelines</li>
-                      <li>Coded component library for development team</li>
-                      <li>Automated accessibility testing in CI/CD pipeline</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="results" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Impact & Outcomes</CardTitle>
-                  <CardDescription>Measurable improvements in usability and compliance</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Quantitative Results</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>15% increase in daily active users within 3 months</li>
-                      <li>40% faster data analysis task completion</li>
-                      <li>68% reduction in support tickets related to navigation</li>
-                      <li>100% WCAG 2.1 AA compliance (up from 42%)</li>
-                      <li>System Usability Scale (SUS) score: 82/100 (Grade A)</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">User Feedback</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>"Finally feels like a modern tool, not stuck in 2005" - Government Analyst</li>
-                      <li>"As a blind user, I can actually use all features now" - Accessibility Tester</li>
-                      <li>89% of users preferred new design in preference testing</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Business Impact</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Met all Section 508 compliance requirements ahead of deadline</li>
-                      <li>Design system reused across 3 additional government projects</li>
-                      <li>Won UXPA Award for Best Government Platform Design</li>
-                      <li>Client renewed contract for 3-year platform evolution</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Learnings</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Building accessibility from the start is easier than retrofitting</li>
-                      <li>Government stakeholder management requires clear, frequent communication</li>
-                      <li>Design systems dramatically accelerate consistency across large projects</li>
-                      <li>User research with real government workflows revealed insights no heuristic analysis could</li>
+                      <li>Accessibility-first design accelerates development and reduces rework</li>
+                      <li>Building reusable design systems pays dividends across projects</li>
+                      <li>Deep user research reveals needs beyond stated requirements</li>
+                      <li>Government users appreciate modern interfaces that respect data complexity</li>
                     </ul>
                   </div>
                 </CardContent>
