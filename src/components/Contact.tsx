@@ -50,13 +50,13 @@ const Contact = () => {
               </h3>
               <div className="space-y-4">
                 <a 
-                  href="mailto:nathan@zukerman.design" 
+                  href="mailto:natezukerman@gmail.com" 
                   className="flex items-center gap-3 text-muted-foreground hover:text-accent transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <Mail className="h-5 w-5" />
                   </div>
-                  <span>nathan@zukerman.design</span>
+                  <span>natezukerman@gmail.com</span>
                 </a>
                 
                 <a 
@@ -72,7 +72,7 @@ const Contact = () => {
                 </a>
                 
                 <a 
-                  href="https://github.com/nathanzukerman" 
+                  href="https://github.com/spaceducknate777" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-accent transition-colors group"
@@ -80,7 +80,7 @@ const Contact = () => {
                   <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <Github className="h-5 w-5" />
                   </div>
-                  <span>github.com/nathanzukerman</span>
+                  <span>github.com/spaceducknate777</span>
                 </a>
               </div>
             </div>
