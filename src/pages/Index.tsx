@@ -1,17 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ImpactStats from "@/components/ImpactStats";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
+      <ImpactStats />
       <About />
       <Projects />
       <Contact />

@@ -16,16 +16,16 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <div className="space-y-2">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                Nathan Zukerman
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                👋 Hi, I'm Nathan Zukerman
               </h1>
-              <p className="text-xl sm:text-2xl text-muted-foreground font-medium">
-                UX Designer • Creative Strategist
+              <p className="text-xl sm:text-2xl text-accent font-semibold">
+                Senior UX Designer & Research Lead
               </p>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Designing intuitive, research-driven interfaces for BMW, USAA, Booz Allen Hamilton, and innovative consumer apps — creating experiences that bridge strategy, empathy, and innovation.
+              Crafting inclusive, research-driven digital experiences for BMW, Booz Allen, and USAA — helping over 500K+ users through accessible, data-informed design systems.
             </p>
 
             {/* Buttons */}

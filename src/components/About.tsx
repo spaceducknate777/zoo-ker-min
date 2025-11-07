@@ -11,9 +11,8 @@ const About = () => {
 
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed animate-fade-in">
           <p>
-            As a UX Designer and Creative Strategist, I specialize in creating intuitive, 
-            research-driven interfaces that solve real user problems. My work spans across 
-            automotive innovation, financial services, government platforms, and retail logistics.
+            I'm a UX Designer & Research Lead with 7+ years of experience across startups, government, and enterprise. 
+            My work blends research, design systems, and storytelling to craft accessible experiences that make people's lives easier.
           </p>
           
           <p>
@@ -23,9 +22,7 @@ const About = () => {
           </p>
 
           <p>
-            With experience working for industry leaders like BMW, USAA, Booz Allen Hamilton, and 
-            Trader Joe's, I've developed a comprehensive understanding of how to design solutions 
-            that balance user needs, business goals, and technical constraints.
+            When I'm not designing, I'm building stop-motion animations, sculpting, or hiking with my Shiba-Chihuahua mix.
           </p>
         </div>
       </div>
