@@ -1,10 +1,12 @@
 import bmwLogo from "@/assets/bmw-logo.png";
+import usaaLogo from "@/assets/usaa-logo.png";
+import boozAllenLogo from "@/assets/booz-allen-logo.png";
 
 const BrandBar = () => {
   const brands = [
-    { name: "BMW", industry: "Automotive Innovation", logo: bmwLogo, hasImage: true },
-    { name: "USAA", industry: "Financial Services", hasImage: false },
-    { name: "Booz Allen Hamilton", industry: "Government Consulting", hasImage: false },
+    { name: "BMW", industry: "Automotive Innovation", logo: bmwLogo },
+    { name: "USAA", industry: "Financial Services", logo: usaaLogo },
+    { name: "Booz Allen Hamilton", industry: "Government Consulting", logo: boozAllenLogo },
   ];
 
   return (
@@ -21,19 +23,13 @@ const BrandBar = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="w-full p-8 rounded-xl bg-background border-2 border-border group-hover:border-accent/50 transition-all duration-300 group-hover:shadow-[var(--shadow-elevated)] flex flex-col items-center gap-4">
-                {brand.hasImage && brand.logo ? (
-                  <div className="h-16 w-auto flex items-center justify-center">
-                    <img 
-                      src={brand.logo} 
-                      alt={`${brand.name} logo`}
-                      className="h-full w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                ) : (
-                  <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent group-hover:from-accent group-hover:to-accent/70 transition-all duration-300">
-                    {brand.name}
-                  </h3>
-                )}
+                <div className="h-16 w-auto flex items-center justify-center">
+                  <img 
+                    src={brand.logo} 
+                    alt={`${brand.name} logo`}
+                    className="h-full w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
                 <p className="text-xs sm:text-sm text-muted-foreground font-medium uppercase tracking-wide">
                   {brand.industry}
                 </p>
