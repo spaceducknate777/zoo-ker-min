@@ -11,15 +11,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="absolute inset-0 bg-[var(--gradient-hero)] pointer-events-none" />
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 👋 Hi, I'm Nathan Zukerman
               </h1>
-              <p className="text-xl sm:text-2xl text-accent font-semibold">
+              <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
                 Senior UX Designer & Research Lead
               </p>
             </div>
@@ -35,7 +36,7 @@ const Hero = () => {
                 variant="accent" 
                 size="lg"
                 onClick={() => scrollToSection("contact")}
-                className="group"
+                className="group shadow-lg hover:shadow-[var(--shadow-glow)] transition-all duration-300"
               >
                 Contact Me
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -46,6 +47,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg"
                 asChild
+                className="border-2 hover:border-accent transition-all duration-300"
               >
                 <a 
                   href="/resume/nathan-zukerman-resume.pdf" 
@@ -61,7 +63,8 @@ const Hero = () => {
 
           {/* Portrait Image */}
           <div className="relative animate-scale-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="absolute inset-0 bg-accent/20 rounded-2xl blur-3xl opacity-50" />
+            <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elevated)] ring-1 ring-border/50 hover:ring-accent/50 transition-all duration-500 hover:shadow-[var(--shadow-glow)]">
               <img 
                 src={portraitImage} 
                 alt="Nathan Zukerman, UX Designer" 

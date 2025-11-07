@@ -20,21 +20,26 @@ const ImpactStats = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 border-y border-border bg-secondary/20">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 border-y border-border bg-gradient-to-b from-secondary/20 to-background">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-16">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center space-y-3 animate-fade-in"
+              className="relative flex flex-col items-center text-center space-y-4 animate-fade-in group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <stat.icon className="h-8 w-8 text-accent" />
-              <div className="space-y-1">
-                <p className="text-3xl sm:text-4xl font-bold text-foreground">
+              <div className="relative">
+                <div className="absolute inset-0 bg-accent/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                  <stat.icon className="h-8 w-8 text-accent" />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
                   {stat.value}
                 </p>
-                <p className="text-sm sm:text-base text-muted-foreground font-medium">
+                <p className="text-sm sm:text-base text-muted-foreground font-semibold uppercase tracking-wide">
                   {stat.label}
                 </p>
               </div>
