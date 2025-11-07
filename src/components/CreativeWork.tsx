@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Palette, Film, Box, Play } from "lucide-react";
+import { Palette, Film, Box, Play, Smartphone } from "lucide-react";
 import { useState } from "react";
 
 const CreativeWork = () => {
@@ -51,6 +51,20 @@ const CreativeWork = () => {
       ]
     },
     {
+      title: "Digital 3D Sculpting",
+      icon: Smartphone,
+      type: "gallery",
+      description: "Character modeling in Nomad Sculpt that bridges traditional sculpting with digital workflows.",
+      skills: "Digital Sculpting, Character Design, 3D Modeling",
+      images: [
+        "/creative/nomad-sculpt-1.jpg",
+        "/creative/nomad-sculpt-2.jpg",
+        "/creative/nomad-sculpt-3.jpg",
+        "/creative/nomad-sculpt-4.jpg",
+        "/creative/nomad-sculpt-5.jpg"
+      ]
+    },
+    {
       title: "Digital Illustrations",
       icon: Palette,
       type: "gallery",
@@ -91,7 +105,7 @@ const CreativeWork = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
           {creativeProjects.map((project, index) => {
             const IconComponent = project.icon;
             return (
@@ -166,7 +180,7 @@ const CreativeWork = () => {
           <h3 className="text-xl font-bold text-foreground mb-3">
             How Creative Work Informs My UX Process
           </h3>
-          <div className="grid md:grid-cols-3 gap-6 mt-6 text-sm text-muted-foreground">
+          <div className="grid md:grid-cols-4 gap-6 mt-6 text-sm text-muted-foreground">
             <div className="space-y-2">
               <p className="font-semibold text-accent">Frame-by-Frame Thinking</p>
               <p>Stop-motion teaches me to design micro-interactions with precision and intentionality.</p>
@@ -174,6 +188,10 @@ const CreativeWork = () => {
             <div className="space-y-2">
               <p className="font-semibold text-accent">Spatial Reasoning</p>
               <p>Sculpture strengthens my ability to design for 3D spaces, AR/VR, and physical products.</p>
+            </div>
+            <div className="space-y-2">
+              <p className="font-semibold text-accent">Digital-Physical Bridge</p>
+              <p>3D digital sculpting connects traditional craftsmanship with modern prototyping workflows.</p>
             </div>
             <div className="space-y-2">
               <p className="font-semibold text-accent">Visual Communication</p>
