@@ -116,8 +116,8 @@ const CreativeWork = () => {
                     ))}
                   </div>
                 ) : project.type === "gallery" ? (
-                  <div className="grid grid-cols-3 gap-1 p-2">
-                    {project.images?.slice(0, 9).map((img, imgIndex) => (
+                  <div className="grid grid-cols-3 gap-1 p-2 max-h-[400px] overflow-y-auto">
+                    {project.images?.map((img, imgIndex) => (
                       <div key={imgIndex} className="relative aspect-square overflow-hidden rounded-md bg-muted">
                         <img 
                           src={img} 
