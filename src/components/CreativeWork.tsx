@@ -55,7 +55,12 @@ const CreativeWork = () => {
         "/creative/illustration-6.png",
         "/creative/illustration-7.png",
         "/creative/illustration-8.png",
-        "/creative/illustration-9.jpg"
+        "/creative/illustration-9.jpg",
+        "/creative/illustration-10.jpg",
+        "/creative/illustration-11.png",
+        "/creative/illustration-12.jpg",
+        "/creative/illustration-13.png",
+        "/creative/illustration-14.png"
       ]
     }
   ];
