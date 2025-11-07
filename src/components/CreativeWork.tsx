@@ -35,10 +35,20 @@ const CreativeWork = () => {
     {
       title: "Sculpey Sculptures",
       icon: Box,
-      type: "image",
+      type: "gallery",
       description: "Three-dimensional world-building that sharpens spatial reasoning and tactile design thinking.",
       skills: "3D Thinking, Craftsmanship, Material Understanding",
-      image: "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop" // Placeholder - upload your sculpture photos
+      images: [
+        "/creative/sculpey-1.jpg",
+        "/creative/sculpey-2.jpg",
+        "/creative/sculpey-3.jpg",
+        "/creative/sculpey-4.jpg",
+        "/creative/sculpey-5.jpg",
+        "/creative/sculpey-6.jpg",
+        "/creative/sculpey-7.jpg",
+        "/creative/sculpey-8.jpg",
+        "/creative/sculpey-9.jpg"
+      ]
     },
     {
       title: "Digital Illustrations",
@@ -127,21 +137,7 @@ const CreativeWork = () => {
                       </div>
                     ))}
                   </div>
-                ) : (
-                  <div className="relative h-56 overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                    <div className="absolute top-4 left-4">
-                      <div className="w-12 h-12 rounded-full bg-accent/90 flex items-center justify-center">
-                        <IconComponent className="h-6 w-6 text-accent-foreground" />
-                      </div>
-                    </div>
-                  </div>
-                )}
+                ) : null}
                 
                 <div className="p-6 space-y-3">
                   <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors duration-300">
