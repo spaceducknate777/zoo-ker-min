@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import finavImage from "@/assets/finav-project.jpg";
+import finavSketches from "@/assets/finav-sketches.jpg";
 
 const MonsterAisleCaseStudy = () => {
   const navigate = useNavigate();
@@ -161,6 +162,17 @@ const MonsterAisleCaseStudy = () => {
                   <CardDescription>A state-of-the-art fire management system enhancing communication, navigation, and coordination</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="mb-6">
+                    <img 
+                      src={finavSketches} 
+                      alt="FINAV AR Interface Design Sketches"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Conceptual design sketches showing AR interface development, heads-up display wireframes, and user interaction flows
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">System Overview</h4>
                     <p className="text-muted-foreground mb-3">

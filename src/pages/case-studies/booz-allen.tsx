@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
+import boozAllenWireframes from "@/assets/booz-allen-wireframes.jpg";
 
 const BoozAllenCaseStudy = () => {
   const navigate = useNavigate();
@@ -87,6 +88,17 @@ const BoozAllenCaseStudy = () => {
                   <CardDescription>Modernizing public transportation data access and analysis</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="mb-6">
+                    <img 
+                      src={boozAllenWireframes} 
+                      alt="Design evolution from low to high fidelity wireframes"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Design evolution showing iterative wireframe development from low-fidelity sketches to high-fidelity prototypes
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
                     <p className="text-muted-foreground mb-3">

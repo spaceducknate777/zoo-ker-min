@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import bmwImage from "@/assets/bmw-project.jpg";
+import bmwWireframes from "@/assets/bmw-wireframes.jpg";
 
 const BMWCaseStudy = () => {
   const navigate = useNavigate();
@@ -125,11 +126,24 @@ const BMWCaseStudy = () => {
                   <CardDescription>Iterative approach from concept to validation</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="mb-6">
+                    <img 
+                      src={bmwWireframes} 
+                      alt="BMW Gesture Interface Wireframe Explorations"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Early wireframe explorations showing gesture concept iterations and design thinking
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Ideation & Prototyping</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>Generated 40+ gesture concepts through design workshops</li>
+                      <li>Sketched gesture variations exploring push, swipe, rotate, and tap interactions</li>
                       <li>Built Wizard-of-Oz prototypes for early testing</li>
+                      <li>Created low-fidelity wireframes to test gesture recognition zones</li>
                       <li>Narrowed to 12 core gestures based on naturalness and safety</li>
                     </ul>
                   </div>
@@ -140,6 +154,7 @@ const BMWCaseStudy = () => {
                       <li>Round 1: 15 participants, driving simulator, 8 gesture variants</li>
                       <li>Round 2: 20 participants, on-road testing, refined to 6 gestures</li>
                       <li>Round 3: 30 participants, validation with final system</li>
+                      <li>Documented learnings and iterated on gesture recognition sensitivity</li>
                     </ul>
                   </div>
 

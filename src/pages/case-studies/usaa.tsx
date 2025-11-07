@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import usaaImage from "@/assets/usaa-storyboard.png";
+import usaaResearch from "@/assets/usaa-research.jpg";
 
 const USAACaseStudy = () => {
   const navigate = useNavigate();
@@ -128,9 +129,22 @@ const USAACaseStudy = () => {
                   <CardDescription>Collaborative approach across two distinct projects</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="mb-6">
+                    <img 
+                      src={usaaResearch} 
+                      alt="USAA Research Synthesis - User insights and affinity mapping"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Research synthesis showing user insights, affinity mapping, and persona development from military family interviews
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Mobile Financial Tools Design</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      <li>Synthesized user research through affinity mapping and journey mapping</li>
+                      <li>Created personas representing military family financial needs</li>
                       <li>Designed intuitive, trust-building UI patterns for financial decision-making</li>
                       <li>Focused on simplicity and ease of use for complex financial actions</li>
                       <li>Created mobile-first wireframes and high-fidelity prototypes</li>
