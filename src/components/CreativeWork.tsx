@@ -1,28 +1,47 @@
 import { Card } from "@/components/ui/card";
-import { Palette, Film, Box } from "lucide-react";
+import { Palette, Film, Box, Play } from "lucide-react";
+import { useState } from "react";
 
 const CreativeWork = () => {
+  const [playingVideo, setPlayingVideo] = useState<number | null>(null);
+
+  const stopMotionVideos = [
+    {
+      title: "Stop-Motion Animation 1",
+      video: "/creative/stop-motion-1.MOV",
+      description: "Frame-by-frame storytelling that taught me to obsess over micro-interactions and transitions."
+    },
+    {
+      title: "Stop-Motion Animation 2",
+      video: "/creative/stop-motion-2.MOV",
+      description: "Sequential narrative design that strengthens my understanding of user flow and timing."
+    }
+  ];
+
   const creativeProjects = [
     {
       title: "Stop-Motion Animation",
       icon: Film,
+      type: "videos",
       description: "Frame-by-frame storytelling that taught me to obsess over micro-interactions and transitions.",
       skills: "Patience, Sequential Thinking, Attention to Detail",
-      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&h=600&fit=crop" // Placeholder - replace with actual work
+      videos: stopMotionVideos
     },
     {
       title: "Sculpey Sculptures",
       icon: Box,
+      type: "image",
       description: "Three-dimensional world-building that sharpens spatial reasoning and tactile design thinking.",
       skills: "3D Thinking, Craftsmanship, Material Understanding",
-      image: "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop" // Placeholder - replace with actual work
+      image: "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop" // Placeholder - upload your sculpture photos
     },
     {
       title: "Digital Illustrations",
       icon: Palette,
+      type: "image",
       description: "Visual storytelling that strengthens my eye for composition, color theory, and emotional design.",
       skills: "Visual Design, Creative Problem-Solving, Color Theory",
-      image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" // Placeholder - replace with actual work
+      image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" // Placeholder - upload your illustrations
     }
   ];
 
@@ -51,19 +70,46 @@ const CreativeWork = () => {
                 className="group overflow-hidden border-border hover:border-accent/50 transition-all duration-500 hover:shadow-[var(--shadow-elevated)] bg-card animate-fade-in"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                  <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 rounded-full bg-accent/90 flex items-center justify-center">
-                      <IconComponent className="h-6 w-6 text-accent-foreground" />
+                {project.type === "videos" ? (
+                  <div className="space-y-3">
+                    {project.videos?.map((video, videoIndex) => (
+                      <div key={videoIndex} className="relative h-56 overflow-hidden bg-black/90">
+                        <video 
+                          className="w-full h-full object-contain"
+                          controls
+                          preload="metadata"
+                          playsInline
+                          onPlay={() => setPlayingVideo(videoIndex)}
+                        >
+                          <source src={video.video} type="video/quicktime" />
+                          <source src={video.video} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        {playingVideo !== videoIndex && (
+                          <div className="absolute inset-0 flex items-center justify-center bg-background/20 pointer-events-none">
+                            <div className="w-16 h-16 rounded-full bg-accent/90 flex items-center justify-center">
+                              <Play className="h-8 w-8 text-accent-foreground ml-1" />
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="relative h-56 overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+                    <div className="absolute top-4 left-4">
+                      <div className="w-12 h-12 rounded-full bg-accent/90 flex items-center justify-center">
+                        <IconComponent className="h-6 w-6 text-accent-foreground" />
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
                 
                 <div className="p-6 space-y-3">
                   <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors duration-300">
