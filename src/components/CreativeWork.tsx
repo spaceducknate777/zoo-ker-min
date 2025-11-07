@@ -61,7 +61,9 @@ const CreativeWork = () => {
         "/creative/nomad-sculpt-2.jpg",
         "/creative/nomad-sculpt-3.jpg",
         "/creative/nomad-sculpt-4.jpg",
-        "/creative/nomad-sculpt-5.jpg"
+        "/creative/nomad-sculpt-5.jpg",
+        "/creative/nomad-sculpt-6.jpg",
+        "/creative/nomad-sculpt-7.jpg"
       ]
     },
     {
