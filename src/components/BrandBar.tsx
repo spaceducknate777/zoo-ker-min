@@ -22,15 +22,15 @@ const BrandBar = () => {
               className="flex flex-col items-center text-center gap-4 animate-fade-in group"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="w-full p-8 rounded-xl bg-background border-2 border-border group-hover:border-accent/50 transition-all duration-300 group-hover:shadow-[var(--shadow-elevated)] flex flex-col items-center gap-4">
-                <div className="h-12 sm:h-14 w-full flex items-center justify-center px-4">
+              <div className="w-full aspect-[3/2] p-6 rounded-xl bg-background border-2 border-border group-hover:border-accent/50 transition-all duration-300 group-hover:shadow-[var(--shadow-elevated)] flex flex-col items-center justify-center gap-3">
+                <div className="h-16 w-full flex items-center justify-center px-4">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
-                    className="max-h-full w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
-                <p className="text-xs sm:text-sm text-muted-foreground font-medium uppercase tracking-wide">
+                <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide text-center">
                   {brand.industry}
                 </p>
               </div>
