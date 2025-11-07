@@ -15,7 +15,7 @@ const BrandBar = () => {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center gap-2 opacity-0 animate-fade-in group"
+              className="flex flex-col items-center text-center gap-2 animate-fade-in group"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="w-full p-6 rounded-lg bg-background border-2 border-border group-hover:border-accent/50 transition-all duration-300 group-hover:shadow-lg">
