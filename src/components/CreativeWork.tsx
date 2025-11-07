@@ -43,10 +43,20 @@ const CreativeWork = () => {
     {
       title: "Digital Illustrations",
       icon: Palette,
-      type: "image",
+      type: "gallery",
       description: "Visual storytelling that strengthens my eye for composition, color theory, and emotional design.",
       skills: "Visual Design, Creative Problem-Solving, Color Theory",
-      image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" // Placeholder - upload your illustrations
+      images: [
+        "/creative/illustration-1.png",
+        "/creative/illustration-2.png",
+        "/creative/illustration-3.png",
+        "/creative/illustration-4.png",
+        "/creative/illustration-5.png",
+        "/creative/illustration-6.png",
+        "/creative/illustration-7.png",
+        "/creative/illustration-8.png",
+        "/creative/illustration-9.jpg"
+      ]
     }
   ];
 
@@ -97,6 +107,18 @@ const CreativeWork = () => {
                             </div>
                           </div>
                         )}
+                      </div>
+                    ))}
+                  </div>
+                ) : project.type === "gallery" ? (
+                  <div className="grid grid-cols-3 gap-1 p-2">
+                    {project.images?.slice(0, 9).map((img, imgIndex) => (
+                      <div key={imgIndex} className="relative aspect-square overflow-hidden rounded-md bg-muted">
+                        <img 
+                          src={img} 
+                          alt={`${project.title} ${imgIndex + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                        />
                       </div>
                     ))}
                   </div>
