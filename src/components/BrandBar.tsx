@@ -23,11 +23,11 @@ const BrandBar = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="w-full p-8 rounded-xl bg-background border-2 border-border group-hover:border-accent/50 transition-all duration-300 group-hover:shadow-[var(--shadow-elevated)] flex flex-col items-center gap-4">
-                <div className="h-16 w-auto flex items-center justify-center">
+                <div className="h-12 sm:h-14 w-full flex items-center justify-center px-4">
                   <img 
                     src={brand.logo} 
                     alt={`${brand.name} logo`}
-                    className="h-full w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="max-h-full w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
                 <p className="text-xs sm:text-sm text-muted-foreground font-medium uppercase tracking-wide">
