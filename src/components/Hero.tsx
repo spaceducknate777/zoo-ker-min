@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Crafting inclusive, research-driven digital experiences for BMW, Booz Allen, and USAA — helping over 500K+ users through accessible, data-informed design systems.
+              I craft inclusive, research-driven digital experiences for BMW, Booz Allen, and USAA — helping over 500K+ users through accessible, data-informed design systems that bridge empathy and innovation.
             </p>
 
             {/* Buttons */}

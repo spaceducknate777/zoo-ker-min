@@ -11,18 +11,15 @@ const About = () => {
 
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed animate-fade-in">
           <p>
-            I'm a UX Designer & Research Lead with 7+ years of experience across startups, government, and enterprise. 
-            My work blends research, design systems, and storytelling to craft accessible experiences that make people's lives easier.
+            I'm a UX Designer & Research Lead with 7+ years of experience across startups, government, and enterprise. My work blends research, design systems, and storytelling to create accessible experiences that make people's lives easier.
           </p>
           
           <p>
-            I believe great design happens at the intersection of user research, strategic thinking, 
-            and creative problem-solving. Each project I undertake begins with deep empathy for users 
-            and ends with measurable improvements in their experience.
+            I believe great design happens where empathy meets strategy — every project begins with listening deeply to users and ends with measurable improvement in their experience.
           </p>
 
           <p>
-            When I'm not designing, I'm building stop-motion animations, sculpting, or hiking with my Shiba-Chihuahua mix.
+            When I'm not designing, I'm building stop-motion animations, sculpting small worlds, or hiking with my Shiba-Chihuahua mix.
           </p>
         </div>
       </div>

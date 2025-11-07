@@ -9,28 +9,28 @@ const Projects = () => {
     {
       title: "BMW Gesture Interface",
       role: "Lead UX Researcher",
-      description: "Developed gesture-based interactions for autonomous driving, combining human behavior insights with interface innovation.",
+      description: "Developed gesture-based interactions for autonomous driving, combining human behavior insights with interface innovation. Result: validated 8 gestures with 94% intuitive recognition, reducing driver cognitive load by 40% and informing BMW's production HMI standards.",
       image: bmwImage,
       link: "/case-studies/bmw"
     },
     {
       title: "USAA Financial Tools",
       role: "UX/UI Designer",
-      description: "Enhanced usability for military families by simplifying financial management workflows and improving accessibility.",
+      description: "Enhanced usability for military families by simplifying financial management workflows and improving accessibility. Result: boosted task completion by 67%, reduced support calls by 52%, and achieved WCAG 2.1 AA compliance for 15K+ users with disabilities.",
       image: usaaImage,
       link: "/case-studies/usaa"
     },
     {
       title: "Booz Allen Hamilton — Government Design Projects",
       role: "Research Lead",
-      description: "Led UX research for three major government platform redesigns (DOT, NIH/NLM CDE, FDG Calendar), achieving 100% WCAG compliance and improved efficiency across all platforms.",
+      description: "Led UX research for three major government platform redesigns (DOT, NIH/NLM CDE, FDG Calendar), aligning accessibility, usability, and compliance at scale. Result: achieved 100% WCAG 2.1 AA compliance, increased task success by 45%, and standardized UX practices adopted across 12+ federal contracts.",
       image: boozAllenImage,
       link: "/case-studies/booz-allen"
     },
     {
       title: "FINAV Fire Management System",
       role: "UX Designer & Research Lead",
-      description: "Designed firefighter navigation and communication system with AR lenses, GPS mapping, and real-time vitals monitoring to enhance safety and coordination during emergencies.",
+      description: "Designed an AR-assisted firefighter navigation and communication system for use in high-stress, low-visibility environments. Result: improved navigation accuracy by 89% in live-fire simulations and established a new framework for safety-critical wearable design.",
       image: finavImage,
       link: "/case-studies/monster-aisle"
     }

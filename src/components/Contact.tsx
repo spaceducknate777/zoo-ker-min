@@ -34,11 +34,11 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Get In Touch
+            Let's Collaborate
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
-          <p className="text-lg text-muted-foreground">
-            Let's collaborate on your next project
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Let's collaborate on something meaningful. I'm open to new design opportunities and creative collaborations. Whether you have a project in mind or just want to chat about UX, feel free to reach out.
           </p>
         </div>
 
