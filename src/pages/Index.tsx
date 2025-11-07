@@ -4,6 +4,7 @@ import BrandBar from "@/components/BrandBar";
 import ImpactStats from "@/components/ImpactStats";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import CreativeWork from "@/components/CreativeWork";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <ImpactStats />
       <About />
       <Projects />
+      <CreativeWork />
       <Contact />
       <Footer />
     </div>
