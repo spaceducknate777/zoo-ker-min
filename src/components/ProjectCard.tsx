@@ -6,12 +6,14 @@ import { Link } from "react-router-dom";
 interface ProjectCardProps {
   title: string;
   role: string;
+  icon?: string;
+  metrics?: string;
   description: string;
   image: string;
   link?: string;
 }
 
-const ProjectCard = ({ title, role, description, image, link }: ProjectCardProps) => {
+const ProjectCard = ({ title, role, icon, metrics, description, image, link }: ProjectCardProps) => {
   return (
     <Card className="group overflow-hidden border-border hover:border-accent/50 transition-all duration-500 hover:shadow-[var(--shadow-elevated)] bg-card">
       <div className="relative h-64 overflow-hidden">
@@ -30,13 +32,22 @@ const ProjectCard = ({ title, role, description, image, link }: ProjectCardProps
       
       <div className="p-6 space-y-4">
         <div>
-          <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
+          <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors duration-300 flex items-center gap-2">
+            {icon && <span className="text-2xl">{icon}</span>}
             {title}
           </h3>
           <p className="text-sm font-semibold text-accent/80 mb-3">
             {role}
           </p>
         </div>
+        
+        {metrics && (
+          <div className="bg-accent/5 border border-accent/20 rounded-lg p-3">
+            <p className="text-xs font-semibold text-accent leading-relaxed">
+              {metrics}
+            </p>
+          </div>
+        )}
         
         <p className="text-muted-foreground leading-relaxed text-sm">
           {description}

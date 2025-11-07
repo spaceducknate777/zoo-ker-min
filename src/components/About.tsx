@@ -15,11 +15,11 @@ const About = () => {
           </p>
           
           <p className="border-l-4 border-accent pl-6 italic text-foreground/80">
-            I believe great design happens where empathy meets strategy — every project begins with listening deeply to users and ends with measurable improvement in their experience.
+            I believe great design happens where empathy meets strategy — each project begins with listening deeply to users and ends with measurable improvement in their experience.
           </p>
 
           <p className="text-center">
-            When I'm not designing, I'm building stop-motion animations, sculpting small worlds, or hiking with my Shiba-Chihuahua mix.
+            Outside of design, I bring the same curiosity and creativity to stop-motion animation, sculpting, and world-building — exploring how storytelling and design intersect.
           </p>
         </div>
       </div>

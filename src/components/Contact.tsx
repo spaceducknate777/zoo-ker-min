@@ -37,8 +37,11 @@ const Contact = () => {
             Let's Collaborate
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
+          <p className="text-xl font-medium text-foreground/90 max-w-2xl mx-auto mb-4 italic">
+            "Let's build something meaningful together — experiences that move people, not just pixels."
+          </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's collaborate on something meaningful. I'm open to new design opportunities and creative collaborations. Whether you have a project in mind or just want to chat about UX, feel free to reach out.
+            I'm open to new design opportunities and creative collaborations. Whether you have a project in mind or just want to chat about UX, feel free to reach out.
           </p>
         </div>
 

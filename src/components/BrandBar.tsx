@@ -12,8 +12,11 @@ const BrandBar = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/40 to-background border-y border-border">
       <div className="max-w-6xl mx-auto">
-        <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-12">
+        <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">
           Trusted by Industry Leaders
+        </p>
+        <p className="text-center text-base text-muted-foreground/80 mb-12 max-w-2xl mx-auto">
+          Across automotive, finance, and government sectors
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
           {brands.map((brand, index) => (
