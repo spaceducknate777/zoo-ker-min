@@ -44,8 +44,8 @@ const ProjectCard = ({ title, role, description, image, link }: ProjectCardProps
 
         {link && (
           <Button 
-            variant="ghost" 
-            className="group/button p-0 h-auto font-semibold text-accent hover:text-accent/80 transition-all duration-300"
+            variant="outline" 
+            className="group/button w-full mt-2 border-accent/50 text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-300"
             asChild
           >
             <Link to={link}>
