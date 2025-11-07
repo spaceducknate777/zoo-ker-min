@@ -15,6 +15,11 @@ const CreativeWork = () => {
       title: "Stop-Motion Animation 2",
       video: "/creative/stop-motion-2.MOV",
       description: "Sequential narrative design that strengthens my understanding of user flow and timing."
+    },
+    {
+      title: "Strawberry Head vs Dot Apple Juice",
+      video: "/creative/stop-motion-3.MOV",
+      description: "Character-driven storytelling exploring conflict, personality, and emotional narrative design."
     }
   ];
 
