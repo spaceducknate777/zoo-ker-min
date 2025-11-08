@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!resume/.*|creative/.*|robots\\.txt|.*\\.(pdf|jpg|jpeg|png|gif|svg|ico|webp|mov|MOV)).*)",
       "destination": "/index.html"
     }
   ]
