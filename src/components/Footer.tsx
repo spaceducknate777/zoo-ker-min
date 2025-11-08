@@ -19,7 +19,23 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Download className="mr-2 h-4 w-4" />
-                Resume
+                Resume (PDF)
+              </a>
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              size="sm"
+              asChild
+              className="border-accent/50 hover:border-accent"
+            >
+              <a 
+                href="/resume/nathan-zukerman-resume-ats-optimized.html" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                ATS Resume
               </a>
             </Button>
             

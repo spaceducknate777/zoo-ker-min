@@ -58,22 +58,40 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
 
-              {/* View Resume Button */}
-              <Button 
-                variant="outline" 
-                size="lg"
-                asChild
-                className="border-2 hover:border-accent transition-all duration-300"
-              >
-                <a 
-                  href="/resume/nathan-zukerman-resume.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+              {/* Resume Buttons */}
+              <div className="flex flex-col sm:flex-row gap-2">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  asChild
+                  className="border-2 hover:border-accent transition-all duration-300"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  View Resume
-                </a>
-              </Button>
+                  <a 
+                    href="/resume/nathan-zukerman-resume.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    Resume (PDF)
+                  </a>
+                </Button>
+                
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  asChild
+                  className="border-2 hover:border-accent transition-all duration-300"
+                >
+                  <a 
+                    href="/resume/nathan-zukerman-resume-ats-optimized.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    ATS Resume
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
 
