@@ -1,5 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import portraitImage from "@/assets/nathan-profile.jpeg";
 
 const Hero = () => {
@@ -60,37 +61,51 @@ const Hero = () => {
 
               {/* Resume Buttons */}
               <div className="flex flex-col sm:flex-row gap-2">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  asChild
-                  className="border-2 hover:border-accent transition-all duration-300"
-                >
-                  <a 
-                    href="/resume/nathan-zukerman-resume.pdf" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Download className="mr-2 h-4 w-4" />
-                    Resume (PDF)
-                  </a>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button 
+                      variant="outline" 
+                      size="lg"
+                      asChild
+                      className="border-2 hover:border-accent transition-all duration-300"
+                    >
+                      <a 
+                        href="/resume/nathan-zukerman-resume.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <Download className="mr-2 h-4 w-4" />
+                        Resume (PDF)
+                      </a>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Standard PDF resume for viewing and printing</p>
+                  </TooltipContent>
+                </Tooltip>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  asChild
-                  className="border-2 hover:border-accent transition-all duration-300"
-                >
-                  <a 
-                    href="/resume/nathan-zukerman-resume-ats-optimized.html" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Download className="mr-2 h-4 w-4" />
-                    ATS Resume
-                  </a>
-                </Button>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button 
+                      variant="outline" 
+                      size="lg"
+                      asChild
+                      className="border-2 hover:border-accent transition-all duration-300"
+                    >
+                      <a 
+                        href="/resume/nathan-zukerman-resume-ats-optimized.html" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <Download className="mr-2 h-4 w-4" />
+                        ATS Resume
+                      </a>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Optimized for Applicant Tracking Systems (ATS)</p>
+                  </TooltipContent>
+                </Tooltip>
               </div>
             </div>
           </div>
