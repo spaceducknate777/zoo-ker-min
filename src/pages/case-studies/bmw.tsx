@@ -27,7 +27,7 @@ const BMWCaseStudy = () => {
               BMW Gesture Interface
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Lead UX Researcher — Autonomous Driving Interface Innovation
+              Lead UX Researcher & Strategic Advisor — Guided Executive Decision-Making for Autonomous Driving Innovation
             </p>
             <img 
               src={bmwImage} 
@@ -56,7 +56,7 @@ const BMWCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Led research team of 4, conducted 50+ user interviews, designed testing protocols
+                  Strategic advisor to senior leadership, led research team of 4, presented findings to C-suite executives, guided 20+ strategic design decisions through research-driven workshops
                 </p>
               </CardContent>
             </Card>
@@ -108,6 +108,16 @@ const BMWCaseStudy = () => {
                   </div>
 
                   <div>
+                    <h4 className="font-semibold text-foreground mb-2">Phase 3: Executive Advisory & Strategic Workshops</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      <li>Presented research insights to VP of Product and senior leadership team to guide strategic roadmap decisions</li>
+                      <li>Facilitated executive workshops to align stakeholders on gesture interface strategy and safety priorities</li>
+                      <li>Advised C-suite on risk mitigation and competitive positioning through data-driven recommendations</li>
+                      <li>Led cross-functional design sprints with engineering and safety teams, translating executive vision into actionable design decisions</li>
+                    </ul>
+                  </div>
+
+                  <div>
                     <h4 className="font-semibold text-foreground mb-2">Key Insights</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>Users prefer gestures that mirror real-world actions (push, swipe, grab)</li>
@@ -122,8 +132,8 @@ const BMWCaseStudy = () => {
             <TabsContent value="process" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Design Process</CardTitle>
-                  <CardDescription>Iterative approach from concept to validation</CardDescription>
+                  <CardTitle>Strategic Design Process & Executive Engagement</CardTitle>
+                  <CardDescription>Research-driven approach to guide executive decision-making and validate gesture concepts</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="mb-6">
@@ -135,6 +145,16 @@ const BMWCaseStudy = () => {
                     <p className="text-sm text-muted-foreground mt-3 italic">
                       Early wireframe explorations showing gesture concept iterations and design thinking
                     </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-2">Strategic Planning & Executive Presentations</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      <li>Delivered quarterly research presentations to senior leadership (VP Product, Head of Innovation, Safety Directors) with strategic recommendations</li>
+                      <li>Created executive briefings that translated complex user data into business impact and competitive advantage</li>
+                      <li>Facilitated strategic workshops to guide senior leaders through critical gesture interface decisions and safety trade-offs</li>
+                      <li>Advised on roadmap prioritization based on user research insights and market trends</li>
+                    </ul>
                   </div>
 
                   <div>

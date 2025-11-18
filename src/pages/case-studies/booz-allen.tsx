@@ -27,7 +27,7 @@ const BoozAllenCaseStudy = () => {
               Booz Allen Hamilton — Government Design Projects
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Research Lead — Three Major Government Platform Redesigns
+              Research Lead & Strategic Communications Advisor — Guided Government Stakeholders Through Complex Policy and Information Architecture Decisions
             </p>
             <img 
               src={boozAllenImage} 
@@ -108,33 +108,35 @@ const BoozAllenCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Strategic Research & Executive Advisory</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Conducted 25 stakeholder interviews across multiple DOT agencies</li>
-                      <li>Performed heuristic evaluation identifying 65+ usability issues</li>
-                      <li>Analyzed analytics data revealing key user journeys and drop-off points</li>
-                      <li>Competitive analysis of state and international transportation portals</li>
+                      <li>Advised DOT senior leadership on strategic information architecture decisions to improve public access to transportation data</li>
+                      <li>Presented research findings to government executives, translating user needs into actionable policy and design recommendations</li>
+                      <li>Conducted 25 stakeholder interviews across multiple DOT agencies and analyzed user journeys revealing critical drop-off points</li>
+                      <li>Guided strategic content prioritization decisions through workshops with policy experts and communications teams</li>
+                      <li>Led competitive analysis to position DOT platform as best-in-class for government data portals</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Strategic Communications Challenges</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Complex data structures spanning multiple transportation modes</li>
-                      <li>Legacy system constraints and integration requirements</li>
-                      <li>Diverse user base from technical analysts to general public</li>
-                      <li>Strict Section 508 accessibility compliance requirements</li>
+                      <li>Developed strategic content framework to communicate complex transportation policy and data to diverse public audiences</li>
+                      <li>Made critical information architecture decisions about which policy content to surface based on user tasks and government communications priorities</li>
+                      <li>Organized complex data structures spanning multiple transportation modes into intuitive navigation—strategic choices about technical depth vs. accessibility</li>
+                      <li>Balanced legacy system constraints with modern design while advising leadership on integration trade-offs</li>
+                      <li>Created content hierarchy serving both technical analysts and general public, requiring strategic decisions about specialized vs. plain language</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Strategic Solution & Measurable Impact</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Redesigned information architecture reducing navigation depth by 40%</li>
-                      <li>Created intuitive data visualization dashboard for complex datasets</li>
-                      <li>Implemented advanced search with faceted filtering</li>
-                      <li>Achieved 100% WCAG 2.1 AA compliance</li>
-                      <li>28% increase in data downloads within first quarter post-launch</li>
+                      <li>Redesigned information architecture based on strategic content workshops—reduced navigation depth by 40% and improved task completion</li>
+                      <li>Made evidence-based content decisions: created intuitive data visualization dashboard prioritizing most-accessed datasets</li>
+                      <li>Implemented strategic search and filtering informed by user research insights on how different audiences approach transportation data</li>
+                      <li>Achieved 100% WCAG 2.1 AA compliance while maintaining modern standards—proving accessibility and design excellence coexist</li>
+                      <li>28% increase in data downloads within first quarter, demonstrating strategic communications improvements drove engagement</li>
                     </ul>
                   </div>
                 </CardContent>
