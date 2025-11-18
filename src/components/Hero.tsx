@@ -106,29 +106,6 @@ const Hero = () => {
                     <p>Optimized for Applicant Tracking Systems (ATS)</p>
                   </TooltipContent>
                 </Tooltip>
-
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="lg"
-                      asChild
-                      className="border-2 hover:border-accent transition-all duration-300"
-                    >
-                      <a 
-                        href="/resume/nathan-zukerman-hasbro-cover-letter.html" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <FileText className="mr-2 h-4 w-4" />
-                        Hasbro Cover Letter
-                      </a>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Cover letter for Hasbro product design position</p>
-                  </TooltipContent>
-                </Tooltip>
               </div>
             </div>
           </div>
