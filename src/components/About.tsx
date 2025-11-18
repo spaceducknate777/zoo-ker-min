@@ -3,12 +3,12 @@ import { Card } from "./ui/card";
 
 const About = () => {
   const skills = [
-    { icon: Lightbulb, label: "Product Thinking", description: "Strategic design that drives business impact" },
+    { icon: Lightbulb, label: "Strategic Leadership", description: "Executive advisory and research-driven decision-making" },
     { icon: Users, label: "User Research", description: "Mixed methods research & usability testing" },
     { icon: Layers, label: "Design Systems", description: "Scalable component libraries & patterns" },
     { icon: BarChart, label: "Enterprise UX", description: "Complex workflows for B2B & government" },
-    { icon: Figma, label: "Figma Expert", description: "Advanced prototyping & design tooling" },
-    { icon: Palette, label: "Creative Direction", description: "Visual design & brand storytelling" },
+    { icon: Figma, label: "Accessibility Expert", description: "WCAG compliance, assistive tech (JAWS, NVDA, Dragon), cognitive & neurodiverse design" },
+    { icon: Palette, label: "Strategic Communications", description: "Information architecture & policy content strategy" },
   ];
 
   return (
@@ -23,12 +23,25 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto space-y-6 text-lg text-muted-foreground leading-relaxed animate-fade-in mb-16">
           <p className="text-center font-medium text-xl text-foreground/90">
-            I'm a UX Designer & Research Lead with 7+ years of experience across startups, government, and enterprise. My work blends research, design systems, and storytelling to create accessible experiences that make people's lives easier.
+            I'm a Strategic Design & Research Lead with 7+ years advising executives and leading UX initiatives across government, enterprise, and startups. I guide senior stakeholders through complex design decisions, combining research insights with strategic communications to create accessible experiences that drive measurable impact.
           </p>
           
           <p className="border-l-4 border-accent pl-6 italic text-foreground/80">
-            I believe great design happens where empathy meets strategy — each project begins with listening deeply to users and ends with measurable improvement in their experience.
+            Great design happens where strategic thinking meets user empathy—I translate research into executive recommendations, facilitate stakeholder workshops, and lead teams through evidence-based design decisions that improve lives.
           </p>
+
+          <div className="bg-accent/5 border-l-4 border-accent p-6 rounded-r-lg">
+            <h4 className="font-semibold text-foreground mb-3">Accessibility Expertise Beyond Compliance</h4>
+            <p className="text-muted-foreground mb-2">
+              I design for universal access across the full spectrum of human ability—not just Section 508 checkboxes. My approach encompasses:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+              <li><strong>Assistive Technology Testing:</strong> Hands-on experience with JAWS, NVDA, Dragon NaturallySpeaking, VoiceOver, and TalkBack to ensure real-world usability</li>
+              <li><strong>Cognitive Accessibility:</strong> Designing for memory limitations, attention diversity, and information processing differences—clear language, progressive disclosure, consistent patterns</li>
+              <li><strong>Neurodiverse Design:</strong> Creating interfaces that support users with ADHD, autism, dyslexia, and other cognitive differences through customizable interfaces, reduced sensory overload, and flexible interaction models</li>
+              <li><strong>Strategic Accessibility Leadership:</strong> Advising stakeholders on accessibility as a design principle, not a compliance afterthought—embedding inclusive design into organizational strategy</li>
+            </ul>
+          </div>
 
           <p className="text-center">
             Outside of design, I bring the same curiosity and creativity to stop-motion animation, sculpting, and world-building — exploring how storytelling and design intersect.
