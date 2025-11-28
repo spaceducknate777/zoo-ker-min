@@ -1,14 +1,45 @@
-import { Lightbulb, Users, BarChart, Layers, Figma, Palette } from "lucide-react";
+import { Lightbulb, Users, BarChart, Layers, Figma, Palette, Building2 } from "lucide-react";
 import { Card } from "./ui/card";
+import { Badge } from "./ui/badge";
 
 const About = () => {
   const skills = [
-    { icon: Lightbulb, label: "Strategic Leadership", description: "Executive advisory and research-driven decision-making" },
-    { icon: Users, label: "User Research", description: "Mixed methods research & usability testing" },
-    { icon: Layers, label: "Design Systems", description: "Scalable component libraries & patterns" },
-    { icon: BarChart, label: "Enterprise UX", description: "Complex workflows for B2B & government" },
-    { icon: Figma, label: "Accessibility Expert", description: "WCAG compliance, assistive tech (JAWS, NVDA, Dragon), cognitive & neurodiverse design" },
-    { icon: Palette, label: "Strategic Communications", description: "Information architecture & policy content strategy" },
+    { 
+      icon: Lightbulb, 
+      label: "Strategic Leadership", 
+      description: "Executive advisory and research-driven decision-making",
+      companies: ["BMW", "Booz Allen"]
+    },
+    { 
+      icon: Users, 
+      label: "User Research", 
+      description: "Mixed methods research & usability testing",
+      companies: ["BMW", "USAA", "Booz Allen"]
+    },
+    { 
+      icon: Layers, 
+      label: "Design Systems", 
+      description: "Scalable component libraries & patterns",
+      companies: ["USAA", "BMW"]
+    },
+    { 
+      icon: BarChart, 
+      label: "Enterprise UX", 
+      description: "Complex workflows for B2B & government",
+      companies: ["Booz Allen", "USAA"]
+    },
+    { 
+      icon: Figma, 
+      label: "Accessibility Expert", 
+      description: "WCAG compliance, assistive tech (JAWS, NVDA, Dragon), cognitive & neurodiverse design",
+      companies: ["Booz Allen", "USAA"]
+    },
+    { 
+      icon: Palette, 
+      label: "Strategic Communications", 
+      description: "Information architecture & policy content strategy",
+      companies: ["Booz Allen", "BMW"]
+    },
   ];
 
   return (
@@ -60,9 +91,20 @@ const About = () => {
                   <div className="p-3 rounded-lg bg-accent/10 text-accent">
                     <skill.icon className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h4 className="font-semibold text-foreground mb-1">{skill.label}</h4>
-                    <p className="text-sm text-muted-foreground">{skill.description}</p>
+                    <p className="text-sm text-muted-foreground mb-3">{skill.description}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {skill.companies.map((company, idx) => (
+                        <Badge 
+                          key={idx} 
+                          variant="secondary" 
+                          className="text-xs px-2 py-0.5 bg-secondary/80"
+                        >
+                          {company}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </Card>
