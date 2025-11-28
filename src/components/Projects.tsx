@@ -25,11 +25,11 @@ const Projects = () => {
       link: "/case-studies/usaa"
     },
     {
-      title: "Booz Allen Hamilton — Government Design Projects",
-      role: "Research Lead",
+      title: "Federal Design Portfolio",
+      role: "Senior UX Research Consultant",
       icon: "🏛️",
-      metrics: "100% WCAG compliance | 45% task success increase | 12+ federal contracts",
-      description: "Led UX research for three major government platform redesigns (DOT, NIH/NLM CDE, FDG Calendar), aligning accessibility, usability, and compliance at scale.",
+      metrics: "4 agencies | 12+ contracts | 100% WCAG | 45% avg. task improvement",
+      description: "Built trusted advisor relationships across DOT, NIH, NLM, and Treasury. Delivered concurrent federal engagements with rapid stakeholder onboarding and reusable design standards.",
       image: boozAllenImage,
       link: "/case-studies/booz-allen"
     },
