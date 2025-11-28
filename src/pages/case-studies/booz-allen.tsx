@@ -23,11 +23,22 @@ const BoozAllenCaseStudy = () => {
 
         <div className="space-y-8">
           <div>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">DOT</span>
+              <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">NIH</span>
+              <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">NLM</span>
+              <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">Treasury</span>
+            </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              Booz Allen Hamilton — Government Design Projects
+              Federal Design Portfolio
             </h1>
-            <p className="text-xl text-muted-foreground mb-6">
-              Research Lead & Strategic Communications Advisor — Guided Government Stakeholders Through Complex Policy and Information Architecture Decisions
+            <p className="text-xl text-muted-foreground mb-4">
+              Senior UX Research Consultant at Booz Allen Hamilton
+            </p>
+            <p className="text-lg text-foreground/80 mb-6 max-w-3xl">
+              Over 3 years, I built a reputation as a trusted advisor across 4 federal agencies and 12+ contracts. 
+              My consulting approach emphasizes <strong>rapid stakeholder onboarding</strong>, <strong>cross-domain adaptability</strong>, 
+              and <strong>lasting organizational impact</strong> through reusable design standards.
             </p>
             <img 
               src={boozAllenImage} 
@@ -35,6 +46,32 @@ const BoozAllenCaseStudy = () => {
               className="w-full h-96 object-cover object-right rounded-lg shadow-xl"
             />
           </div>
+
+          {/* Consulting Value Proposition */}
+          <Card className="bg-accent/5 border-accent/20">
+            <CardContent className="p-6">
+              <h3 className="text-lg font-semibold text-foreground mb-3">Why Consulting Breadth Matters</h3>
+              <p className="text-muted-foreground mb-4">
+                Government consulting requires a unique skill set: the ability to rapidly understand new domains, 
+                build trust with diverse stakeholders, and deliver value within compressed timelines. 
+                My portfolio demonstrates:
+              </p>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="text-center p-4 rounded-lg bg-background">
+                  <p className="text-2xl font-bold text-accent">30 days</p>
+                  <p className="text-sm text-muted-foreground">Avg. time to trusted advisor status</p>
+                </div>
+                <div className="text-center p-4 rounded-lg bg-background">
+                  <p className="text-2xl font-bold text-accent">4 domains</p>
+                  <p className="text-sm text-muted-foreground">Transportation, Health, Finance, Research</p>
+                </div>
+                <div className="text-center p-4 rounded-lg bg-background">
+                  <p className="text-2xl font-bold text-accent">100%</p>
+                  <p className="text-sm text-muted-foreground">Contract renewal / extension rate</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -44,7 +81,7 @@ const BoozAllenCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Modernize three complex government platforms (DOT, NIH/NLM, FDG) with strict accessibility and compliance requirements
+                  Deliver user-centered design across 4 federal agencies with vastly different domains, stakeholders, and compliance requirements
                 </p>
               </CardContent>
             </Card>
@@ -52,11 +89,11 @@ const BoozAllenCaseStudy = () => {
             <Card>
               <CardHeader>
                 <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Role</CardTitle>
+                <CardTitle>Consulting Approach</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Research Lead across three parallel projects, managed research team, led UX strategy and accessibility compliance
+                  Rapid stakeholder onboarding, concurrent workstream management, and creation of reusable frameworks that outlast individual engagements
                 </p>
               </CardContent>
             </Card>
@@ -64,11 +101,11 @@ const BoozAllenCaseStudy = () => {
             <Card>
               <CardHeader>
                 <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Impact</CardTitle>
+                <CardTitle>Cumulative Impact</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Successfully delivered 3 major redesigns, achieved 100% WCAG compliance, improved efficiency across all platforms
+                  12+ contracts delivered, 100% WCAG compliance across all projects, accessibility standards adopted agency-wide
                 </p>
               </CardContent>
             </Card>

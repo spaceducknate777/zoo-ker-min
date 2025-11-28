@@ -56,24 +56,31 @@ const ProfessionalExperience = () => {
     {
       company: "Booz Allen Hamilton",
       logo: boozAllenLogo,
-      role: "UX Research Lead",
-      duration: "3 years",
-      industry: "Government Consulting",
+      role: "Senior UX Research Consultant",
+      duration: "3 years • Government Portfolio",
+      industry: "Federal Consulting",
+      subtitle: "Multi-Agency Design Practice",
+      agencies: ["DOT", "NIH", "NLM", "Treasury"],
       skills: [
+        { label: "Rapid Stakeholder Onboarding", icon: Users },
         { label: "Strategic Communications", icon: BarChart },
+        { label: "Cross-Agency Adaptability", icon: Target },
         { label: "Information Architecture", icon: Layers },
         { label: "Policy Content Strategy", icon: FileCheck },
         { label: "Executive Advisory", icon: Presentation },
       ],
       achievements: [
-        { metric: "100%", label: "WCAG compliance achieved" },
-        { metric: "45%", label: "Task success improvement" },
-        { metric: "12+", label: "Federal contracts supported" },
+        { metric: "4", label: "Federal agencies served" },
+        { metric: "12+", label: "Contracts delivered" },
+        { metric: "100%", label: "WCAG compliance rate" },
+        { metric: "45%", label: "Avg. task improvement" },
       ],
       highlights: [
-        "Led strategic redesign of DOT.gov improving task completion through information architecture decisions",
-        "Advised federal stakeholders on content prioritization and policy communication strategies",
-        "Established accessibility standards adopted across multiple government platforms"
+        "Built reputation for rapid onboarding—became trusted advisor to new agency stakeholders within first 30 days on each engagement",
+        "Led concurrent workstreams across DOT, NIH/NLM, and Treasury, demonstrating ability to context-switch across vastly different domains",
+        "Established reusable accessibility standards adopted across multiple agencies, creating lasting organizational impact beyond individual projects",
+        "Advised senior federal stakeholders on strategic content decisions, translating complex policy requirements into user-centered design",
+        "Developed consulting methodologies for government UX that reduced client ramp-up time and improved cross-team collaboration"
       ]
     },
   ];
@@ -111,10 +118,20 @@ const ProfessionalExperience = () => {
                   <div>
                     <h3 className="text-2xl font-bold text-foreground">{exp.company}</h3>
                     <p className="text-lg text-accent font-semibold">{exp.role}</p>
-                    <div className="flex items-center gap-2 mt-1">
+                    <div className="flex flex-wrap items-center gap-2 mt-1">
                       <Badge variant="secondary" className="text-xs">{exp.industry}</Badge>
                       <span className="text-sm text-muted-foreground">• {exp.duration}</span>
                     </div>
+                    {exp.agencies && (
+                      <div className="flex flex-wrap items-center gap-1.5 mt-2">
+                        <span className="text-xs text-muted-foreground">Agencies:</span>
+                        {exp.agencies.map((agency, idx) => (
+                          <Badge key={idx} variant="outline" className="text-xs px-2 py-0.5 border-accent/40 bg-accent/10">
+                            {agency}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

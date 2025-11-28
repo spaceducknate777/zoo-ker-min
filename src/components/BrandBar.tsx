@@ -21,10 +21,10 @@ const BrandBar = () => {
     },
     { 
       name: "Booz Allen Hamilton", 
-      industry: "Government Consulting", 
+      industry: "Federal Consulting", 
       logo: boozAllenLogo,
-      role: "UX Research Lead",
-      highlight: "Federal Platform Redesigns"
+      role: "Senior UX Consultant",
+      highlight: "4 Agencies • 12+ Contracts"
     },
   ];
 
