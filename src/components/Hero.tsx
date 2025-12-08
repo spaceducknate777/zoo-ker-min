@@ -30,16 +30,16 @@ const Hero = () => {
                 👋 Hi, I'm Nathan Zukerman
               </h1>
               <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
-                Senior UX Designer & Research Lead
+                Senior UX Research Lead
               </p>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I craft inclusive, research-driven digital experiences for BMW, Booz Allen, and USAA — helping over 500K+ users through accessible, data-informed design systems.
+              I lead mixed-methods user research for enterprise products at BMW, Booz Allen, and USAA — translating stakeholder interviews, usability studies, and behavioral data into design decisions that impact 500K+ users.
             </p>
             
             <p className="text-base font-semibold text-foreground/90 max-w-lg">
-              Currently open to senior UX design or research roles where human-centered design drives measurable impact.
+              Seeking Senior UX Research Lead roles where I can build research practice and drive product strategy through evidence-based insights.
             </p>
             
             <p className="text-sm text-muted-foreground/80 max-w-lg italic">
