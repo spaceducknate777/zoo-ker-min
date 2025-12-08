@@ -93,7 +93,7 @@ const Hero = () => {
                       className="border-2 hover:border-accent transition-all duration-300"
                     >
                       <a 
-                        href="/resume/nathan-zukerman-resume-ats-optimized.html" 
+                        href="/resume/nathan-zukerman-ux-research-lead.html" 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -103,7 +103,7 @@ const Hero = () => {
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Optimized for Applicant Tracking Systems (ATS)</p>
+                    <p>Research-focused resume optimized for ATS</p>
                   </TooltipContent>
                 </Tooltip>
               </div>
