@@ -33,12 +33,12 @@ const BoozAllenCaseStudy = () => {
               Federal Design Portfolio
             </h1>
             <p className="text-xl text-muted-foreground mb-4">
-              Senior UX Research Consultant at Booz Allen Hamilton
+              UX Researcher at Booz Allen Hamilton
             </p>
             <p className="text-lg text-foreground/80 mb-6 max-w-3xl">
-              Over 3 years, I built a reputation as a trusted advisor across 4 federal agencies and 12+ contracts. 
-              My consulting approach emphasizes <strong>rapid stakeholder onboarding</strong>, <strong>cross-domain adaptability</strong>, 
-              and <strong>lasting organizational impact</strong> through reusable design standards.
+              Over 2 years, I contributed to user research and design across multiple federal agencies. 
+              I learned to <strong>quickly understand new domains</strong>, <strong>work with diverse stakeholders</strong>, 
+              and <strong>apply research methods</strong> in government contexts.
             </p>
             <img 
               src={boozAllenImage} 
@@ -47,27 +47,26 @@ const BoozAllenCaseStudy = () => {
             />
           </div>
 
-          {/* Consulting Value Proposition */}
+          {/* What I Learned Section */}
           <Card className="bg-accent/5 border-accent/20">
             <CardContent className="p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-3">Why Consulting Breadth Matters</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-3">What I Learned in Government Consulting</h3>
               <p className="text-muted-foreground mb-4">
-                Government consulting requires a unique skill set: the ability to rapidly understand new domains, 
-                build trust with diverse stakeholders, and deliver value within compressed timelines. 
-                My portfolio demonstrates:
+                Government consulting taught me valuable skills: how to rapidly understand new domains, 
+                build trust with diverse stakeholders, and deliver research within compressed timelines.
               </p>
               <div className="grid sm:grid-cols-3 gap-4">
                 <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">30 days</p>
-                  <p className="text-sm text-muted-foreground">Avg. time to trusted advisor status</p>
+                  <p className="text-2xl font-bold text-accent">4 agencies</p>
+                  <p className="text-sm text-muted-foreground">Different domains I worked across</p>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">4 domains</p>
-                  <p className="text-sm text-muted-foreground">Transportation, Health, Finance, Research</p>
+                  <p className="text-2xl font-bold text-accent">100+</p>
+                  <p className="text-sm text-muted-foreground">User interviews conducted</p>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">100%</p>
-                  <p className="text-sm text-muted-foreground">Contract renewal / extension rate</p>
+                  <p className="text-2xl font-bold text-accent">WCAG 2.1</p>
+                  <p className="text-sm text-muted-foreground">Accessibility compliance learned</p>
                 </div>
               </div>
             </CardContent>
@@ -81,7 +80,7 @@ const BoozAllenCaseStudy = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Deliver user-centered design across 4 federal agencies with vastly different domains, stakeholders, and compliance requirements
+                  Support user-centered design across federal agencies with different domains, stakeholders, and compliance requirements
                 </p>
               </CardContent>
             </Card>
@@ -89,11 +88,11 @@ const BoozAllenCaseStudy = () => {
             <Card>
               <CardHeader>
                 <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Consulting Approach</CardTitle>
+                <CardTitle>My Role</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Rapid stakeholder onboarding, concurrent workstream management, and creation of reusable frameworks that outlast individual engagements
+                  Conducted user interviews, usability testing, and research synthesis; learned to work across different government domains
                 </p>
               </CardContent>
             </Card>
@@ -101,11 +100,11 @@ const BoozAllenCaseStudy = () => {
             <Card>
               <CardHeader>
                 <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Cumulative Impact</CardTitle>
+                <CardTitle>Contributions</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  12+ contracts delivered, 100% WCAG compliance across all projects, accessibility standards adopted agency-wide
+                  100+ user interviews, WCAG compliance support, research documentation across multiple projects
                 </p>
               </CardContent>
             </Card>
@@ -139,41 +138,39 @@ const BoozAllenCaseStudy = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
                     <p className="text-muted-foreground mb-3">
-                      Led UX research and design for the Department of Transportation's public data platform, 
+                      Contributed to UX research for the Department of Transportation's public data platform, 
                       serving transportation planners, researchers, and policy makers across the nation.
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Strategic Research & Executive Advisory</h4>
+                    <h4 className="font-semibold text-foreground mb-2">My Research Contributions</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Advised DOT senior leadership on strategic information architecture decisions to improve public access to transportation data</li>
-                      <li>Presented research findings to government executives, translating user needs into actionable policy and design recommendations</li>
-                      <li>Conducted 25 stakeholder interviews across multiple DOT agencies and analyzed user journeys revealing critical drop-off points</li>
-                      <li>Guided strategic content prioritization decisions through workshops with policy experts and communications teams</li>
-                      <li>Led competitive analysis to position DOT platform as best-in-class for government data portals</li>
+                      <li>Conducted 25 stakeholder interviews across multiple DOT divisions</li>
+                      <li>Helped analyze user journeys to identify drop-off points</li>
+                      <li>Assisted with card sorting and tree testing exercises</li>
+                      <li>Documented research findings and contributed to insight synthesis</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Strategic Communications Challenges</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Challenges I Worked On</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Developed strategic content framework to communicate complex transportation policy and data to diverse public audiences</li>
-                      <li>Made critical information architecture decisions about which policy content to surface based on user tasks and government communications priorities</li>
-                      <li>Organized complex data structures spanning multiple transportation modes into intuitive navigation—strategic choices about technical depth vs. accessibility</li>
-                      <li>Balanced legacy system constraints with modern design while advising leadership on integration trade-offs</li>
-                      <li>Created content hierarchy serving both technical analysts and general public, requiring strategic decisions about specialized vs. plain language</li>
+                      <li>Learned how to communicate complex transportation data to diverse public audiences</li>
+                      <li>Helped organize data structures spanning multiple transportation modes into navigation</li>
+                      <li>Worked on balancing legacy system constraints with modern design</li>
+                      <li>Contributed to content hierarchy serving both technical analysts and general public</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Strategic Solution & Measurable Impact</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Results & What I Learned</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Redesigned information architecture based on strategic content workshops—reduced navigation depth by 40% and improved task completion</li>
-                      <li>Made evidence-based content decisions: created intuitive data visualization dashboard prioritizing most-accessed datasets</li>
-                      <li>Implemented strategic search and filtering informed by user research insights on how different audiences approach transportation data</li>
-                      <li>Achieved 100% WCAG 2.1 AA compliance while maintaining modern standards—proving accessibility and design excellence coexist</li>
-                      <li>28% increase in data downloads within first quarter, demonstrating strategic communications improvements drove engagement</li>
+                      <li>Information architecture changes reduced navigation depth by 40%</li>
+                      <li>Learned to create intuitive data visualization dashboards</li>
+                      <li>Achieved 100% WCAG 2.1 AA compliance</li>
+                      <li>28% increase in data downloads within first quarter</li>
+                      <li>Learned how research drives design decisions in government contexts</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -280,10 +277,10 @@ const BoozAllenCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Cross-Project Learnings</h4>
+                    <h4 className="font-semibold text-foreground mb-2">What I Learned Across Projects</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>Accessibility-first design accelerates development and reduces rework</li>
-                      <li>Building reusable design systems pays dividends across projects</li>
+                      <li>How to build reusable research templates and design patterns</li>
                       <li>Deep user research reveals needs beyond stated requirements</li>
                       <li>Government users appreciate modern interfaces that respect data complexity</li>
                     </ul>

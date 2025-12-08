@@ -27,7 +27,7 @@ const MonsterAisleCaseStudy = () => {
               FINAV Fire Management System
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              UX Designer & Research Lead — Firefighter Navigation & Communication System
+              UX Design Student — Academic Project on Firefighter Navigation & Communication
             </p>
             <img 
               src={finavImage} 
@@ -52,11 +52,11 @@ const MonsterAisleCaseStudy = () => {
             <Card>
               <CardHeader>
                 <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Role</CardTitle>
+                <CardTitle>My Role</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  UX Designer & Research Lead, managed team through primary/secondary research, interviews, and stakeholder presentations
+                  Team member responsible for user interviews, research synthesis, and contributing to stakeholder presentations
                 </p>
               </CardContent>
             </Card>
@@ -64,11 +64,11 @@ const MonsterAisleCaseStudy = () => {
             <Card>
               <CardHeader>
                 <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Impact</CardTitle>
+                <CardTitle>Outcome</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Recognized by stakeholders with strong investment interest for potential to save firefighter lives
+                  Concept received recognition from stakeholders with interest in potential real-world application
                 </p>
               </CardContent>
             </Card>
@@ -299,31 +299,33 @@ const MonsterAisleCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Achievements</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Contributions</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Successfully completed 10-week design studio project</li>
-                      <li>Conducted comprehensive primary research with active firefighters</li>
-                      <li>Developed innovative AR and communication solutions</li>
-                      <li>Integrated existing geospatial data systems (SAGIS)</li>
-                      <li>Created concept with real investment potential</li>
+                      <li>Completed 10-week design studio project as part of team</li>
+                      <li>Conducted interviews with active firefighters to understand needs</li>
+                      <li>Contributed to AR and communication solution concepts</li>
+                      <li>Helped integrate existing geospatial data systems (SAGIS)</li>
+                      <li>Participated in final stakeholder presentation</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design Leadership</h4>
-                    <p className="text-muted-foreground">
-                      As UX Designer and Research Lead, I managed the team through all phases of the project—from initial firefighter 
-                      interviews and problem identification, through concept exploration and design iterations, to final stakeholder 
-                      presentations. This experience demonstrated the power of user-centered design in addressing real-world safety challenges.
-                    </p>
+                    <h4 className="font-semibold text-foreground mb-2">What I Learned</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      <li>How to conduct primary research with specialized users (firefighters)</li>
+                      <li>The importance of understanding real-world constraints before designing</li>
+                      <li>How to collaborate effectively in a team design environment</li>
+                      <li>How user-centered design can address life-or-death challenges</li>
+                      <li>How to present design concepts to stakeholders</li>
+                    </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Vision for the Future</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Reflection</h4>
                     <p className="text-muted-foreground">
-                      FINAV represents a vision for the future of firefighter safety—where technology enhances human capabilities, 
-                      improves communication, and ultimately saves more lives. The positive stakeholder response validates the potential 
-                      impact of thoughtfully designed emergency response systems.
+                      This academic project taught me the power of user-centered design in addressing real-world safety challenges. 
+                      Working with actual firefighters gave me experience conducting research with specialized user groups and 
+                      understanding their unique needs and constraints.
                     </p>
                   </div>
                 </CardContent>
