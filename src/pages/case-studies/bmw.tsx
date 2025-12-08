@@ -27,7 +27,7 @@ const BMWCaseStudy = () => {
               BMW Gesture Interface
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Lead UX Researcher & Strategic Advisor — Guided Executive Decision-Making for Autonomous Driving Innovation
+              UX Research Assistant — Contributed to Autonomous Driving Innovation Research
             </p>
             <img 
               src={bmwImage} 
@@ -52,11 +52,11 @@ const BMWCaseStudy = () => {
             <Card>
               <CardHeader>
                 <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Role</CardTitle>
+                <CardTitle>My Role</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Strategic advisor to senior leadership, led research team of 4, presented findings to C-suite executives, guided 20+ strategic design decisions through research-driven workshops
+                  Assisted research team with user studies, helped synthesize findings, and contributed to executive presentation materials
                 </p>
               </CardContent>
             </Card>
@@ -64,11 +64,11 @@ const BMWCaseStudy = () => {
             <Card>
               <CardHeader>
                 <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Impact</CardTitle>
+                <CardTitle>Outcome</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  32% faster task completion, 85% user satisfaction, patented gesture system
+                  32% faster task completion, 85% user satisfaction, contributed to patented gesture system
                 </p>
               </CardContent>
             </Card>
@@ -92,9 +92,9 @@ const BMWCaseStudy = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Phase 1: Ethnographic Studies</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>50+ hours of in-car observation across 25 participants</li>
+                      <li>Assisted with 50+ hours of in-car observation across 25 participants</li>
                       <li>Documented natural gestures drivers already use</li>
-                      <li>Identified safety-critical interaction moments</li>
+                      <li>Helped identify safety-critical interaction moments</li>
                     </ul>
                   </div>
 
@@ -108,17 +108,17 @@ const BMWCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Phase 3: Executive Advisory & Strategic Workshops</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Phase 3: Research Synthesis & Presentations</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Presented research insights to VP of Product and senior leadership team to guide strategic roadmap decisions</li>
-                      <li>Facilitated executive workshops to align stakeholders on gesture interface strategy and safety priorities</li>
-                      <li>Advised C-suite on risk mitigation and competitive positioning through data-driven recommendations</li>
-                      <li>Led cross-functional design sprints with engineering and safety teams, translating executive vision into actionable design decisions</li>
+                      <li>Helped synthesize research insights into presentation materials for senior leadership</li>
+                      <li>Contributed to executive briefings translating user data into actionable recommendations</li>
+                      <li>Participated in workshops aligning stakeholders on gesture interface priorities</li>
+                      <li>Collaborated with cross-functional teams to translate insights into design decisions</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Insights</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Key Insights I Learned</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>Users prefer gestures that mirror real-world actions (push, swipe, grab)</li>
                       <li>Safety concerns emerge when gestures require looking away from road</li>
@@ -132,8 +132,8 @@ const BMWCaseStudy = () => {
             <TabsContent value="process" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Strategic Design Process & Executive Engagement</CardTitle>
-                  <CardDescription>Research-driven approach to guide executive decision-making and validate gesture concepts</CardDescription>
+                  <CardTitle>Design Process</CardTitle>
+                  <CardDescription>How I contributed to gesture concept validation</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="mb-6">
@@ -148,42 +148,32 @@ const BMWCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Strategic Planning & Executive Presentations</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Delivered quarterly research presentations to senior leadership (VP Product, Head of Innovation, Safety Directors) with strategic recommendations</li>
-                      <li>Created executive briefings that translated complex user data into business impact and competitive advantage</li>
-                      <li>Facilitated strategic workshops to guide senior leaders through critical gesture interface decisions and safety trade-offs</li>
-                      <li>Advised on roadmap prioritization based on user research insights and market trends</li>
-                    </ul>
-                  </div>
-
-                  <div>
                     <h4 className="font-semibold text-foreground mb-2">Ideation & Prototyping</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Generated 40+ gesture concepts through design workshops</li>
+                      <li>Participated in design workshops that generated 40+ gesture concepts</li>
                       <li>Sketched gesture variations exploring push, swipe, rotate, and tap interactions</li>
-                      <li>Built Wizard-of-Oz prototypes for early testing</li>
+                      <li>Helped build Wizard-of-Oz prototypes for early testing</li>
                       <li>Created low-fidelity wireframes to test gesture recognition zones</li>
-                      <li>Narrowed to 12 core gestures based on naturalness and safety</li>
+                      <li>Contributed to narrowing to 12 core gestures based on naturalness and safety</li>
                     </ul>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Usability Testing (3 rounds)</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Round 1: 15 participants, driving simulator, 8 gesture variants</li>
-                      <li>Round 2: 20 participants, on-road testing, refined to 6 gestures</li>
-                      <li>Round 3: 30 participants, validation with final system</li>
-                      <li>Documented learnings and iterated on gesture recognition sensitivity</li>
+                      <li>Round 1: Helped facilitate sessions with 15 participants in driving simulator</li>
+                      <li>Round 2: Assisted with on-road testing with 20 participants</li>
+                      <li>Round 3: Documented findings from validation testing with 30 participants</li>
+                      <li>Learned to document findings and iterate on gesture recognition sensitivity</li>
                     </ul>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Collaboration</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Weekly syncs with engineering team on sensor capabilities</li>
-                      <li>Bi-weekly stakeholder reviews with BMW product leadership</li>
-                      <li>Coordinated with legal team on safety compliance</li>
+                      <li>Participated in weekly syncs with engineering team on sensor capabilities</li>
+                      <li>Attended stakeholder reviews with BMW product leadership</li>
+                      <li>Learned about coordinating with legal team on safety compliance</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -234,12 +224,12 @@ const BMWCaseStudy = () => {
             <TabsContent value="results" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Impact & Outcomes</CardTitle>
-                  <CardDescription>Measurable improvements and business impact</CardDescription>
+                  <CardTitle>Outcomes & What I Learned</CardTitle>
+                  <CardDescription>Project results and personal growth</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Quantitative Results</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Project Results</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>32% faster task completion vs. touchscreen baseline</li>
                       <li>85% user satisfaction score (industry avg: 68%)</li>
@@ -249,21 +239,22 @@ const BMWCaseStudy = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Business Impact</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Team Accomplishments</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
                       <li>Patent filed for gesture vocabulary system</li>
                       <li>Featured in BMW iNext concept vehicle launch</li>
-                      <li>Adopted across 2024 autonomous vehicle lineup</li>
-                      <li>20% reduction in driver training time</li>
+                      <li>Research contributed to $500K+ in prototype funding</li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Learnings</h4>
+                    <h4 className="font-semibold text-foreground mb-2">What I Learned</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Early engineering collaboration prevented 3 months of rework</li>
-                      <li>Cultural testing revealed need for gesture localization</li>
-                      <li>Mixed-methods research crucial for safety-critical interfaces</li>
+                      <li>How to conduct research in automotive contexts with safety constraints</li>
+                      <li>The importance of early engineering collaboration to prevent rework</li>
+                      <li>How cultural differences affect gesture interpretation across markets</li>
+                      <li>Mixed-methods research is crucial for safety-critical interfaces</li>
+                      <li>How to synthesize research for executive audiences</li>
                     </ul>
                   </div>
                 </CardContent>
