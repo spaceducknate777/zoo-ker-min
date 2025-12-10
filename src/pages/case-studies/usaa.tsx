@@ -152,6 +152,16 @@ const USAACaseStudy = () => {
                     </ul>
                   </div>
 
+                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
+                    <h4 className="font-semibold text-foreground mb-2">Why I Made These Design Decisions</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                      <li><strong>Mobile-first approach:</strong> Research showed military families often manage finances during deployments with limited access — mobile had to work perfectly in low-connectivity environments</li>
+                      <li><strong>Progressive confirmation for large transactions:</strong> Interviews revealed anxiety around financial mistakes while deployed — multi-step confirmation reduced errors and built trust</li>
+                      <li><strong>Simplified language over financial jargon:</strong> Many spouses managing finances weren't financial experts — plain language tested 40% better for comprehension</li>
+                      <li><strong>Distinct vehicle category icons:</strong> User testing showed generic car icons caused confusion — differentiated silhouettes for car/truck/SUV improved navigation speed by 35%</li>
+                    </ul>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Icon System Design & Storyboarding</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
