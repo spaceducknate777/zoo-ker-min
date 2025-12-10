@@ -30,16 +30,16 @@ const Hero = () => {
                 👋 Hi, I'm Nathan Zukerman
               </h1>
             <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
-                UX Designer
+                Product Designer
               </p>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I design user-centered experiences for products at BMW, Booz Allen, and USAA — combining research insights with intuitive interface design.
+              I design end-to-end product experiences at BMW, Booz Allen, and USAA — bridging user needs with business goals through strategic design.
             </p>
             
             <p className="text-base font-semibold text-foreground/90 max-w-lg">
-              Seeking UX Design roles where I can grow my skills and contribute to user-centered product teams.
+              Seeking Product Design roles where I can own end-to-end experiences and drive product outcomes.
             </p>
             
             <p className="text-sm text-muted-foreground/80 max-w-lg italic">
@@ -103,7 +103,7 @@ const Hero = () => {
                     </Button>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>UX Design resume optimized for ATS</p>
+                    <p>Product Design resume optimized for ATS</p>
                   </TooltipContent>
                 </Tooltip>
               </div>
@@ -116,7 +116,7 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elevated)] ring-1 ring-border/50 hover:ring-accent/50 transition-all duration-500 hover:shadow-[var(--shadow-glow)]">
               <img 
                 src={portraitImage} 
-                alt="Nathan Zukerman, UX Designer"
+                alt="Nathan Zukerman, Product Designer"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent pointer-events-none" />
