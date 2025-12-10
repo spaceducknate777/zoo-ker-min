@@ -3,8 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
+import DesignProcessFlow from "@/components/DesignProcessFlow";
 import finavImage from "@/assets/finav-project.jpg";
 import finavSketches from "@/assets/finav-sketches.jpg";
+
+const finavDesignProcess = [
+  {
+    insight: "Firefighters can't look at handheld devices in dense smoke",
+    decision: "AR overlay keeping information in peripheral vision, hands-free",
+    outcome: "Enabled eyes-forward navigation in zero-visibility"
+  },
+  {
+    insight: "Walkie-talkies fail in basements and attics where reception is weakest",
+    decision: "Firetruck-boosted communication hub maintaining connectivity",
+    outcome: "Reliable audio in previously dead zones"
+  },
+  {
+    insight: "Chiefs make withdrawal decisions based on unreliable radio silence",
+    decision: "Real-time vitals monitoring providing objective safety data",
+    outcome: "Data-driven safety decisions for team"
+  }
+];
 
 const MonsterAisleCaseStudy = () => {
   const navigate = useNavigate();
@@ -98,6 +117,17 @@ const MonsterAisleCaseStudy = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Design Process Flow */}
+          <Card>
+            <CardHeader>
+              <CardTitle>How Research Shaped Design</CardTitle>
+              <CardDescription>Tracing decisions from firefighter interviews to solution concepts</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DesignProcessFlow steps={finavDesignProcess} />
+            </CardContent>
+          </Card>
 
           <Tabs defaultValue="problem" className="w-full">
             <TabsList className="grid w-full grid-cols-4">
