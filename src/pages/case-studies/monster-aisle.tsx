@@ -182,6 +182,16 @@ const MonsterAisleCaseStudy = () => {
                     </p>
                   </div>
 
+                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
+                    <h4 className="font-semibold text-foreground mb-2">Why We Designed It This Way</h4>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                      <li><strong>AR over traditional screens:</strong> Firefighters told us they can't look at handheld devices in smoke — AR overlay keeps hands free and information in peripheral vision</li>
+                      <li><strong>Firetruck as communication hub:</strong> Interviews revealed walkie-talkies fail in basements and attics; a boosted signal from the truck maintains connectivity where it matters most</li>
+                      <li><strong>SAGIS integration:</strong> Firefighters mentioned they often enter buildings blind — existing public data on floor plans could save critical seconds during rescue</li>
+                      <li><strong>Vitals monitoring for chiefs:</strong> Research showed chiefs make withdrawal decisions based on radio silence, which is unreliable — real-time vitals provide objective safety data</li>
+                    </ul>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Core System Components</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-2">
