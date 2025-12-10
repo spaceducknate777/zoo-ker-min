@@ -3,8 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
+import DesignProcessFlow from "@/components/DesignProcessFlow";
 import usaaImage from "@/assets/usaa-storyboard.png";
 import usaaResearch from "@/assets/usaa-research.jpg";
+
+const usaaDesignProcess = [
+  {
+    insight: "Military families manage finances during deployments with limited connectivity",
+    decision: "Mobile-first design optimized for low-bandwidth environments",
+    outcome: "25% increase in mobile engagement"
+  },
+  {
+    insight: "Spouses managing finances weren't financial experts — jargon confused them",
+    decision: "Plain language replacing financial terminology throughout",
+    outcome: "40% improvement in comprehension scores"
+  },
+  {
+    insight: "Generic car icons caused confusion between vehicle categories",
+    decision: "Differentiated silhouettes for car, truck, SUV categories",
+    outcome: "35% faster navigation in user testing"
+  }
+];
 
 const USAACaseStudy = () => {
   const navigate = useNavigate();
@@ -73,6 +92,17 @@ const USAACaseStudy = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Design Process Flow */}
+          <Card>
+            <CardHeader>
+              <CardTitle>How Research Shaped Design</CardTitle>
+              <CardDescription>Tracing decisions from military family insights to measurable outcomes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DesignProcessFlow steps={usaaDesignProcess} />
+            </CardContent>
+          </Card>
 
           <Tabs defaultValue="research" className="w-full">
             <TabsList className="grid w-full grid-cols-4">

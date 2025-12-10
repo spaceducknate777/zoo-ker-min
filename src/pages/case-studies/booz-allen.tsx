@@ -3,8 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
+import DesignProcessFlow from "@/components/DesignProcessFlow";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
 import boozAllenWireframes from "@/assets/booz-allen-wireframes.jpg";
+
+const dotDesignProcess = [
+  {
+    insight: "Users expected content within 3 clicks — deep hierarchies caused 67% abandonment",
+    decision: "Flattened information architecture from 6 levels to 3",
+    outcome: "40% reduction in navigation depth"
+  },
+  {
+    insight: "Technical analysts wanted raw data, but general public was overwhelmed",
+    decision: "Progressive disclosure with expandable summaries + drill-down",
+    outcome: "28% increase in data downloads"
+  },
+  {
+    insight: "Government buildings often have poor lighting affecting screen readability",
+    decision: "High-contrast color system exceeding WCAG requirements",
+    outcome: "100% WCAG 2.1 AA compliance"
+  }
+];
 
 const BoozAllenCaseStudy = () => {
   const navigate = useNavigate();
@@ -109,6 +128,17 @@ const BoozAllenCaseStudy = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Design Process Flow */}
+          <Card>
+            <CardHeader>
+              <CardTitle>How Research Shaped Design (DOT Project)</CardTitle>
+              <CardDescription>Tracing decisions from user insights to measurable outcomes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DesignProcessFlow steps={dotDesignProcess} />
+            </CardContent>
+          </Card>
 
           <Tabs defaultValue="dot" className="w-full">
             <TabsList className="grid w-full grid-cols-3">

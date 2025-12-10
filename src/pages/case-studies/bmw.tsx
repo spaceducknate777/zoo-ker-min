@@ -3,8 +3,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
+import DesignProcessFlow from "@/components/DesignProcessFlow";
 import bmwImage from "@/assets/bmw-project.jpg";
 import bmwWireframes from "@/assets/bmw-wireframes.jpg";
+
+const bmwDesignProcess = [
+  {
+    insight: "Drivers instinctively push away to 'let go' and pull back to 'take control'",
+    decision: "Mapped push/pull gestures to autonomy mode switching",
+    outcome: "32% faster task completion vs touchscreen"
+  },
+  {
+    insight: "85% of participants already use rotational gestures for physical knobs",
+    decision: "Used rotate gesture for volume control to leverage muscle memory",
+    outcome: "94% gesture recognition accuracy"
+  },
+  {
+    insight: "Multi-finger gestures caused confusion and 40% more errors in testing",
+    decision: "Simplified to single-hand, single-gesture vocabulary",
+    outcome: "85% user satisfaction (vs 68% industry avg)"
+  }
+];
 
 const BMWCaseStudy = () => {
   const navigate = useNavigate();
@@ -73,6 +92,17 @@ const BMWCaseStudy = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Design Process Flow */}
+          <Card>
+            <CardHeader>
+              <CardTitle>How Research Shaped Design</CardTitle>
+              <CardDescription>Tracing decisions from user insights to measurable outcomes</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DesignProcessFlow steps={bmwDesignProcess} />
+            </CardContent>
+          </Card>
 
           <Tabs defaultValue="research" className="w-full">
             <TabsList className="grid w-full grid-cols-4">
