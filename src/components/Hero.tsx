@@ -1,4 +1,4 @@
-import { ArrowRight, Download, FileText } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import portraitImage from "@/assets/nathan-profile.jpeg";
@@ -59,54 +59,29 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
 
-              {/* Resume and Cover Letter Buttons */}
-              <div className="flex flex-col sm:flex-row gap-2">
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="lg"
-                      asChild
-                      className="border-2 hover:border-accent transition-all duration-300"
+              {/* Resume Button */}
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    asChild
+                    className="border-2 hover:border-accent transition-all duration-300"
+                  >
+                    <a 
+                      href="/resume/nathan-zukerman-ux-research-lead.html" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
                     >
-                      <a 
-                        href="/resume/nathan-zukerman-resume.pdf" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Download className="mr-2 h-4 w-4" />
-                        Resume (PDF)
-                      </a>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Standard PDF resume for viewing and printing</p>
-                  </TooltipContent>
-                </Tooltip>
-                
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button 
-                      variant="outline" 
-                      size="lg"
-                      asChild
-                      className="border-2 hover:border-accent transition-all duration-300"
-                    >
-                      <a 
-                        href="/resume/nathan-zukerman-ux-research-lead.html" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Download className="mr-2 h-4 w-4" />
-                        ATS Resume
-                      </a>
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Product Design resume optimized for ATS</p>
-                  </TooltipContent>
-                </Tooltip>
-              </div>
+                      <FileText className="mr-2 h-4 w-4" />
+                      Resume
+                    </a>
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Product Designer resume (ATS-optimized)</p>
+                </TooltipContent>
+              </Tooltip>
             </div>
           </div>
 
