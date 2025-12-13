@@ -1,4 +1,4 @@
-import { Download, Linkedin } from "lucide-react";
+import { Download, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
@@ -51,6 +51,52 @@ const Footer = () => {
               </TooltipTrigger>
               <TooltipContent>
                 <p>Optimized for Applicant Tracking Systems</p>
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  asChild
+                  className="border-accent/50 hover:border-accent"
+                >
+                  <a 
+                    href="/resume/nathan-zukerman-lenovo-visual-ux.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <FileText className="mr-2 h-4 w-4" />
+                    Lenovo Resume
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Visual UX Designer - AI Ecosystems</p>
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  asChild
+                  className="border-accent/50 hover:border-accent"
+                >
+                  <a 
+                    href="/resume/nathan-zukerman-lenovo-cover-letter.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <FileText className="mr-2 h-4 w-4" />
+                    Lenovo Cover Letter
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Cover letter for Visual UX Designer role</p>
               </TooltipContent>
             </Tooltip>
             
