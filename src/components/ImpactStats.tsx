@@ -5,14 +5,14 @@ const ImpactStats = () => {
     {
       icon: Users,
       value: "500K+",
-      label: "Users Impacted",
-      context: "Across BMW, USAA & Government"
+      label: "Users Reached",
+      context: "With measurable task improvements"
     },
     {
       icon: TrendingUp,
       value: "67%",
-      label: "Avg. Task Improvement",
-      context: "Measured across all projects"
+      label: "Avg. Task Success Boost",
+      context: "Across BMW, USAA & Federal"
     },
     {
       icon: Brain,
