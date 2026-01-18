@@ -4,8 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import DesignProcessFlow from "@/components/DesignProcessFlow";
-import usaaImage from "@/assets/usaa-storyboard.png";
-import usaaResearch from "@/assets/usaa-research.jpg";
+import usaaStoryboard from "@/assets/usaa-storyboard-illustrations.png";
+import usaaIcons from "@/assets/usaa-icons.png";
+import usaaWhiteboard from "@/assets/usaa-whiteboard-process.jpg";
+import usaaWorkshop from "@/assets/usaa-workshop.jpg";
+import usaaSketches from "@/assets/usaa-sketches.jpg";
+import usaaIconProcess from "@/assets/usaa-icon-process.png";
 
 const usaaDesignProcess = [
   {
@@ -49,9 +53,9 @@ const USAACaseStudy = () => {
               UX Designer — Mobile-First Financial Tools & Icon Design for Military Families
             </p>
             <img 
-              src={usaaImage} 
-              alt="USAA Storyboard showcasing icon design for automotive categories"
-              className="w-full h-auto object-contain rounded-lg shadow-xl bg-muted/20 p-8"
+              src={usaaStoryboard} 
+              alt="USAA Storyboard illustrations showing claims process user journey"
+              className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8"
             />
           </div>
 
@@ -159,14 +163,37 @@ const USAACaseStudy = () => {
                   <CardDescription>Collaborative approach across two distinct projects</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <img 
+                        src={usaaWhiteboard} 
+                        alt="Design workshop - storyboard cards pinned to whiteboard with user flow annotations"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Workshop session: Mapping the claims process with illustrated storyboard cards
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={usaaWorkshop} 
+                        alt="Collaborative design session with team members discussing user flows"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Cross-functional collaboration during design review
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="mb-6">
                     <img 
-                      src={usaaResearch} 
-                      alt="USAA Research Synthesis - User insights and affinity mapping"
+                      src={usaaSketches} 
+                      alt="Hand-drawn storyboard sketches showing 10-step user journey from FNOL to repair scheduling"
                       className="w-full h-auto rounded-lg shadow-lg"
                     />
                     <p className="text-sm text-muted-foreground mt-3 italic">
-                      Research synthesis showing user insights, affinity mapping, and persona development from military family interviews
+                      Early sketches: 10-step user journey from First Notice of Loss (FNOL) through estimate delivery and repair scheduling
                     </p>
                   </div>
 
@@ -233,7 +260,30 @@ const USAACaseStudy = () => {
                   <CardTitle>Final Solutions</CardTitle>
                   <CardDescription>Mobile-first financial tools and cohesive icon system</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <img 
+                        src={usaaIconProcess} 
+                        alt="Icon design iterations showing evolution from rough concepts to final refined icons for truck, SUV, and signature categories"
+                        className="w-full h-auto rounded-lg shadow-lg bg-white p-4"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Icon design process: 4 iterations from concept to final refined iconography
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={usaaIcons} 
+                        alt="Final icon set showing signature document, truck, and SUV icons"
+                        className="w-full h-auto rounded-lg shadow-lg bg-white p-4"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Final icons: Signature documents and vehicle categories with distinct silhouettes
+                      </p>
+                    </div>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Mobile Financial Tools Features</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
