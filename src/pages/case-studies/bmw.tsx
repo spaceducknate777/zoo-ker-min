@@ -4,8 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import DesignProcessFlow from "@/components/DesignProcessFlow";
-import bmwImage from "@/assets/bmw-project.jpg";
-import bmwWireframes from "@/assets/bmw-wireframes.jpg";
+import bmwGestureUI from "@/assets/bmw-gesture-ui-concept.jpg";
+import bmwGestureShapes from "@/assets/bmw-gesture-shapes.jpg";
+import bmwHapticPrototype from "@/assets/bmw-haptic-prototype-testing.png";
+import bmwGestureTaxonomy from "@/assets/bmw-gesture-taxonomy.jpg";
+import bmwArmrestConcept from "@/assets/bmw-armrest-concept.png";
+import bmwPrototypeCloseup from "@/assets/bmw-prototype-closeup.png";
+import bmwUserTesting from "@/assets/bmw-user-testing.png";
 
 const bmwDesignProcess = [
   {
@@ -49,9 +54,9 @@ const BMWCaseStudy = () => {
               UX Research Assistant — Contributed to Autonomous Driving Innovation Research
             </p>
             <img 
-              src={bmwImage} 
-              alt="BMW Gesture Interface Project"
-              className="w-full h-96 object-cover rounded-lg shadow-xl"
+              src={bmwGestureUI} 
+              alt="BMW Gesture Interface - Hand gesture interactions with iDrive radial menu"
+              className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8"
             />
           </div>
 
@@ -118,7 +123,18 @@ const BMWCaseStudy = () => {
                   <CardTitle>Research Methodology</CardTitle>
                   <CardDescription>Multi-phase approach to understand gesture interaction in autonomous contexts</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-6">
+                  <div className="mb-6">
+                    <img 
+                      src={bmwGestureTaxonomy} 
+                      alt="Gesture taxonomy - 24 different hand gesture positions documented during user research"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Gesture taxonomy: Documenting 24 natural hand positions observed during ethnographic research
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Phase 1: Ethnographic Studies</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
@@ -166,15 +182,50 @@ const BMWCaseStudy = () => {
                   <CardDescription>How I contributed to gesture concept validation</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="mb-6">
-                    <img 
-                      src={bmwWireframes} 
-                      alt="BMW Gesture Interface Wireframe Explorations"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <p className="text-sm text-muted-foreground mt-3 italic">
-                      Early wireframe explorations showing gesture concept iterations and design thinking
-                    </p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <img 
+                        src={bmwGestureShapes} 
+                        alt="Shape primitives and gesture testing - hands interacting with paper prototypes"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Early-stage exploration: Testing gesture recognition zones with shape primitives
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={bmwHapticPrototype} 
+                        alt="Haptic prototype board with tactile feedback elements"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Physical haptic prototype: Testing tactile feedback patterns for gesture confirmation
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <img 
+                        src={bmwUserTesting} 
+                        alt="User testing session with BMW stakeholders and haptic prototype"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        User testing with BMW stakeholders evaluating prototype interactions
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={bmwPrototypeCloseup} 
+                        alt="Close-up of haptic feedback elements with illuminated touch zones"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Prototype detail: Illuminated touch zones with integrated haptic feedback
+                      </p>
+                    </div>
                   </div>
 
                   <div>
@@ -217,6 +268,17 @@ const BMWCaseStudy = () => {
                   <CardDescription>Intuitive gesture vocabulary for autonomous driving</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
+                  <div className="mb-6">
+                    <img 
+                      src={bmwArmrestConcept} 
+                      alt="Armrest concept sketch showing embedded click wheel with haptic feedback annotations"
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                    <p className="text-sm text-muted-foreground mt-3 italic">
+                      Design concept: Embedded armrest control with haptic feedback for scrolling and clicking
+                    </p>
+                  </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Core Gesture Set</h4>
                     <ul className="list-disc list-inside text-muted-foreground space-y-1">
