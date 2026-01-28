@@ -26,36 +26,28 @@ const Hero = () => {
             </div>
             
             <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                👋 Hi, I'm Nathan Zukerman
-              </h1>
-            <p className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
+              <p className="text-lg font-semibold text-accent uppercase tracking-wide">
                 Product Designer
               </p>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                Solving complex problems from discovery to design
+              </h1>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I design end-to-end product experiences at BMW, Booz Allen, and USAA — bridging user needs with business goals through strategic design.
-            </p>
-            
-            <p className="text-base font-semibold text-foreground/90 max-w-lg">
-              Seeking Product Design roles where I can own end-to-end experiences and drive product outcomes.
-            </p>
-            
-            <p className="text-sm text-muted-foreground/80 max-w-lg italic">
-              Available for full-time remote or hybrid roles.
+              I design and iterate end-to-end product experiences — translating user insight, technical constraints, and business needs into clear, usable interfaces.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              {/* Contact Me Button */}
+              {/* View Case Studies Button */}
               <Button 
                 variant="accent" 
                 size="lg"
-                onClick={() => scrollToSection("contact")}
+                onClick={() => scrollToSection("projects")}
                 className="group shadow-lg hover:shadow-[var(--shadow-glow)] transition-all duration-300"
               >
-                Contact Me
+                View Product Case Studies
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
 
@@ -69,17 +61,17 @@ const Hero = () => {
                     className="border-2 hover:border-accent transition-all duration-300"
                   >
                     <a 
-                      href="/resume/nathan-zukerman-ux-research-lead.html" 
+                      href="/resume/nathan-zukerman-resume.pdf" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
                       <FileText className="mr-2 h-4 w-4" />
-                      Resume
+                      Download Resume
                     </a>
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Product Designer resume (ATS-optimized)</p>
+                  <p>Download PDF resume</p>
                 </TooltipContent>
               </Tooltip>
             </div>
