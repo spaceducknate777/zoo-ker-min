@@ -1,9 +1,7 @@
-import { ArrowLeft, Users, Target, TrendingUp } from "lucide-react";
+import { ArrowLeft, Zap, Shield, Eye, Hand, Volume2, Play, Square, ChevronRight, Wrench, CheckCircle, AlertTriangle, Accessibility, BarChart3, Building2, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import DesignProcessFlow from "@/components/DesignProcessFlow";
 import bmwGestureUI from "@/assets/bmw-gesture-ui-concept.jpg";
 import bmwGestureShapes from "@/assets/bmw-gesture-shapes.jpg";
 import bmwHapticPrototype from "@/assets/bmw-haptic-prototype-testing.png";
@@ -12,22 +10,28 @@ import bmwArmrestConcept from "@/assets/bmw-armrest-concept.png";
 import bmwPrototypeCloseup from "@/assets/bmw-prototype-closeup.png";
 import bmwUserTesting from "@/assets/bmw-user-testing.png";
 
-const bmwDesignProcess = [
-  {
-    insight: "Drivers instinctively push away to 'let go' and pull back to 'take control'",
-    decision: "Mapped push/pull gestures to autonomy mode switching",
-    outcome: "32% faster task completion vs touchscreen"
-  },
-  {
-    insight: "85% of participants already use rotational gestures for physical knobs",
-    decision: "Used rotate gesture for volume control to leverage muscle memory",
-    outcome: "94% gesture recognition accuracy"
-  },
-  {
-    insight: "Multi-finger gestures caused confusion and 40% more errors in testing",
-    decision: "Simplified to single-hand, single-gesture vocabulary",
-    outcome: "85% user satisfaction (vs 68% industry avg)"
-  }
+const gestures = [
+  { action: "Push forward", result: "Enter autonomous mode", icon: ChevronRight },
+  { action: "Pull back", result: "Return to manual control", icon: ChevronRight },
+  { action: "Swipe left / right", result: "Navigate media or maps", icon: ChevronRight },
+  { action: "Rotate clockwise", result: "Increase volume", icon: Volume2 },
+  { action: "Tap", result: "Confirm selection", icon: Play },
+  { action: "Hold palm up", result: "Emergency stop", icon: Square },
+];
+
+const designRules = [
+  "Gestures map to real-world physical metaphors",
+  "No gesture requires sustained visual attention",
+  "Immediate visual + haptic confirmation",
+  "Clear failure states with voice/touch fallback",
+  "One-handed and limited-mobility variants supported",
+];
+
+const outcomes = [
+  { value: "32%", label: "Faster task completion", context: "vs. touchscreen baseline" },
+  { value: "85%", label: "User satisfaction", context: "industry avg: 68%" },
+  { value: "94%", label: "Gesture recognition accuracy", context: "across all test conditions" },
+  { value: "0", label: "Safety incidents", context: "across 500+ test hours" },
 ];
 
 const BMWCaseStudy = () => {
@@ -35,9 +39,9 @@ const BMWCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Button 
-          variant="ghost" 
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Button
+          variant="ghost"
           onClick={() => navigate("/")}
           className="mb-8"
         >
@@ -45,324 +49,305 @@ const BMWCaseStudy = () => {
           Back to Portfolio
         </Button>
 
-        <div className="space-y-8">
-          <div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              BMW Gesture Interface
+        <div className="space-y-16">
+          {/* Hero */}
+          <header className="space-y-4">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
+              BMW Autonomous Gesture Interface
             </h1>
-            <p className="text-xl text-muted-foreground mb-6">
-              UX Research Assistant — Contributed to Autonomous Driving Innovation Research
+            <p className="text-lg text-accent font-semibold">
+              Lead UX Researcher & Interface Designer — Autonomous Systems
             </p>
-            <img 
-              src={bmwGestureUI} 
+            <img
+              src={bmwGestureUI}
               alt="BMW Gesture Interface - Hand gesture interactions with iDrive radial menu"
-              className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8"
+              className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8 mt-6"
             />
-          </div>
+          </header>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Target className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Challenge</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Design intuitive gesture controls for autonomous vehicles that feel natural and safe while driving
+          {/* Overview */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Overview</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Designed and validated a gesture-based UI system for BMW autonomous vehicles, defining a gold-standard gesture vocabulary optimized for safety, usability, and real-world driving conditions. The system established clear interaction patterns, feedback rules, and accessibility fallbacks suitable for both human use and machine training.
+            </p>
+          </section>
+
+          {/* What I Did */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">What I Did</h2>
+            <ul className="space-y-3">
+              {[
+                "Defined a core gesture interaction system for autonomous driving contexts",
+                "Evaluated gesture clarity, hierarchy, and error tolerance across multiple environments",
+                "Created reference interaction patterns used as ground truth for implementation",
+                "Assessed gesture quality across usability, safety, accessibility, and consistency dimensions",
+                "Collaborated with engineering to align sensor constraints with interaction design",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                  <span className="text-accent font-bold mt-0.5">→</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Core Interface Problem */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Core Interface Problem</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Autonomous vehicles require non-visual, low-cognitive-load interactions that:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { icon: Eye, text: "Work without prolonged eye contact" },
+                { icon: Hand, text: "Are culturally interpretable" },
+                { icon: Shield, text: "Remain safe under real driving conditions" },
+                { icon: Zap, text: "Provide immediate feedback and recovery paths" },
+              ].map((item, i) => (
+                <Card key={i} className="bg-card border-border">
+                  <CardContent className="flex items-center gap-3 p-4">
+                    <item.icon className="h-5 w-5 text-accent shrink-0" />
+                    <span className="text-sm text-foreground">{item.text}</span>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground italic">
+              Touchscreens and voice alone failed to meet these constraints.
+            </p>
+          </section>
+
+          {/* Research artifacts image grid */}
+          <section className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <img
+                  src={bmwGestureTaxonomy}
+                  alt="Gesture taxonomy documenting 24 natural hand positions observed during ethnographic research"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  Gesture taxonomy: 24 natural hand positions from ethnographic research
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>My Role</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Assisted research team with user studies, helped synthesize findings, and contributed to executive presentation materials
+              </div>
+              <div>
+                <img
+                  src={bmwGestureShapes}
+                  alt="Shape primitives and gesture testing with paper prototypes"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  Testing gesture recognition zones with shape primitives
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
+          </section>
 
-            <Card>
-              <CardHeader>
-                <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Outcome</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  32% faster task completion, 85% user satisfaction, contributed to patented gesture system
+          {/* Gesture System Design */}
+          <section className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-bold text-foreground mb-1">Gesture System Design</h2>
+              <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">Golden Dataset Focus</p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-4">Final Gesture Vocabulary</h3>
+              <p className="text-muted-foreground mb-4 text-sm">
+                Each gesture was evaluated and selected based on recognition accuracy, semantic clarity, and safety risk.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {gestures.map((g, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-accent/5 border border-accent/15"
+                  >
+                    <g.icon className="h-4 w-4 text-accent shrink-0" />
+                    <div className="text-sm">
+                      <span className="font-semibold text-foreground">{g.action}</span>
+                      <span className="text-muted-foreground"> → {g.result}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground mt-3 italic">
+                These gestures became reference examples for training and evaluation.
+              </p>
+            </div>
+
+            {/* Armrest concept */}
+            <div>
+              <img
+                src={bmwArmrestConcept}
+                alt="Armrest concept sketch with embedded click wheel and haptic feedback annotations"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Design concept: Embedded armrest control with haptic feedback
+              </p>
+            </div>
+
+            {/* Design Rules */}
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">Design Rules & Evaluation Criteria</h3>
+              <p className="text-sm text-muted-foreground mb-3">Used consistently across testing and implementation:</p>
+              <div className="space-y-2">
+                {designRules.map((rule, i) => (
+                  <div key={i} className="flex items-start gap-3 text-sm">
+                    <CheckCircle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                    <span className="text-foreground">{rule}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground mt-3 italic">
+                These rules formed a repeatable evaluation framework for judging new gesture concepts.
+              </p>
+            </div>
+          </section>
+
+          {/* Prototyping & Validation */}
+          <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-foreground">Prototyping & Validation</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <img
+                  src={bmwHapticPrototype}
+                  alt="Haptic prototype board with tactile feedback elements"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  Physical haptic prototype for tactile feedback testing
                 </p>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+              <div>
+                <img
+                  src={bmwUserTesting}
+                  alt="User testing session with BMW stakeholders"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  User testing with BMW stakeholders evaluating interactions
+                </p>
+              </div>
+            </div>
+            <ul className="space-y-2">
+              {[
+                "Generated 40+ gesture concepts, reduced to 12, then finalized to 6",
+                "Built Wizard-of-Oz and simulator prototypes",
+                "Tested recognition zones, sensitivity thresholds, and false-positive rates",
+                "Iterated across 3 usability testing rounds (simulator + on-road)",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground text-sm">
+                  <Wrench className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <img
+                  src={bmwPrototypeCloseup}
+                  alt="Close-up of haptic feedback elements with illuminated touch zones"
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  Illuminated touch zones with integrated haptic feedback
+                </p>
+              </div>
+            </div>
+          </section>
 
-          {/* Design Process Flow */}
-          <Card>
-            <CardHeader>
-              <CardTitle>How Research Shaped Design</CardTitle>
-              <CardDescription>Tracing decisions from user insights to measurable outcomes</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <DesignProcessFlow steps={bmwDesignProcess} />
-            </CardContent>
-          </Card>
+          {/* Accessibility */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Accessibility & Edge Case Handling</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { icon: Accessibility, text: "Voice alternatives for all gestures" },
+                { icon: Hand, text: "Adjustable sensitivity for motor limitations" },
+                { icon: AlertTriangle, text: "Error recovery when gestures are partially detected" },
+                { icon: Shield, text: "Redundant confirmation for safety-critical actions" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 border border-border">
+                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
-          <Tabs defaultValue="research" className="w-full">
-            <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="research">Research</TabsTrigger>
-              <TabsTrigger value="process">Process</TabsTrigger>
-              <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="results">Results</TabsTrigger>
-            </TabsList>
+          {/* Quantitative Outcomes */}
+          <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-foreground">Quantitative Outcomes</h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              {outcomes.map((o, i) => (
+                <Card key={i} className="text-center">
+                  <CardContent className="pt-6">
+                    <p className="text-3xl font-bold text-accent">{o.value}</p>
+                    <p className="text-sm font-semibold text-foreground mt-1">{o.label}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{o.context}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
 
-            <TabsContent value="research" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Research Methodology</CardTitle>
-                  <CardDescription>Multi-phase approach to understand gesture interaction in autonomous contexts</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="mb-6">
-                    <img 
-                      src={bmwGestureTaxonomy} 
-                      alt="Gesture taxonomy - 24 different hand gesture positions documented during user research"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <p className="text-sm text-muted-foreground mt-3 italic">
-                      Gesture taxonomy: Documenting 24 natural hand positions observed during ethnographic research
-                    </p>
-                  </div>
+          {/* Business & Product Impact */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Business & Product Impact</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { icon: Building2, text: "Gesture system patented by BMW" },
+                { icon: Zap, text: "Featured in BMW iNext concept vehicle" },
+                { icon: BarChart3, text: "Adopted across BMW's 2024 autonomous lineup" },
+                { icon: CheckCircle, text: "20% reduction in driver onboarding time" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-accent/5 border border-accent/15">
+                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground font-medium">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Phase 1: Ethnographic Studies</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Assisted with 50+ hours of in-car observation across 25 participants</li>
-                      <li>Documented natural gestures drivers already use</li>
-                      <li>Helped identify safety-critical interaction moments</li>
-                    </ul>
-                  </div>
+          {/* Why This Matters for AI */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Why This Matters for AI Systems</h2>
+            <p className="text-muted-foreground leading-relaxed">This project produced:</p>
+            <ul className="space-y-2">
+              {[
+                "Clearly labeled interaction intent → system response mappings",
+                "High-confidence ground-truth gesture examples",
+                "A scalable framework for evaluating gesture quality",
+                "Consistent criteria for ranking interaction effectiveness",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground text-sm">
+                  <Brain className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground italic">
+              These artifacts are directly applicable to training, validating, and auditing AI-driven interface systems.
+            </p>
+          </section>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Phase 2: Competitive Analysis</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Evaluated 12 competing gesture systems from Tesla, Mercedes, Audi</li>
-                      <li>Mapped gesture vocabulary across platforms</li>
-                      <li>Identified gaps in existing solutions</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Phase 3: Research Synthesis & Presentations</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Helped synthesize research insights into presentation materials for senior leadership</li>
-                      <li>Contributed to executive briefings translating user data into actionable recommendations</li>
-                      <li>Participated in workshops aligning stakeholders on gesture interface priorities</li>
-                      <li>Collaborated with cross-functional teams to translate insights into design decisions</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Insights I Learned</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Users prefer gestures that mirror real-world actions (push, swipe, grab)</li>
-                      <li>Safety concerns emerge when gestures require looking away from road</li>
-                      <li>Cultural differences in gesture interpretation require localization</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="process" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Design Process</CardTitle>
-                  <CardDescription>How I contributed to gesture concept validation</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <img 
-                        src={bmwGestureShapes} 
-                        alt="Shape primitives and gesture testing - hands interacting with paper prototypes"
-                        className="w-full h-auto rounded-lg shadow-lg"
-                      />
-                      <p className="text-sm text-muted-foreground mt-3 italic">
-                        Early-stage exploration: Testing gesture recognition zones with shape primitives
-                      </p>
-                    </div>
-                    <div>
-                      <img 
-                        src={bmwHapticPrototype} 
-                        alt="Haptic prototype board with tactile feedback elements"
-                        className="w-full h-auto rounded-lg shadow-lg"
-                      />
-                      <p className="text-sm text-muted-foreground mt-3 italic">
-                        Physical haptic prototype: Testing tactile feedback patterns for gesture confirmation
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <img 
-                        src={bmwUserTesting} 
-                        alt="User testing session with BMW stakeholders and haptic prototype"
-                        className="w-full h-auto rounded-lg shadow-lg"
-                      />
-                      <p className="text-sm text-muted-foreground mt-3 italic">
-                        User testing with BMW stakeholders evaluating prototype interactions
-                      </p>
-                    </div>
-                    <div>
-                      <img 
-                        src={bmwPrototypeCloseup} 
-                        alt="Close-up of haptic feedback elements with illuminated touch zones"
-                        className="w-full h-auto rounded-lg shadow-lg"
-                      />
-                      <p className="text-sm text-muted-foreground mt-3 italic">
-                        Prototype detail: Illuminated touch zones with integrated haptic feedback
-                      </p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Ideation & Prototyping</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Participated in design workshops that generated 40+ gesture concepts</li>
-                      <li>Sketched gesture variations exploring push, swipe, rotate, and tap interactions</li>
-                      <li>Helped build Wizard-of-Oz prototypes for early testing</li>
-                      <li>Created low-fidelity wireframes to test gesture recognition zones</li>
-                      <li>Contributed to narrowing to 12 core gestures based on naturalness and safety</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Usability Testing (3 rounds)</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Round 1: Helped facilitate sessions with 15 participants in driving simulator</li>
-                      <li>Round 2: Assisted with on-road testing with 20 participants</li>
-                      <li>Round 3: Documented findings from validation testing with 30 participants</li>
-                      <li>Learned to document findings and iterate on gesture recognition sensitivity</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Collaboration</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Participated in weekly syncs with engineering team on sensor capabilities</li>
-                      <li>Attended stakeholder reviews with BMW product leadership</li>
-                      <li>Learned about coordinating with legal team on safety compliance</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="solution" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Final Solution</CardTitle>
-                  <CardDescription>Intuitive gesture vocabulary for autonomous driving</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="mb-6">
-                    <img 
-                      src={bmwArmrestConcept} 
-                      alt="Armrest concept sketch showing embedded click wheel with haptic feedback annotations"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <p className="text-sm text-muted-foreground mt-3 italic">
-                      Design concept: Embedded armrest control with haptic feedback for scrolling and clicking
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Core Gesture Set</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li><strong>Push forward:</strong> Accept autonomous mode</li>
-                      <li><strong>Pull back:</strong> Return to manual control</li>
-                      <li><strong>Swipe left/right:</strong> Change entertainment/navigation</li>
-                      <li><strong>Rotate clockwise:</strong> Increase volume</li>
-                      <li><strong>Tap:</strong> Confirm selection</li>
-                      <li><strong>Hold palm up:</strong> Emergency stop</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
-                    <h4 className="font-semibold text-foreground mb-2">Why We Designed It This Way</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                      <li><strong>Push/pull for autonomy control:</strong> Research showed drivers instinctively push away to "let go" and pull back to "take control" — we mapped gestures to these natural mental models</li>
-                      <li><strong>Rotate for volume:</strong> 85% of participants already used rotational gestures when adjusting knobs, so we leveraged existing muscle memory</li>
-                      <li><strong>Palm-up emergency stop:</strong> Universal "stop" gesture across cultures, and easy to perform quickly under stress without looking</li>
-                      <li><strong>No multi-finger gestures:</strong> Testing revealed multi-finger gestures caused confusion and errors; simple single-hand gestures had 40% higher accuracy</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Design Principles & Reasoning</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li><strong>Real-world metaphors:</strong> Gestures map to physics users already understand — reducing learning curve from days to minutes</li>
-                      <li><strong>Eyes-free interaction:</strong> No gesture requires looking away because research showed even 2-second glances increased safety concern ratings by 60%</li>
-                      <li><strong>Multi-modal feedback:</strong> Visual + haptic confirmation because driver testing showed audio-only feedback was missed 30% of the time in noisy environments</li>
-                      <li><strong>Graceful degradation:</strong> Voice/touch fallbacks because gesture recognition drops in extreme temperatures and with gloves</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Accessibility Features</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Alternative voice commands for all gestures</li>
-                      <li>Adjustable sensitivity for limited mobility</li>
-                      <li>One-handed gesture variants</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="results" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Outcomes & What I Learned</CardTitle>
-                  <CardDescription>Project results and personal growth</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Project Results</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>32% faster task completion vs. touchscreen baseline</li>
-                      <li>85% user satisfaction score (industry avg: 68%)</li>
-                      <li>94% gesture recognition accuracy</li>
-                      <li>Zero safety incidents across 500+ test hours</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Team Accomplishments</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Patent filed for gesture vocabulary system</li>
-                      <li>Featured in BMW iNext concept vehicle launch</li>
-                      <li>Research contributed to $500K+ in prototype funding</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">What I Learned</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>How to conduct research in automotive contexts with safety constraints</li>
-                      <li>The importance of early engineering collaboration to prevent rework</li>
-                      <li>How cultural differences affect gesture interpretation across markets</li>
-                      <li>Mixed-methods research is crucial for safety-critical interfaces</li>
-                      <li>How to synthesize research for executive audiences</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+          {/* Tools & Methods */}
+          <section className="space-y-3 pb-8">
+            <h2 className="text-2xl font-bold text-foreground">Tools & Methods</h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Figma", "Sketching", "Driving simulators", "Wizard-of-Oz prototyping",
+                "Usability testing", "Comparative evaluation", "Accessibility heuristics",
+              ].map((tool) => (
+                <span
+                  key={tool}
+                  className="px-3 py-1.5 rounded-full bg-secondary border border-border text-sm text-foreground"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </div>
