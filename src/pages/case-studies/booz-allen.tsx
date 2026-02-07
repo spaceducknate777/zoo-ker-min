@@ -1,351 +1,294 @@
-import { ArrowLeft, Users, Target, TrendingUp } from "lucide-react";
+import { ArrowLeft, Eye, ShieldCheck, Accessibility, Brain, CheckCircle, Wrench, BarChart3, Building2, Users, AlertTriangle, Keyboard, Palette, FileCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import DesignProcessFlow from "@/components/DesignProcessFlow";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
 import boozAllenWireframes from "@/assets/booz-allen-wireframes.jpg";
-
-const dotDesignProcess = [
-  {
-    insight: "Users expected content within 3 clicks — deep hierarchies caused 67% abandonment",
-    decision: "Flattened information architecture from 6 levels to 3",
-    outcome: "40% reduction in navigation depth"
-  },
-  {
-    insight: "Technical analysts wanted raw data, but general public was overwhelmed",
-    decision: "Progressive disclosure with expandable summaries + drill-down",
-    outcome: "28% increase in data downloads"
-  },
-  {
-    insight: "Government buildings often have poor lighting affecting screen readability",
-    decision: "High-contrast color system exceeding WCAG requirements",
-    outcome: "100% WCAG 2.1 AA compliance"
-  }
-];
 
 const BoozAllenCaseStudy = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate("/")}
-          className="mb-8"
-        >
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Button variant="ghost" onClick={() => navigate("/")} className="mb-8">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Portfolio
         </Button>
 
-        <div className="space-y-8">
-          <div>
-            <div className="flex flex-wrap gap-2 mb-4">
+        <div className="space-y-16">
+          {/* Hero */}
+          <header className="space-y-4">
+            <div className="flex flex-wrap gap-2 mb-2">
               <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">DOT</span>
               <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">NIH</span>
               <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">NLM</span>
               <span className="px-3 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium">Treasury</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              Federal Design Portfolio
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
+              Booz Allen Hamilton — Federal Healthcare & Government Platforms
             </h1>
-            <p className="text-xl text-muted-foreground mb-4">
-              UX Researcher at Booz Allen Hamilton
+            <p className="text-lg text-accent font-semibold">
+              UI / UX Designer — Large-Scale, Accessibility-First Systems
             </p>
-            <p className="text-lg text-foreground/80 mb-6 max-w-3xl">
-              Over 2 years, I contributed to user research and design across multiple federal agencies. 
-              I learned to <strong>quickly understand new domains</strong>, <strong>work with diverse stakeholders</strong>, 
-              and <strong>apply research methods</strong> in government contexts.
-            </p>
-            <img 
-              src={boozAllenImage} 
+            <img
+              src={boozAllenImage}
               alt="Booz Allen Hamilton Government Design Projects"
-              className="w-full h-96 object-cover object-right rounded-lg shadow-xl"
+              className="w-full h-96 object-cover object-right rounded-lg shadow-xl mt-6"
             />
-          </div>
+          </header>
 
-          {/* What I Learned Section */}
-          <Card className="bg-accent/5 border-accent/20">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-3">What I Learned in Government Consulting</h3>
-              <p className="text-muted-foreground mb-4">
-                Government consulting taught me valuable skills: how to rapidly understand new domains, 
-                build trust with diverse stakeholders, and deliver research within compressed timelines.
-              </p>
-              <div className="grid sm:grid-cols-3 gap-4">
-                <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">4 agencies</p>
-                  <p className="text-sm text-muted-foreground">Different domains I worked across</p>
-                </div>
-                <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">100+</p>
-                  <p className="text-sm text-muted-foreground">User interviews conducted</p>
-                </div>
-                <div className="text-center p-4 rounded-lg bg-background">
-                  <p className="text-2xl font-bold text-accent">WCAG 2.1</p>
-                  <p className="text-sm text-muted-foreground">Accessibility compliance learned</p>
-                </div>
+          {/* Overview */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Overview</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Designed and evaluated mission-critical government and healthcare interfaces used by millions of users, prioritizing accessibility, consistency, error prevention, and policy compliance. Established reference UI standards suitable for high-stakes, regulated environments and AI-driven quality evaluation.
+            </p>
+          </section>
+
+          {/* What I Did */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">What I Did</h2>
+            <ul className="space-y-3">
+              {[
+                "Evaluated and redesigned complex data-heavy government interfaces",
+                "Defined UI consistency rules across multiple tools and teams",
+                "Created gold-standard reference screens for accessibility and usability",
+                "Assessed interfaces across clarity, hierarchy, accessibility, and compliance",
+                "Documented decision logic to support scalable implementation",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                  <span className="text-accent font-bold mt-0.5">→</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Core Interface Problem */}
+          <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-foreground">Core Interface Problem</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Federal and healthcare platforms must serve:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { icon: Users, text: "Diverse user abilities" },
+                { icon: AlertTriangle, text: "High cognitive and emotional load" },
+                { icon: ShieldCheck, text: "Strict policy and compliance requirements" },
+                { icon: Building2, text: "Long-term maintainability across teams" },
+              ].map((item, i) => (
+                <Card key={i} className="bg-card border-border">
+                  <CardContent className="flex items-center gap-3 p-4">
+                    <item.icon className="h-5 w-5 text-accent shrink-0" />
+                    <span className="text-sm text-foreground">{item.text}</span>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div>
+              <p className="text-muted-foreground mb-2">Existing tools suffered from:</p>
+              <ul className="space-y-2">
+                {[
+                  "Inconsistent layouts and components",
+                  "Poor accessibility support",
+                  "High error rates in critical workflows",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <AlertTriangle className="h-4 w-4 text-destructive shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* Wireframes */}
+          <section>
+            <img
+              src={boozAllenWireframes}
+              alt="Design evolution from low to high fidelity wireframes"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+            <p className="text-sm text-muted-foreground mt-2 italic">
+              Iterative wireframe development from low-fidelity sketches to high-fidelity prototypes
+            </p>
+          </section>
+
+          {/* UI System & Design Standards */}
+          <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-foreground">UI System & Design Standards</h2>
+
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-4">Key Interfaces</h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { icon: Building2, text: "Public-facing healthcare tools" },
+                  { icon: BarChart3, text: "Internal government dashboards" },
+                  { icon: FileCheck, text: "Data entry and reporting workflows" },
+                  { icon: Eye, text: "Date, time, and system-status components" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-accent/5 border border-accent/15">
+                    <item.icon className="h-4 w-4 text-accent shrink-0" />
+                    <span className="text-sm text-foreground">{item.text}</span>
+                  </div>
+                ))}
               </div>
-            </CardContent>
-          </Card>
+              <p className="text-sm text-muted-foreground mt-3 italic">
+                Each interface was evaluated for readability, predictability, and accessibility under stress.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Target className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Challenge</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Support user-centered design across federal agencies with different domains, stakeholders, and compliance requirements
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <Users className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>My Role</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Conducted user interviews, usability testing, and research synthesis; learned to work across different government domains
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <TrendingUp className="h-8 w-8 text-accent mb-2" />
-                <CardTitle>Contributions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  100+ user interviews, WCAG compliance support, research documentation across multiple projects
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Design Process Flow */}
-          <Card>
-            <CardHeader>
-              <CardTitle>How Research Shaped Design (DOT Project)</CardTitle>
-              <CardDescription>Tracing decisions from user insights to measurable outcomes</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <DesignProcessFlow steps={dotDesignProcess} />
-            </CardContent>
-          </Card>
-
-          <Tabs defaultValue="dot" className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="dot">DOT Redesign</TabsTrigger>
-              <TabsTrigger value="nih">NIH & NLM CDE</TabsTrigger>
-              <TabsTrigger value="fdg">FDG Calendar</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="dot" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Department of Transportation Redesign</CardTitle>
-                  <CardDescription>Modernizing public transportation data access and analysis</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="mb-6">
-                    <img 
-                      src={boozAllenWireframes} 
-                      alt="Design evolution from low to high fidelity wireframes"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <p className="text-sm text-muted-foreground mt-3 italic">
-                      Design evolution showing iterative wireframe development from low-fidelity sketches to high-fidelity prototypes
-                    </p>
+            {/* Accessibility */}
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">Accessibility (Non-Negotiable)</h3>
+              <div className="space-y-2">
+                {[
+                  { icon: Accessibility, text: "WCAG 2.1 AA compliance" },
+                  { icon: Keyboard, text: "Keyboard-only navigation support" },
+                  { icon: Eye, text: "Screen-reader optimized labeling" },
+                  { icon: Palette, text: "Color contrast safe for low vision and color blindness" },
+                ].map((rule, i) => (
+                  <div key={i} className="flex items-start gap-3 text-sm">
+                    <rule.icon className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                    <span className="text-foreground">{rule.text}</span>
                   </div>
+                ))}
+              </div>
+            </div>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
-                    <p className="text-muted-foreground mb-3">
-                      Contributed to UX research for the Department of Transportation's public data platform, 
-                      serving transportation planners, researchers, and policy makers across the nation.
-                    </p>
+            {/* Hierarchy & Layout */}
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">Hierarchy & Layout</h3>
+              <div className="space-y-2">
+                {[
+                  "Clear information grouping",
+                  "Consistent placement of primary actions",
+                  "Reduced visual noise in data-dense views",
+                ].map((rule, i) => (
+                  <div key={i} className="flex items-start gap-3 text-sm">
+                    <CheckCircle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                    <span className="text-foreground">{rule}</span>
                   </div>
+                ))}
+              </div>
+            </div>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">My Research Contributions</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Conducted 25 stakeholder interviews across multiple DOT divisions</li>
-                      <li>Helped analyze user journeys to identify drop-off points</li>
-                      <li>Assisted with card sorting and tree testing exercises</li>
-                      <li>Documented research findings and contributed to insight synthesis</li>
-                    </ul>
+            {/* Error Prevention */}
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-3">Error Prevention</h3>
+              <div className="space-y-2">
+                {[
+                  "Inline validation for forms",
+                  "Explicit system feedback for submissions",
+                  "Clear recovery paths for mistakes",
+                ].map((rule, i) => (
+                  <div key={i} className="flex items-start gap-3 text-sm">
+                    <ShieldCheck className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                    <span className="text-foreground">{rule}</span>
                   </div>
+                ))}
+              </div>
+            </div>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Challenges I Worked On</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Learned how to communicate complex transportation data to diverse public audiences</li>
-                      <li>Helped organize data structures spanning multiple transportation modes into navigation</li>
-                      <li>Worked on balancing legacy system constraints with modern design</li>
-                      <li>Contributed to content hierarchy serving both technical analysts and general public</li>
-                    </ul>
-                  </div>
+            <p className="text-sm text-muted-foreground italic">
+              These rules formed a scoring rubric used to judge interface quality across teams.
+            </p>
+          </section>
 
-                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
-                    <h4 className="font-semibold text-foreground mb-2">Why I Made These Design Decisions</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                      <li><strong>Flattened IA from 6 levels to 3:</strong> Card sorting revealed users expected content within 3 clicks — deep hierarchies caused 67% of users to abandon searches</li>
-                      <li><strong>Progressive disclosure for data tables:</strong> Research showed technical analysts wanted raw data, but general public was overwhelmed — we designed expandable summaries with drill-down capability</li>
-                      <li><strong>High-contrast color system:</strong> Many government employees work in older buildings with poor lighting — WCAG compliance wasn't just checkbox, it improved usability for everyone</li>
-                    </ul>
-                  </div>
+          {/* Prototyping & Validation */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Prototyping & Validation</h2>
+            <ul className="space-y-2">
+              {[
+                "Built high-fidelity Figma prototypes",
+                "Conducted usability testing with real government users",
+                "Iterated on spacing, typography, and interaction clarity",
+                "Validated designs with accessibility audits",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground text-sm">
+                  <Wrench className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Results & What I Learned</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Information architecture changes reduced navigation depth by 40%</li>
-                      <li>Learned to create intuitive data visualization dashboards</li>
-                      <li>Achieved 100% WCAG 2.1 AA compliance</li>
-                      <li>28% increase in data downloads within first quarter</li>
-                      <li>Learned how research drives design decisions in government contexts</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
+          {/* Quantitative & Organizational Impact */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Quantitative & Organizational Impact</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { icon: BarChart3, text: "20% improvement in accessibility scores" },
+                { icon: CheckCircle, text: "Reduced usability-related support issues" },
+                { icon: Users, text: "Design system adopted across multiple teams" },
+                { icon: Building2, text: "Interfaces remain live and in active use" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-accent/5 border border-accent/15">
+                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground font-medium">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
-            <TabsContent value="nih" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>NIH & NLM CDE Repository Redesign</CardTitle>
-                  <CardDescription>Streamlining clinical data element management for medical researchers</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
-                    <p className="text-muted-foreground mb-3">
-                      Redesigned the Common Data Elements (CDE) Repository for the National Institutes of Health 
-                      and National Library of Medicine, enabling medical researchers to discover and standardize 
-                      clinical research data elements.
-                    </p>
-                  </div>
+          {/* Business & Stakeholder Impact */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Business & Stakeholder Impact</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                { icon: Users, text: "Improved user satisfaction across public-facing tools" },
+                { icon: ShieldCheck, text: "Increased stakeholder trust through clarity and predictability" },
+                { icon: Wrench, text: "Reduced rework by aligning UI standards early" },
+                { icon: BarChart3, text: "Accelerated development through shared components" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 border border-border">
+                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </section>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Interviewed 18 clinical researchers and data scientists</li>
-                      <li>Observed workflows at 3 major research institutions</li>
-                      <li>Analyzed search logs revealing common query patterns and failures</li>
-                      <li>Reviewed NIH standards and metadata requirements</li>
-                    </ul>
-                  </div>
+          {/* Why This Matters for AI */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Why This Matters for AI Systems</h2>
+            <p className="text-muted-foreground leading-relaxed">This work produced:</p>
+            <ul className="space-y-2">
+              {[
+                "High-quality accessibility-labeled UI examples",
+                "Clear distinctions between compliant vs. non-compliant designs",
+                "Consistent component logic across tools",
+                "A repeatable framework for evaluating AI-generated government interfaces",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground text-sm">
+                  <Brain className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-muted-foreground italic">
+              Government and healthcare UIs are ideal training environments for AI quality judgment because they demand precision, clarity, and zero ambiguity.
+            </p>
+          </section>
 
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Highly technical users with specialized domain knowledge</li>
-                      <li>Complex metadata schemas with nested relationships</li>
-                      <li>Need for precise search across thousands of data elements</li>
-                      <li>Integration with existing research tools and workflows</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
-                    <h4 className="font-semibold text-foreground mb-2">Why We Chose This Approach</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                      <li><strong>Faceted search over keyword-only:</strong> Researchers told us they think in categories (disease, study type, data format) — keyword search failed 70% of the time for complex queries</li>
-                      <li><strong>Side-by-side CDE comparison:</strong> Contextual inquiry showed researchers constantly opened multiple tabs to compare elements — we brought comparison into one view</li>
-                      <li><strong>Visual metadata trees:</strong> Nested relationships were invisible in flat lists; tree visualization reduced time to understand relationships by 50%</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Implemented advanced faceted search with medical ontology support</li>
-                      <li>Created streamlined CDE comparison and selection workflow</li>
-                      <li>Designed clear metadata visualization for complex relationships</li>
-                      <li>Built API integration for programmatic access</li>
-                      <li>45% reduction in time to find relevant CDEs</li>
-                      <li>62% increase in CDE repository usage by research community</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="fdg" className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>FDG Fiscal Data Group Release Calendar Redesign</CardTitle>
-                  <CardDescription>Transforming government financial data publication scheduling</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Project Overview</h4>
-                    <p className="text-muted-foreground mb-3">
-                      Redesigned the Fiscal Data Group's release calendar interface used by Treasury Department 
-                      staff and financial analysts to track and plan for government financial data publications.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Research & Discovery</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Shadowed Treasury staff during data release planning sessions</li>
-                      <li>Analyzed 6 months of calendar usage patterns and pain points</li>
-                      <li>Conducted usability testing with 15 financial analysts</li>
-                      <li>Benchmarked against industry-leading calendar and scheduling tools</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Key Challenges</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Complex multi-dataset release dependencies and schedules</li>
-                      <li>Need to display historical, current, and projected releases</li>
-                      <li>Users required both calendar and list views for different tasks</li>
-                      <li>Critical need for accuracy in publication timing</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-4 bg-accent/5 rounded-lg border border-accent/20">
-                    <h4 className="font-semibold text-foreground mb-2">Design Rationale</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                      <li><strong>Dual calendar + list views:</strong> Usage analysis showed 60% preferred visual calendar for planning, 40% preferred searchable lists for specific lookups — we supported both workflows</li>
-                      <li><strong>Color-coded release status:</strong> After observing confusion about "delayed" vs "rescheduled," we created distinct visual states with clear labels</li>
-                      <li><strong>Email subscriptions:</strong> Analysts told us they set manual calendar reminders that frequently failed — automated notifications reduced missed releases by 83%</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Solution & Impact</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Created dual-view interface: interactive calendar and filterable list</li>
-                      <li>Implemented smart filtering by dataset, agency, and date range</li>
-                      <li>Designed clear visual indicators for release status and changes</li>
-                      <li>Built subscription system for release notifications</li>
-                      <li>Reduced time to find release dates by 55%</li>
-                      <li>83% decrease in missed or delayed data release communications</li>
-                      <li>System adopted by 8 additional federal agencies</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">What I Learned Across Projects</h4>
-                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                      <li>Accessibility-first design accelerates development and reduces rework</li>
-                      <li>How to build reusable research templates and design patterns</li>
-                      <li>Deep user research reveals needs beyond stated requirements</li>
-                      <li>Government users appreciate modern interfaces that respect data complexity</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+          {/* Tools & Methods */}
+          <section className="space-y-3 pb-8">
+            <h2 className="text-2xl font-bold text-foreground">Tools & Methods</h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Figma", "Design systems", "Accessibility audits", "Usability testing",
+                "UI evaluation", "Government design standards",
+              ].map((tool) => (
+                <span
+                  key={tool}
+                  className="px-3 py-1.5 rounded-full bg-secondary border border-border text-sm text-foreground"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
     </div>
