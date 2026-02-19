@@ -95,12 +95,13 @@ const CreativeWork = () => {
     <section id="creative" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-sm font-bold text-accent uppercase tracking-widest mb-2">Experimental Design & Practice</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Beyond UX: Creative Practice
+            The Lab
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent/50 mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            My creative practice in stop-motion animation, sculpture, and digital illustration sharpens my eye for detail, teaches patience in iteration, and reminds me that great experiences are built frame-by-frame.
+            Frame-by-frame animation sharpens my obsession with micro-interactions. Sculpture builds spatial reasoning for 3D and spatial computing. Every piece of creative R&D feeds directly into how I design digital experiences.
           </p>
           <p className="text-base text-foreground/80 max-w-2xl mx-auto mt-4 italic">
             "Every clay model, every animated sequence, every illustration deepens my understanding of how users perceive space, motion, and narrative."
@@ -180,7 +181,7 @@ const CreativeWork = () => {
 
         <div className="bg-accent/5 border border-accent/20 rounded-xl p-8 text-center animate-fade-in">
           <h3 className="text-xl font-bold text-foreground mb-3">
-            How Creative Work Informs My UX Process
+            How Creative R&D Informs My Design Process
           </h3>
           <div className="grid md:grid-cols-4 gap-6 mt-6 text-sm text-muted-foreground">
             <div className="space-y-2">
@@ -189,15 +190,15 @@ const CreativeWork = () => {
             </div>
             <div className="space-y-2">
               <p className="font-semibold text-accent">Spatial Reasoning</p>
-              <p>Sculpture strengthens my ability to design for 3D spaces, AR/VR, and physical products.</p>
+              <p>Sculpture strengthens my ability to design for spatial computing, AR/VR, and hardware-software bridges.</p>
             </div>
             <div className="space-y-2">
               <p className="font-semibold text-accent">Digital-Physical Bridge</p>
               <p>3D digital sculpting connects traditional craftsmanship with modern prototyping workflows.</p>
             </div>
             <div className="space-y-2">
-              <p className="font-semibold text-accent">Visual Communication</p>
-              <p>Illustration enhances my ability to communicate complex ideas through visual storytelling.</p>
+              <p className="font-semibold text-accent">Narrative Design</p>
+              <p>Sequential illustration and storyboarding strengthen my ability to map complex user journeys and present data-driven research.</p>
             </div>
           </div>
         </div>

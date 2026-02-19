@@ -33,7 +33,7 @@ const Hero = () => {
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-accent uppercase tracking-wide">
-                Product Designer & Maker
+                Product Designer & Creative Strategist
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 Designing at the intersection of craft, code & interaction
@@ -41,7 +41,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I bring a maker's eye to product design — from sculpting and stop-motion to patented gesture interfaces. Every project is built frame-by-frame with obsessive attention to form, motion, and emotion.
+              Summa Cum Laude SCAD graduate specializing in the intersection of high-stakes enterprise systems and narrative-driven maker practices. From patented gesture interfaces to hand-built prototypes — every project is crafted frame-by-frame with obsessive attention to form, motion, and emotion.
             </p>
 
             {/* Buttons */}

@@ -15,7 +15,7 @@ const Projects = () => {
     },
     {
       title: "Enterprise Financial Tools",
-      role: "UX/UI Designer",
+      role: "Visual Language & Narrative Strategist",
       icon: "💰",
       metrics: "67% task completion boost | ↓52% support calls",
       description: "Reducing complexity across critical financial workflows for military families at scale.",
