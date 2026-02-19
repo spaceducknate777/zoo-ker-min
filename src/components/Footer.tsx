@@ -95,7 +95,10 @@ const Footer = () => {
             </Button>
           </div>
           
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground italic">
+            Made with heart (and a bit of clay) in Woodstock, VA
+          </p>
+          <p className="text-xs text-muted-foreground/60 mt-1">
             © {new Date().getFullYear()} Nathan Zukerman. All rights reserved.
           </p>
         </div>
