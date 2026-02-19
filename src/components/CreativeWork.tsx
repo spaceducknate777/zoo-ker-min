@@ -83,6 +83,18 @@ const CreativeWork = () => {
           ]
         },
         {
+          title: "Ergonomic Prototyping: Buzz Hammer",
+          type: "gallery" as const,
+          description: "Human factors study translating a fictional prop into a functional, ergonomic form — from concept sketch to pink foam rough to painted final model.",
+          skills: "Industrial Design, Ergonomics, Form Factor Testing, Fabrication",
+          images: [
+            "/creative/buzz-hammer-sketch.jpg",
+            "/creative/buzz-hammer-foam.jpg",
+            "/creative/buzz-hammer-painted.jpg",
+            "/creative/buzz-hammer-reference.jpeg"
+          ]
+        },
+        {
           title: "Digital 3D Sculpting",
           type: "gallery" as const,
           description: "Character modeling in Nomad Sculpt that bridges traditional craftsmanship with modern prototyping workflows.",
