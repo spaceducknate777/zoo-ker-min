@@ -2,11 +2,11 @@ import { ArrowLeft, Eye, ShieldCheck, Accessibility, Brain, CheckCircle, Wrench,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import usaaStoryboard from "@/assets/usaa-storyboard-illustrations.png";
+import usaaWhiteboardStoryboard from "@/assets/usaa-whiteboard-storyboard.jpg";
+import usaaSketchesJourney from "@/assets/usaa-sketches-journey.jpg";
+import usaaNathanReviewing from "@/assets/usaa-nathan-reviewing.jpg";
+import usaaWhiteboardCloseup from "@/assets/usaa-whiteboard-closeup.jpg";
 import usaaIcons from "@/assets/usaa-icons.png";
-import usaaWhiteboard from "@/assets/usaa-whiteboard-process.jpg";
-import usaaWorkshop from "@/assets/usaa-workshop.jpg";
-import usaaSketches from "@/assets/usaa-sketches.jpg";
 import usaaIconProcess from "@/assets/usaa-icon-process.png";
 
 const interfaces = [
@@ -34,13 +34,16 @@ const USAACaseStudy = () => {
               USAA Digital Banking Experience
             </h1>
             <p className="text-lg text-accent font-semibold">
-              UI / UX Designer — Financial Product Interfaces
+              Visual Language & Narrative Strategist — Financial Product Interfaces
             </p>
             <img
-              src={usaaStoryboard}
-              alt="USAA storyboard illustrations showing the claims process user journey"
-              className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8 mt-6"
+              src={usaaSketchesJourney}
+              alt="Hand-drawn 10-step user journey sketches mapping the USAA claims process from FNOL through estimate delivery"
+              className="w-full h-auto object-contain rounded-lg shadow-xl mt-6"
             />
+            <p className="text-sm text-muted-foreground italic">
+              Hand-drawn user journey: 10-step claims flow from first notice of loss through repair scheduling
+            </p>
           </header>
 
           {/* Overview */}
@@ -96,29 +99,40 @@ const USAACaseStudy = () => {
             </p>
           </section>
 
-          {/* Process images */}
+          {/* Process images — REAL photos */}
           <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Design Process</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <img
-                  src={usaaWhiteboard}
-                  alt="Design workshop with storyboard cards pinned to whiteboard"
+                  src={usaaWhiteboardStoryboard}
+                  alt="Whiteboard with storyboard illustrations pinned showing the complete claims user journey"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 italic">
-                  Workshop: Mapping the claims process with storyboard cards
+                  Workshop: Mapping the claims process with hand-illustrated storyboard cards
                 </p>
               </div>
               <div>
                 <img
-                  src={usaaWorkshop}
-                  alt="Collaborative design session with team members"
+                  src={usaaNathanReviewing}
+                  alt="Nathan reviewing storyboard cards on whiteboard during design critique session"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
                 <p className="text-sm text-muted-foreground mt-2 italic">
-                  Cross-functional collaboration during design review
+                  Design critique: Evaluating storyboard flow and identifying gaps
                 </p>
               </div>
+            </div>
+            <div>
+              <img
+                src={usaaWhiteboardCloseup}
+                alt="Close-up of storyboard cards showing detailed interaction illustrations for claims flow"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Close-up: Illustrated storyboard cards detailing each step from FNOL to communication resolution
+              </p>
             </div>
           </section>
 
@@ -138,18 +152,6 @@ const USAACaseStudy = () => {
               </div>
               <p className="text-sm text-muted-foreground mt-3 italic">
                 Each screen was evaluated for scanability, hierarchy, and decision confidence.
-              </p>
-            </div>
-
-            {/* Sketches */}
-            <div>
-              <img
-                src={usaaSketches}
-                alt="Hand-drawn storyboard sketches showing 10-step user journey"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Early sketches: 10-step user journey from FNOL through estimate delivery and repair scheduling
               </p>
             </div>
 

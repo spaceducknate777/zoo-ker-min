@@ -4,8 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useNavigate } from "react-router-dom";
 import DesignProcessFlow from "@/components/DesignProcessFlow";
-import finavImage from "@/assets/finav-project.jpg";
-import finavSketches from "@/assets/finav-sketches.jpg";
+import finav3dFloorplan from "@/assets/finav-3d-floorplan.webp";
+import finavWireframeSketches from "@/assets/finav-wireframe-sketches.png";
+import finavUiScreens from "@/assets/finav-ui-screens.png";
+import finavWhiteboardWireframes from "@/assets/finav-whiteboard-wireframes.webp";
 
 const finavDesignProcess = [
   {
@@ -49,8 +51,8 @@ const MonsterAisleCaseStudy = () => {
               UX Design Student — Academic Project on Firefighter Navigation & Communication
             </p>
             <img 
-              src={finavImage} 
-              alt="FINAV Fire Management System"
+              src={finav3dFloorplan} 
+              alt="FINAV 3D floor plan interface showing building layout with firefighter positions and exit markers"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
             />
           </div>
@@ -192,15 +194,37 @@ const MonsterAisleCaseStudy = () => {
                   <CardDescription>A state-of-the-art fire management system enhancing communication, navigation, and coordination</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="mb-6">
-                    <img 
-                      src={finavSketches} 
-                      alt="FINAV AR Interface Design Sketches"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                    />
-                    <p className="text-sm text-muted-foreground mt-3 italic">
-                      Conceptual design sketches showing AR interface development, heads-up display wireframes, and user interaction flows
-                    </p>
+                  <div className="mb-6 space-y-6">
+                    <div>
+                      <img 
+                        src={finavWireframeSketches} 
+                        alt="Hand-drawn wireframe sketches showing exploded floor plan views with room labels and navigation flows"
+                        className="w-full h-auto rounded-lg shadow-lg bg-white p-4"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Early concept sketches: Exploded floor plan views exploring how firefighters navigate between levels
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={finavUiScreens} 
+                        alt="FINAV interface screens showing settings panel, thermal camera feeds with firefighter vitals, and 2D floor plan navigation"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Final UI: Settings, thermal camera feeds with real-time vitals, and interactive floor plan navigation
+                      </p>
+                    </div>
+                    <div>
+                      <img 
+                        src={finavWhiteboardWireframes} 
+                        alt="Whiteboard wireframes exploring persona attributes, tablet layouts, map views, and live stream interfaces"
+                        className="w-full h-auto rounded-lg shadow-lg"
+                      />
+                      <p className="text-sm text-muted-foreground mt-3 italic">
+                        Whiteboard session: Exploring persona attributes, tablet layout options, and live stream interface concepts
+                      </p>
+                    </div>
                   </div>
 
                   <div>
