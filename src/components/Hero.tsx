@@ -65,7 +65,7 @@ const Hero = () => {
                     className="border-2 hover:border-accent transition-all duration-300"
                   >
                     <a 
-                      href="/resume/nathan-zukerman-resume.pdf" 
+                      href="/resume/nathan-zukerman-resume.html" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >

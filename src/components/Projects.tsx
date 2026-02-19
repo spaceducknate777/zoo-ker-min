@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
+import finavImage from "@/assets/finav-3d-floorplan.webp";
 
 const Projects = () => {
   const projects = [
@@ -21,6 +22,15 @@ const Projects = () => {
       description: "Reducing complexity across critical financial workflows for military families at scale.",
       image: usaaImage,
       link: "/case-studies/usaa"
+    },
+    {
+      title: "Safety-Critical Systems Design",
+      role: "UX Researcher & Interaction Designer",
+      icon: "🔥",
+      metrics: "AR navigation | Real-time vitals | SAGIS integration",
+      description: "Designing life-saving AR interfaces for firefighter navigation, communication, and situational awareness in zero-visibility environments.",
+      image: finavImage,
+      link: "/case-studies/monster-aisle"
     }
   ];
 
@@ -38,7 +48,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 animate-fade-in">
+        <div className="grid md:grid-cols-3 gap-8 animate-fade-in">
           {projects.map((project, index) => (
             <div key={index} className="animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
               <ProjectCard {...project} />
