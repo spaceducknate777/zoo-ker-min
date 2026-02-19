@@ -1,25 +1,15 @@
 import ProjectCard from "./ProjectCard";
-import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-storyboard.png";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "BMW Autonomous Gesture Interface",
-      role: "Lead UX Researcher",
-      icon: "🚗",
-      metrics: "94% intuitive recognition | ↓40% cognitive load | $500K funding secured",
-      description: "Designing and validating interaction patterns for next-generation autonomous vehicles.",
-      image: bmwImage,
-      link: "/case-studies/bmw"
-    },
-    {
       title: "Government Platform Redesign",
       role: "Senior UX Research Consultant",
       icon: "🏛️",
       metrics: "4 agencies | 100% WCAG | 45% avg. task improvement",
-      description: "Owning usability improvements in high-constraint, data-heavy federal systems.",
+      description: "Accessibility-first redesign of mission-critical federal healthcare and government interfaces serving millions of users.",
       image: boozAllenImage,
       link: "/case-studies/booz-allen"
     },
@@ -28,7 +18,7 @@ const Projects = () => {
       role: "UX/UI Designer",
       icon: "💰",
       metrics: "67% task completion boost | ↓52% support calls",
-      description: "Reducing complexity across critical financial workflows for military families.",
+      description: "Reducing complexity across critical financial workflows for military families at scale.",
       image: usaaImage,
       link: "/case-studies/usaa"
     }
@@ -36,18 +26,19 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-secondary/10">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
+          <p className="text-sm font-bold text-muted-foreground uppercase tracking-widest mb-2">Professional Scale</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Featured Work
+            Enterprise & Government Work
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent/50 mx-auto rounded-full mb-6" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
-            Each case study shows goals, constraints, tradeoffs, and outcomes
+            Proving I can handle complexity, compliance, and millions of users
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 animate-fade-in">
+        <div className="grid md:grid-cols-2 gap-8 animate-fade-in">
           {projects.map((project, index) => (
             <div key={index} className="animate-scale-in" style={{ animationDelay: `${index * 100}ms` }}>
               <ProjectCard {...project} />

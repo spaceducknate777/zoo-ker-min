@@ -1,4 +1,4 @@
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight, FileText, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import portraitImage from "@/assets/nathan-profile.jpeg";
@@ -17,41 +17,45 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 mb-4">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
-              </span>
-              <span className="text-sm font-medium text-foreground">Open to Opportunities</span>
+            <div className="flex flex-wrap gap-3 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                </span>
+                <span className="text-sm font-medium text-foreground">Open to Opportunities</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/30">
+                <GraduationCap className="h-4 w-4 text-success" />
+                <span className="text-sm font-medium text-foreground">SCAD — Summa Cum Laude</span>
+              </div>
             </div>
             
             <div className="space-y-2">
               <p className="text-lg font-semibold text-accent uppercase tracking-wide">
-                Product Designer
+                Product Designer & Maker
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                Solving complex problems from discovery to design
+                Designing at the intersection of craft, code & interaction
               </h1>
             </div>
             
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I design and iterate end-to-end product experiences — translating user insight, technical constraints, and business needs into clear, usable interfaces.
+              I bring a maker's eye to product design — from sculpting and stop-motion to patented gesture interfaces. Every project is built frame-by-frame with obsessive attention to form, motion, and emotion.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              {/* View Case Studies Button */}
               <Button 
                 variant="accent" 
                 size="lg"
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("featured-project")}
                 className="group shadow-lg hover:shadow-[var(--shadow-glow)] transition-all duration-300"
               >
-                View Product Case Studies
+                See My Best Work
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
 
-              {/* Resume Button */}
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button 
@@ -83,7 +87,7 @@ const Hero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elevated)] ring-1 ring-border/50 hover:ring-accent/50 transition-all duration-500 hover:shadow-[var(--shadow-glow)]">
               <img 
                 src={portraitImage} 
-                alt="Nathan Zukerman, Product Designer"
+                alt="Nathan Zukerman, Product Designer & Maker"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent pointer-events-none" />

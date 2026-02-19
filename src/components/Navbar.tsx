@@ -32,8 +32,11 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("about")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection("projects")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Case Studies
+            <button onClick={() => scrollToSection("featured-project")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Work
+            </button>
+            <button onClick={() => scrollToSection("creative")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Creative
             </button>
             <button onClick={() => scrollToSection("contact")} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Contact
@@ -62,8 +65,11 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("about")} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
               About
             </button>
-            <button onClick={() => scrollToSection("projects")} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
-              Case Studies
+            <button onClick={() => scrollToSection("featured-project")} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
+              Work
+            </button>
+            <button onClick={() => scrollToSection("creative")} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
+              Creative
             </button>
             <button onClick={() => scrollToSection("contact")} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
               Contact
