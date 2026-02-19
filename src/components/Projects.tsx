@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import usaaImage from "@/assets/usaa-storyboard.png";
+import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/booz-allen-project.jpg";
 
 const Projects = () => {
