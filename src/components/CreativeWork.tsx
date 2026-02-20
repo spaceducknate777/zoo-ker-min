@@ -72,7 +72,7 @@ const CreativeWork = () => {
           title: "Digital Illustrations",
           type: "gallery" as const,
           description: "Visual storytelling and sequential storyboarding. Exploring narrative through color, composition, and character.",
-          images: ["/creative/illustration-1.png", "/creative/illustration-2.png", "/creative/illustration-3.png", "/creative/illustration-4.png", "/creative/illustration-5.png", "/creative/illustration-6.png", "/creative/illustration-7.png", "/creative/illustration-8.png", "/creative/illustration-9.jpg", "/creative/illustration-10.jpg", "/creative/illustration-11.png", "/creative/illustration-12.jpg", "/creative/illustration-13.png", "/creative/illustration-14.png"],
+          images: ["/creative/illustration-1.png", "/creative/illustration-2.png", "/creative/illustration-3.png", "/creative/illustration-4.png", "/creative/illustration-5.png", "/creative/illustration-6.png", "/creative/illustration-7.png", "/creative/illustration-8.png", "/creative/illustration-9.jpg", "/creative/illustration-10.jpg", "/creative/illustration-11.png", "/creative/illustration-12.jpg", "/creative/illustration-13.png", "/creative/illustration-14.png", "/creative/illustration-15.png", "/creative/illustration-16.png"],
           hero: "/creative/illustration-1.png",
         },
       ],
