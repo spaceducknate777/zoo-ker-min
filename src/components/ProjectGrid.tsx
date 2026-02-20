@@ -10,6 +10,7 @@ type Category = "Featured" | "Product / UX" | "Creative";
 
 interface Project {
   title: string;
+  outcome: string;
   category: Category[];
   image: string;
   tag: string;
@@ -18,36 +19,40 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "BMW Autonomous Gesture Interface",
+    title: "BMW — Autonomous Gesture Interface",
+    outcome: "Patented. 94% intuitive recognition. $500K+ prototype funding.",
     category: ["Featured", "Product / UX"],
     image: bmwImage,
-    tag: "Product / UX",
+    tag: "Interaction Design · Automotive",
     link: "/case-studies/bmw",
   },
   {
-    title: "Government Platform Redesign",
+    title: "Booz Allen — Federal Platform Redesign",
+    outcome: "5 agencies. 30% accessibility improvement. NIH search time −45%.",
     category: ["Featured", "Product / UX"],
     image: boozAllenImage,
-    tag: "Product / UX",
+    tag: "UX Research & Strategy · Gov",
     link: "/case-studies/booz-allen",
   },
   {
-    title: "Enterprise Financial Tools",
+    title: "USAA — Financial Tools for Military Families",
+    outcome: "Iconography adopted sitewide. 25% engagement lift. 12M+ users.",
     category: ["Product / UX"],
     image: usaaImage,
-    tag: "Product / UX",
+    tag: "Design Systems · Fintech",
     link: "/case-studies/usaa",
   },
   {
-    title: "Safety-Critical Systems Design",
+    title: "FiNav — Spatial Wayfinding UI",
+    outcome: "3D floor plan interface for real-time indoor navigation.",
     category: ["Product / UX"],
     image: finavImage,
-    tag: "Product / UX",
+    tag: "Spatial UI · Prototype",
     link: "/case-studies/monster-aisle",
   },
 ];
 
-const filters: Category[] = ["Featured", "Product / UX", "Creative"];
+const filters: Category[] = ["Featured", "Product / UX"];
 
 const ProjectGrid = () => {
   const [active, setActive] = useState<Category>("Featured");
@@ -57,24 +62,25 @@ const ProjectGrid = () => {
   return (
     <section id="projects" className="py-12 px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        {/* Filter tabs */}
-        <div className="flex gap-2 mb-8">
-          {filters.map((f) => (
-            <button
-              key={f}
-              onClick={() => setActive(f)}
-              className={`text-sm px-4 py-1.5 rounded-md border transition-colors ${
-                active === f
-                  ? "border-foreground text-foreground"
-                  : "border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
-              }`}
-            >
-              {f}
-            </button>
-          ))}
+        <div className="flex items-baseline justify-between mb-8">
+          <h2 className="text-2xl font-bold text-foreground">selected work.</h2>
+          <div className="flex gap-2">
+            {filters.map((f) => (
+              <button
+                key={f}
+                onClick={() => setActive(f)}
+                className={`text-sm px-4 py-1.5 rounded-md border transition-colors ${
+                  active === f
+                    ? "border-foreground text-foreground"
+                    : "border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
+                }`}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* Grid */}
         <div className="grid md:grid-cols-2 gap-6">
           {filtered.map((project, i) => (
             <Link
@@ -89,24 +95,21 @@ const ProjectGrid = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="p-5 flex items-center justify-between">
+              <div className="p-5 flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
+                  <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors mb-1">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground mt-0.5">{project.tag}</p>
+                  <p className="text-xs text-accent font-medium mb-1">{project.outcome}</p>
+                  <p className="text-xs text-muted-foreground">{project.tag}</p>
                 </div>
-                <div className="w-8 h-8 rounded-full border border-border flex items-center justify-center group-hover:border-accent transition-colors">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full border border-border flex items-center justify-center group-hover:border-accent transition-colors mt-0.5">
                   <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors" />
                 </div>
               </div>
             </Link>
           ))}
         </div>
-
-        {active === "Creative" && filtered.length === 0 && (
-          <p className="text-muted-foreground text-center py-12">Creative work is showcased in The Lab section below.</p>
-        )}
       </div>
     </section>
   );
