@@ -53,7 +53,7 @@ const MonsterAisleCaseStudy = () => {
             <img 
               src={finav3dFloorplan} 
               alt="FINAV 3D floor plan interface showing building layout with firefighter positions and exit markers"
-              className="w-full h-96 object-cover rounded-lg shadow-xl"
+              className="w-full h-auto object-contain rounded-lg shadow-xl"
             />
           </div>
 
