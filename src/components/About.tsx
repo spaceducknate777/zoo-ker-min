@@ -1,58 +1,52 @@
 const About = () => {
   return (
-    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            About
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent/50 mx-auto rounded-full" />
-        </div>
+    <section id="about" className="py-20 px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-2xl font-bold text-foreground mb-8">about.</h2>
 
-        <div className="animate-fade-in space-y-6">
-          <p className="text-xl text-foreground/90 leading-relaxed text-center">
+        <div className="max-w-3xl space-y-5">
+          <p className="text-base text-muted-foreground leading-relaxed">
             I'm a Product Designer & Creative Strategist with 7+ years of post-grad experience bridging enterprise complexity and narrative-driven maker practices. SCAD Summa Cum Laude graduate with a 4.0 GPA.
           </p>
-          
-          <p className="text-lg text-muted-foreground leading-relaxed text-center">
+          <p className="text-base text-muted-foreground leading-relaxed">
             I own problems end-to-end — from ethnographic research and spatial reasoning to hand-built prototypes and high-fidelity interfaces. My sculpture and animation background gives me a maker's intuition that most designers simply don't have.
           </p>
 
-          <div className="bg-card border border-border rounded-xl p-6 mt-8">
-            <h3 className="font-semibold text-foreground mb-4 text-center">What I bring to product teams:</h3>
-            <ul className="space-y-3 text-muted-foreground max-w-2xl mx-auto">
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
-                <span>End-to-end ownership from discovery through delivery</span>
+          <div className="pt-6 border-t border-border">
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">What I bring to product teams</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
+                End-to-end ownership from discovery through delivery
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
-                <span>Clear communication with engineers and stakeholders</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
+                Clear communication with engineers and stakeholders
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
-                <span>Experience navigating technical and organizational constraints</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
+                Experience navigating technical and organizational constraints
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
-                <span>Focus on shipping work that holds up in real-world conditions</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
+                Focus on shipping work that holds up in real-world conditions
               </li>
             </ul>
           </div>
 
-          <div className="bg-card border border-border rounded-xl p-6 mt-8">
-            <h3 className="font-semibold text-foreground mb-4 text-center">Core Values</h3>
-            <ul className="space-y-3 text-muted-foreground max-w-2xl mx-auto">
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
+          <div className="pt-6 border-t border-border">
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Core Values</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
                 <span><strong className="text-foreground">Radical Empathy:</strong> Designing for military families, firefighters, and the underserved</span>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
                 <span><strong className="text-foreground">Maker's Integrity:</strong> Building prototypes by hand to ensure they work in the real world</span>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-accent font-bold">→</span>
+              <li className="flex items-start gap-2">
+                <span className="text-accent mt-0.5">→</span>
                 <span><strong className="text-foreground">Innovation over Templates:</strong> Rejecting cookie-cutter UX for patented interaction models</span>
               </li>
             </ul>
