@@ -25,6 +25,79 @@ const CreativeWork = () => {
 
   const methodologyGroups = [
     {
+      methodology: "Physical Computing & Haptics",
+      methodologyIcon: Cpu,
+      methodologyDescription: "Haptic Input System Architecture & Interactive Hardware",
+      projects: [
+        {
+          title: "SNAPPED: 100-Point Physical Dashboard",
+          type: "gallery" as const,
+          description: "Designed and fabricated a 100-point physical-digital dashboard interface using Arduino Mega, arcade push buttons, and LED arrays — researching haptic feedback loops and physical Information Architecture.",
+          skills: "Physical Computing, Arduino, Haptic Feedback, System Architecture, Fabrication",
+          images: [
+            "/creative/snapped-concept.png",
+            "/creative/snapped-exploded-view.png",
+            "/creative/snapped-assembly.png",
+            "/creative/snapped-electrical.png",
+            "/creative/snapped-fritzing.png",
+            "/creative/snapped-construction.png",
+            "/creative/snapped-components.png"
+          ]
+        }
+      ]
+    },
+    {
+      methodology: "Human Factors & Form",
+      methodologyIcon: Shapes,
+      methodologyDescription: "Iterative Physical Prototyping & Ergonomic Studies",
+      projects: [
+        {
+          title: "Ergonomic Prototyping: Buzz Hammer",
+          type: "gallery" as const,
+          description: "Human factors study translating a fictional prop into a functional, ergonomic form — from concept sketch to pink foam rough to painted final model.",
+          skills: "Industrial Design, Ergonomics, Form Factor Testing, Fabrication",
+          images: [
+            "/creative/buzz-hammer-sketch.jpg",
+            "/creative/buzz-hammer-foam.jpg",
+            "/creative/buzz-hammer-painted.jpg",
+            "/creative/buzz-hammer-reference.jpeg"
+          ]
+        },
+        {
+          title: "Sculpey Sculptures",
+          type: "gallery" as const,
+          description: "Three-dimensional world-building that sharpens spatial reasoning and tactile design thinking for spatial computing and hardware-software bridges.",
+          skills: "Spatial Reasoning, Ergonomics, Material Understanding",
+          images: [
+            "/creative/sculpey-1.jpg",
+            "/creative/sculpey-2.jpg",
+            "/creative/sculpey-3.jpg",
+            "/creative/sculpey-4.jpg",
+            "/creative/sculpey-5.jpg",
+            "/creative/sculpey-6.jpg",
+            "/creative/sculpey-7.jpg",
+            "/creative/sculpey-8.jpg",
+            "/creative/sculpey-9.jpg"
+          ]
+        },
+        {
+          title: "Digital 3D Sculpting",
+          type: "gallery" as const,
+          description: "Character modeling in Nomad Sculpt that bridges traditional craftsmanship with modern prototyping workflows.",
+          skills: "Digital-Physical Bridge, Character Design, 3D Modeling",
+          images: [
+            "/creative/nomad-sculpt-1.jpg",
+            "/creative/nomad-sculpt-2.jpg",
+            "/creative/nomad-sculpt-3.jpg",
+            "/creative/nomad-sculpt-4.jpg",
+            "/creative/nomad-sculpt-5.jpg",
+            "/creative/nomad-sculpt-6.jpg",
+            "/creative/nomad-sculpt-7.jpg"
+          ]
+        }
+      ]
+    },
+    {
       methodology: "Narrative & Motion",
       methodologyIcon: Film,
       methodologyDescription: "Sequential Storyboarding for User Journeys",
@@ -56,57 +129,6 @@ const CreativeWork = () => {
             "/creative/illustration-12.jpg",
             "/creative/illustration-13.png",
             "/creative/illustration-14.png"
-          ]
-        }
-      ]
-    },
-    {
-      methodology: "Human Factors & Form",
-      methodologyIcon: Shapes,
-      methodologyDescription: "Iterative Physical Prototyping & Ergonomic Studies",
-      projects: [
-        {
-          title: "Sculpey Sculptures",
-          type: "gallery" as const,
-          description: "Three-dimensional world-building that sharpens spatial reasoning and tactile design thinking for spatial computing and hardware-software bridges.",
-          skills: "Spatial Reasoning, Ergonomics, Material Understanding",
-          images: [
-            "/creative/sculpey-1.jpg",
-            "/creative/sculpey-2.jpg",
-            "/creative/sculpey-3.jpg",
-            "/creative/sculpey-4.jpg",
-            "/creative/sculpey-5.jpg",
-            "/creative/sculpey-6.jpg",
-            "/creative/sculpey-7.jpg",
-            "/creative/sculpey-8.jpg",
-            "/creative/sculpey-9.jpg"
-          ]
-        },
-        {
-          title: "Ergonomic Prototyping: Buzz Hammer",
-          type: "gallery" as const,
-          description: "Human factors study translating a fictional prop into a functional, ergonomic form — from concept sketch to pink foam rough to painted final model.",
-          skills: "Industrial Design, Ergonomics, Form Factor Testing, Fabrication",
-          images: [
-            "/creative/buzz-hammer-sketch.jpg",
-            "/creative/buzz-hammer-foam.jpg",
-            "/creative/buzz-hammer-painted.jpg",
-            "/creative/buzz-hammer-reference.jpeg"
-          ]
-        },
-        {
-          title: "Digital 3D Sculpting",
-          type: "gallery" as const,
-          description: "Character modeling in Nomad Sculpt that bridges traditional craftsmanship with modern prototyping workflows.",
-          skills: "Digital-Physical Bridge, Character Design, 3D Modeling",
-          images: [
-            "/creative/nomad-sculpt-1.jpg",
-            "/creative/nomad-sculpt-2.jpg",
-            "/creative/nomad-sculpt-3.jpg",
-            "/creative/nomad-sculpt-4.jpg",
-            "/creative/nomad-sculpt-5.jpg",
-            "/creative/nomad-sculpt-6.jpg",
-            "/creative/nomad-sculpt-7.jpg"
           ]
         }
       ]
