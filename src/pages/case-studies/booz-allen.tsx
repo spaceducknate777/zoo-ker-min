@@ -32,9 +32,9 @@ const BoozAllenCaseStudy = () => {
               UI / UX Designer — Large-Scale, Accessibility-First Systems
             </p>
             <img
-              src={boozAllenImage}
-              alt="Booz Allen Hamilton Government Design Projects"
-              className="w-full h-96 object-cover object-right rounded-lg shadow-xl mt-6"
+              src={boozAllenWireframes}
+              alt="Booz Allen Hamilton Government Design Projects — wireframe evolution"
+              className="w-full h-auto object-contain rounded-lg shadow-xl mt-6"
             />
           </header>
 

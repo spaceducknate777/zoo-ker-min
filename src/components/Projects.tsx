@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
-import boozAllenImage from "@/assets/booz-allen-project.jpg";
+import boozAllenImage from "@/assets/booz-allen-wireframes.jpg";
 import finavImage from "@/assets/finav-3d-floorplan.webp";
 
 const Projects = () => {
