@@ -20,7 +20,7 @@ const ProfessionalExperience = () => {
       role: "UX Innovation Apprentice",
       company: "BMW Group",
       period: "Sept – Nov 2019",
-      location: "Woodcliff Lake, NJ",
+      location: "Savannah, GA",
       description:
         "Designed and patented a natural gesture interface for autonomous vehicles with 94% intuitive recognition. Secured $500K+ in prototype funding via C-suite presentation.",
     },
