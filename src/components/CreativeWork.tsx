@@ -199,7 +199,7 @@ const CreativeWork = () => {
                               <img
                                 src={img}
                                 alt={`${project.title} ${imgIndex + 1}`}
-                                className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                                className="w-full h-full object-contain transition-transform duration-300 hover:scale-110"
                               />
                             </div>
                           ))}
