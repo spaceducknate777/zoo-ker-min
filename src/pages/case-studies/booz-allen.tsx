@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 import nihCdeScreenshot from "@/assets/nih-cde-screenshot.png";
 import dotItsScreenshot from "@/assets/dot-its-screenshot.png";
 import fiscalDataScreenshot from "@/assets/fiscal-data-screenshot.png";
-import boozAllenWireframes from "@/assets/booz-allen-wireframes.jpg";
+import wireframeBefore from "@/assets/booz-allen-wireframe-before.png";
+import wireframeLo from "@/assets/booz-allen-wireframe-lo.png";
+import wireframeHi from "@/assets/booz-allen-wireframe-hi.png";
 
 const BoozAllenCaseStudy = () => {
   const navigate = useNavigate();
@@ -107,14 +109,21 @@ const BoozAllenCaseStudy = () => {
 
           {/* Wireframes */}
           <section>
-            <img
-              src={boozAllenWireframes}
-              alt="Design evolution from low to high fidelity wireframes"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-            <p className="text-sm text-muted-foreground mt-2 italic">
-              Iterative wireframe development from low-fidelity sketches to high-fidelity prototypes
-            </p>
+            <h2 className="text-2xl font-bold text-foreground mb-4">Design Evolution</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div>
+                <img src={wireframeBefore} alt="Original Fiscal Data Release Calendar — before redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                <p className="text-sm text-muted-foreground mt-2 italic text-center">Before — Original interface</p>
+              </div>
+              <div>
+                <img src={wireframeLo} alt="Low-fidelity wireframe of Release Calendar redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                <p className="text-sm text-muted-foreground mt-2 italic text-center">Lo-fi wireframe</p>
+              </div>
+              <div>
+                <img src={wireframeHi} alt="High-fidelity mockup of Release Calendar redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                <p className="text-sm text-muted-foreground mt-2 italic text-center">Hi-fi final design</p>
+              </div>
+            </div>
           </section>
 
           {/* UI System & Design Standards */}
