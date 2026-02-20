@@ -6,54 +6,28 @@ const About = () => {
 
         <div className="max-w-3xl space-y-5">
           <p className="text-base text-muted-foreground leading-relaxed">
-            I'm a Creative Technologist & Spatial Interaction Designer with 7+ years of post-grad experience bridging enterprise complexity and narrative-driven maker practices. SCAD Summa Cum Laude graduate with a 4.0 GPA.
+            SCAD Summa Cum Laude, 4.0 GPA. 7+ years designing complex product experiences across enterprise, federal government, and automotive. I've shipped at scale — 12M+ users at USAA, five federal agencies at Booz Allen, and a patented gesture interface at BMW.
           </p>
           <p className="text-base text-muted-foreground leading-relaxed">
-            I own problems end-to-end — from ethnographic research and spatial reasoning to hand-built prototypes and high-fidelity interfaces. My sculpture and animation background gives me a maker's intuition that most designers simply don't have.
+            My background in physical prototyping, stop-motion, and sculpture isn't a side hobby — it's what makes me precise about motion, timing, and tactile feedback in digital interfaces. I think in systems and feel in materials.
           </p>
 
           <div className="pt-6 border-t border-border">
-            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Core Competencies</h3>
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Skills</h3>
             <div className="space-y-3 text-sm text-muted-foreground">
               <div>
-                <span className="text-foreground font-medium">Spatial & Interaction:</span>{" "}
-                Spatial Computing, Haptic Interfaces, Gesture Systems, AR/VR Prototyping, Physical-Digital Systems, Nomad Sculpt, ZBrush
+                <span className="text-foreground font-medium">Product & Interaction:</span>{" "}
+                Figma (Auto Layout), Design Systems, Design Tokens, Motion Design, Accessibility (WCAG 2.1 AA), Handoff Documentation
               </div>
               <div>
-                <span className="text-foreground font-medium">Design & Strategy:</span>{" "}
-                Design Systems, Design Tokens, Design Ops, Product Strategy, Service Design, Accessibility (WCAG 2.1 AA), Handoff Documentation
+                <span className="text-foreground font-medium">Research:</span>{" "}
+                Ethnographic Studies, Contextual Inquiry, Usability Testing, Jobs-to-be-Done, Stakeholder Management, Agile/Scrum
               </div>
               <div>
-                <span className="text-foreground font-medium">Research & Insights:</span>{" "}
-                Ethnographic Studies, Contextual Inquiry, Usability Testing, Jobs-to-be-Done (JTBD), Stakeholder Management, Agile/Scrum
-              </div>
-              <div>
-                <span className="text-foreground font-medium">The Maker's Toolkit:</span>{" "}
-                Figma (Auto Layout), Framer, Adobe CC, Electronic Prototyping (Sensors/Haptics), Stop-Motion Animation, Physical Form Studies, HTML/CSS, Git
+                <span className="text-foreground font-medium">Prototyping:</span>{" "}
+                Physical Computing (Arduino, Sensors, Haptics), Nomad Sculpt, ZBrush, Framer, Stop-Motion Animation, HTML/CSS, Git
               </div>
             </div>
-          </div>
-
-          <div className="pt-6 border-t border-border">
-            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Why It Matters</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <span className="text-accent mt-0.5">→</span>
-                <span><strong className="text-foreground">High Craft:</strong> Sculpture, stop-motion, and physical computing that AI cannot replicate</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent mt-0.5">→</span>
-                <span><strong className="text-foreground">Professional Scale:</strong> BMW, USAA, and federal agencies prove I can handle millions of users</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent mt-0.5">→</span>
-                <span><strong className="text-foreground">Maker's Integrity:</strong> Building prototypes by hand to ensure they work in the real world</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-accent mt-0.5">→</span>
-                <span><strong className="text-foreground">Innovation over Templates:</strong> Rejecting cookie-cutter UX for patented interaction models</span>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

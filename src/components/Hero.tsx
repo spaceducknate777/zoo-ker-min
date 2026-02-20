@@ -17,10 +17,10 @@ const Hero = () => {
             nathan zukerman
           </h1>
           <p className="text-xl sm:text-2xl text-accent font-medium mb-4">
-            Creative Technologist & Spatial Interaction Designer
+            Product Designer — Interaction & Motion
           </p>
           <p className="text-base text-muted-foreground max-w-xl leading-relaxed">
-            SCAD-trained designer specializing in the intersection of high-stakes enterprise systems and narrative-driven maker practices. I bridge traditional craftsmanship and digital innovation — from patented gesture interfaces to hand-built prototypes — designing frame-by-frame with obsessive focus on form, motion, and human emotion.
+            I design interaction-focused product experiences — from research through shipped UI systems. My background in physical prototyping and animation sharpens how I think about motion, accessibility, and real-world constraints.
           </p>
         </div>
       </div>
