@@ -7,9 +7,12 @@ const CreativeWork = () => {
   const scrollRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const stopMotionVideos = [
-    { title: "Stop-Motion Animation 1", video: "/creative/stop-motion-1.MOV", description: "Frame-by-frame storytelling." },
-    { title: "Stop-Motion Animation 2", video: "/creative/stop-motion-2.MOV", description: "Sequential narrative design." },
-    { title: "Strawberry Head vs Dot Apple Juice", video: "/creative/stop-motion-3.MOV", description: "Character-driven storytelling." },
+    { title: "Stop-Motion Animation 1", video: "/creative/stop-motion-1.MOV", description: "Frame-by-frame storytelling.", type: "local" as const },
+    { title: "Stop-Motion Animation 2", video: "/creative/stop-motion-2.MOV", description: "Sequential narrative design.", type: "local" as const },
+    { title: "Strawberry Head vs Dot Apple Juice", video: "/creative/stop-motion-3.MOV", description: "Character-driven storytelling.", type: "local" as const },
+    { title: "Clay Animation 1", video: "7217704528890613035", description: "TikTok stop-motion piece.", type: "tiktok" as const },
+    { title: "Clay Animation 2", video: "7231756320955780394", description: "TikTok stop-motion piece.", type: "tiktok" as const },
+    { title: "Clay Animation 3", video: "7249260772872834347", description: "TikTok stop-motion piece.", type: "tiktok" as const },
   ];
 
   const methodologyGroups = [
@@ -126,30 +129,41 @@ const CreativeWork = () => {
                               <h4 className="text-base font-semibold text-foreground mb-1">{project.title}</h4>
                               <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
                             </div>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-4 pt-0">
-                              {project.videos?.map((video, videoIndex) => (
-                                <div key={videoIndex} className="relative aspect-video rounded-lg overflow-hidden bg-background group">
-                                  <video
-                                    className="w-full h-full object-contain"
-                                    controls
-                                    preload="metadata"
-                                    playsInline
-                                    onPlay={() => setPlayingVideo(videoIndex)}
-                                  >
-                                    <source src={video.video} type="video/quicktime" />
-                                    <source src={video.video} type="video/mp4" />
-                                  </video>
-                                  {playingVideo !== videoIndex && (
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/40 pointer-events-none">
-                                      <div className="w-14 h-14 rounded-full bg-accent/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        <Play className="h-6 w-6 text-accent-foreground ml-0.5" />
-                                      </div>
-                                      <span className="text-xs text-foreground/70 mt-3 font-medium">{video.title}</span>
-                                    </div>
-                                  )}
-                                </div>
-                              ))}
-                            </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-4 pt-0">
+                               {project.videos?.map((video, videoIndex) => (
+                                 <div key={videoIndex} className="relative aspect-video rounded-lg overflow-hidden bg-background group">
+                                   {video.type === "tiktok" ? (
+                                     <iframe
+                                       src={`https://www.tiktok.com/embed/v2/${video.video}?lang=en-US`}
+                                       className="w-full h-full border-0"
+                                       allowFullScreen
+                                       allow="encrypted-media"
+                                     />
+                                   ) : (
+                                     <>
+                                       <video
+                                         className="w-full h-full object-contain"
+                                         controls
+                                         preload="metadata"
+                                         playsInline
+                                         onPlay={() => setPlayingVideo(videoIndex)}
+                                       >
+                                         <source src={video.video} type="video/quicktime" />
+                                         <source src={video.video} type="video/mp4" />
+                                       </video>
+                                       {playingVideo !== videoIndex && (
+                                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/40 pointer-events-none">
+                                           <div className="w-14 h-14 rounded-full bg-accent/90 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                             <Play className="h-6 w-6 text-accent-foreground ml-0.5" />
+                                           </div>
+                                           <span className="text-xs text-foreground/70 mt-3 font-medium">{video.title}</span>
+                                         </div>
+                                       )}
+                                     </>
+                                   )}
+                                 </div>
+                               ))}
+                             </div>
                           </div>
                         );
                       }
