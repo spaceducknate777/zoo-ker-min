@@ -112,12 +112,12 @@ const BoozAllenCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4">Design Evolution</h2>
             <div className="grid md:grid-cols-3 gap-4">
               <div>
-                <img src={wireframeBefore} alt="Original Fiscal Data Release Calendar — before redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
-                <p className="text-sm text-muted-foreground mt-2 italic text-center">Before — Original interface</p>
-              </div>
-              <div>
                 <img src={wireframeLo} alt="Low-fidelity wireframe of Release Calendar redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
                 <p className="text-sm text-muted-foreground mt-2 italic text-center">Lo-fi wireframe</p>
+              </div>
+              <div>
+                <img src={wireframeBefore} alt="Original Fiscal Data Release Calendar — before redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                <p className="text-sm text-muted-foreground mt-2 italic text-center">Before — Original interface</p>
               </div>
               <div>
                 <img src={wireframeHi} alt="High-fidelity mockup of Release Calendar redesign" className="w-full h-auto rounded-lg shadow-lg border border-border" />
