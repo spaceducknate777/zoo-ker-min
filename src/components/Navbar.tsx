@@ -25,6 +25,9 @@ const Navbar = () => {
           </button>
 
           <div className="hidden md:flex items-center gap-8">
+            <button onClick={() => scrollToSection("creative")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              The Lab
+            </button>
             <button onClick={() => scrollToSection("projects")} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Case Studies
             </button>
@@ -58,6 +61,9 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden border-t border-border bg-background">
           <div className="px-6 py-4 space-y-3">
+            <button onClick={() => scrollToSection("creative")} className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
+              The Lab
+            </button>
             <button onClick={() => scrollToSection("projects")} className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
               Case Studies
             </button>

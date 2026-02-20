@@ -1,28 +1,45 @@
 const ProfessionalExperience = () => {
   const experiences = [
     {
-      role: "Lead UX Researcher",
-      company: "BMW Group",
-      period: "Contract",
-      location: "Woodcliff Lake, NJ",
+      role: "Creative R&D Residency",
+      company: "Independent Lab",
+      period: "Oct 2023 – Present",
+      location: "Remote / Studio",
       description:
-        "Led gesture interaction research for autonomous vehicle interfaces. Developed patented gesture vocabulary, conducted on-road testing, and secured $500K+ in continued project funding through executive presentations.",
+        "Leveraging Nomad Sculpt and ZBrush to bridge traditional sculpture with modern spatial computing prototyping. Conducting frame-by-frame stop-motion studies to master micro-interactions and sequential timing. Developing haptic input system architectures and interactive hardware prototypes using Arduino Mega and LED arrays.",
+      highlight: true,
     },
     {
-      role: "UX/UI Designer",
-      company: "USAA",
-      period: "2 years",
-      location: "San Antonio, TX",
+      role: "Senior Interaction Designer",
+      company: "Pearl",
+      period: "Feb 2023 – Oct 2023",
+      location: "Remote",
       description:
-        "Designed mobile-first financial tools serving 13+ million military families. Created accessible icon systems and reduced support calls by 52% through streamlined task flows.",
+        "Boosted conversion rates by 25% through comprehensive responsive redesign for a high-volume fintech platform. Architected a unified design system with 50+ reusable components, reducing handoff time by 40%.",
     },
     {
-      role: "Senior UX Research Consultant",
+      role: "UX Research & Design Lead",
       company: "Booz Allen Hamilton",
-      period: "3 years",
+      period: "Sept 2019 – Oct 2021",
       location: "Washington, DC",
       description:
-        "Delivered accessibility-first redesigns across 4 federal agencies (DOT, NIH, NLM, Treasury). Achieved 100% WCAG compliance and 45% average task improvement across all engagements.",
+        "Directed UX strategy for 5 federal agencies (NASA, NIH, DOT), achieving 30% average improvement in accessibility and usability scores. Redesigned the NIH CDE Repository, reducing search time by 45%.",
+    },
+    {
+      role: "UX Innovation Apprentice",
+      company: "BMW Group",
+      period: "Sept 2019 – Nov 2019",
+      location: "Woodcliff Lake, NJ",
+      description:
+        "Architected a patented natural gesture interface for autonomous vehicles, achieving 94% intuitive recognition. Secured $500K+ in prototype funding through C-suite presentations.",
+    },
+    {
+      role: "UI/UX Design Intern",
+      company: "USAA",
+      period: "June 2018 – Aug 2018",
+      location: "San Antonio, TX",
+      description:
+        "Created narrative-driven iconography system adopted into the official USAA library serving 12M+ users. Improved engagement by 25% through mobile-first financial tools for military families.",
     },
   ];
 
@@ -33,10 +50,20 @@ const ProfessionalExperience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp, i) => (
-            <div key={i} className="border-b border-border pb-8 last:border-0 last:pb-0">
+            <div
+              key={i}
+              className={`border-b border-border pb-8 last:border-0 last:pb-0 ${
+                (exp as any).highlight ? "relative pl-4 border-l-2 border-l-accent" : ""
+              }`}
+            >
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-3">
                 <h3 className="text-base font-semibold text-foreground">
                   {exp.role} <span className="text-accent">@ {exp.company}</span>
+                  {(exp as any).highlight && (
+                    <span className="ml-2 text-xs bg-accent/15 text-accent px-2 py-0.5 rounded-full font-medium">
+                      Current
+                    </span>
+                  )}
                 </h3>
                 <p className="text-sm text-muted-foreground">
                   {exp.period} <span className="mx-1">|</span> {exp.location}
