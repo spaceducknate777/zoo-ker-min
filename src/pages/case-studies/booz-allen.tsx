@@ -2,7 +2,9 @@ import { ArrowLeft, Eye, ShieldCheck, Accessibility, Brain, CheckCircle, Wrench,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import boozAllenImage from "@/assets/booz-allen-project.jpg";
+import nihCdeScreenshot from "@/assets/nih-cde-screenshot.png";
+import dotItsScreenshot from "@/assets/dot-its-screenshot.png";
+import fiscalDataScreenshot from "@/assets/fiscal-data-screenshot.png";
 import boozAllenWireframes from "@/assets/booz-allen-wireframes.jpg";
 
 const BoozAllenCaseStudy = () => {
@@ -31,11 +33,11 @@ const BoozAllenCaseStudy = () => {
             <p className="text-lg text-accent font-semibold">
               UI / UX Designer — Large-Scale, Accessibility-First Systems
             </p>
-            <img
-              src={boozAllenWireframes}
-              alt="Booz Allen Hamilton Government Design Projects — wireframe evolution"
-              className="w-full h-auto object-contain rounded-lg shadow-xl mt-6"
-            />
+            <div className="grid grid-cols-3 gap-3 mt-6">
+              <img src={nihCdeScreenshot} alt="NIH CDE Repository — healthcare data platform" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+              <img src={dotItsScreenshot} alt="DOT ITS Deployment Evaluation — transportation platform" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+              <img src={fiscalDataScreenshot} alt="Fiscal Data Treasury — government financial data" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+            </div>
           </header>
 
           {/* Overview */}
