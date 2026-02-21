@@ -10,6 +10,8 @@ const CreativeWork = () => {
     { title: "Stop-Motion Animation 1", video: "/creative/stop-motion-1.MOV", description: "Frame-by-frame storytelling." },
     { title: "Stop-Motion Animation 2", video: "/creative/stop-motion-2.MOV", description: "Sequential narrative design." },
     { title: "Strawberry Head vs Dot Apple Juice", video: "/creative/stop-motion-3.MOV", description: "Character-driven storytelling." },
+    { title: "Jumping Into Love", video: "/creative/stop-motion-4.MOV", description: "Playful character animation." },
+    { title: "Stop-Motion Animation 5", video: "/creative/stop-motion-5.MOV", description: "Expressive motion study." },
   ];
 
   const methodologyGroups = [
