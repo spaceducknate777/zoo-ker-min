@@ -50,6 +50,14 @@ const projects: Project[] = [
     tag: "Spatial UI · Prototype",
     link: "/case-studies/monster-aisle",
   },
+  {
+    title: "[AI Product] — AI-Native [Domain] Tool",
+    outcome: "[Key metric placeholder — e.g. 40% faster task completion]",
+    category: ["Featured", "Product / UX"],
+    image: "",
+    tag: "AI/ML · SaaS · 2025",
+    link: "/case-studies/ai-product",
+  },
 ];
 
 const filters: Category[] = ["Featured", "Product / UX"];
@@ -89,11 +97,20 @@ const ProjectGrid = () => {
               className="group block rounded-xl overflow-hidden bg-card border border-border hover:border-accent/50 transition-all duration-500"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-secondary/50 flex items-center justify-center">
+                    <div className="text-center space-y-2">
+                      <span className="text-3xl">🧠</span>
+                      <p className="text-sm text-muted-foreground font-medium">Coming Soon</p>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className="p-5 flex items-start justify-between gap-4">
                 <div>
