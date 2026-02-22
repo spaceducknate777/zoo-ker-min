@@ -43,25 +43,11 @@ const CreativeWork = () => {
           hero: "/creative/buzz-hammer-painted.jpg",
         },
         {
-          title: "Sculpey Sculptures",
-          type: "gallery" as const,
-          description: "Three-dimensional world-building for spatial reasoning. Hand-sculpted characters exploring form, proportion, and personality.",
-          images: ["/creative/sculpey-1.jpg", "/creative/sculpey-2.jpg", "/creative/sculpey-3.jpg", "/creative/sculpey-4.jpg", "/creative/sculpey-5.jpg", "/creative/sculpey-6.jpg", "/creative/sculpey-7.jpg", "/creative/sculpey-8.jpg", "/creative/sculpey-9.jpg", "/creative/ceramic-lamp.jpg", "/creative/paper-walle.jpg"],
-          hero: "/creative/sculpey-1.jpg",
-        },
-        {
           title: "Full-Scale Vehicle Prototype",
           type: "gallery" as const,
-          description: "Large-scale autonomous vehicle concept built with foam core, LED strips, and tessellated paneling. Exploring form language and spatial presence at 1:1 scale.",
+          description: "Autonomous vehicle concept at 1:1 scale — foam core, LED strips, tessellated paneling. Form language and spatial presence study.",
           images: ["/creative/vehicle-1.jpg", "/creative/vehicle-2.jpg", "/creative/vehicle-3.jpg", "/creative/vehicle-4.jpg", "/creative/vehicle-5.jpg", "/creative/vehicle-6.jpg"],
           hero: "/creative/vehicle-1.jpg",
-        },
-        {
-          title: "Digital 3D Sculpting",
-          type: "gallery" as const,
-          description: "Character modeling in Nomad Sculpt bridging traditional and modern workflows. Digital clay meets artistic expression.",
-          images: ["/creative/nomad-sculpt-1.jpg", "/creative/nomad-sculpt-2.jpg", "/creative/nomad-sculpt-3.jpg", "/creative/nomad-sculpt-4.jpg", "/creative/nomad-sculpt-5.jpg", "/creative/nomad-sculpt-6.jpg", "/creative/nomad-sculpt-7.jpg"],
-          hero: "/creative/nomad-sculpt-1.jpg",
         },
       ],
     },
@@ -79,25 +65,11 @@ const CreativeWork = () => {
           hero: undefined,
         },
         {
-          title: "Digital Illustrations",
+          title: "Sequential Illustration",
           type: "gallery" as const,
-          description: "Visual storytelling and sequential storyboarding. Exploring narrative through color, composition, and character.",
-          images: ["/creative/illustration-1.png", "/creative/illustration-2.png", "/creative/illustration-3.png", "/creative/illustration-4.png", "/creative/illustration-5.png", "/creative/illustration-6.png", "/creative/illustration-7.png", "/creative/illustration-8.png", "/creative/illustration-9.jpg", "/creative/illustration-10.jpg", "/creative/illustration-11.png", "/creative/illustration-12.jpg", "/creative/illustration-13.png", "/creative/illustration-14.png", "/creative/illustration-15.png", "/creative/illustration-16.png"],
+          description: "Visual storyboarding exploring timing, pacing, and narrative — skills applied directly to interaction sequencing.",
+          images: ["/creative/illustration-1.png", "/creative/illustration-2.png", "/creative/illustration-3.png", "/creative/illustration-4.png"],
           hero: "/creative/illustration-1.png",
-        },
-        {
-          title: "Epicene — Brand Identity",
-          type: "gallery" as const,
-          description: "Complete brand identity for an androgynous clothing store. Logo system, color palette, typography, and product mockups.",
-          images: ["/creative/epicene-1.jpg"],
-          hero: "/creative/epicene-1.jpg",
-        },
-        {
-          title: "Paul Rand — Editorial Design",
-          type: "gallery" as const,
-          description: "Magazine-style editorial spread exploring Paul Rand's play instinct, typography terms, and design philosophy.",
-          images: ["/creative/paul-rand-1.jpg", "/creative/paul-rand-2.jpg", "/creative/paul-rand-3.jpg", "/creative/paul-rand-4.jpg", "/creative/paul-rand-5.jpg", "/creative/paul-rand-6.jpg", "/creative/paul-rand-7.jpg", "/creative/paul-rand-8.jpg", "/creative/paul-rand-9.jpg", "/creative/paul-rand-10.jpg"],
-          hero: "/creative/paul-rand-2.jpg",
         },
       ],
     },
@@ -120,10 +92,10 @@ const CreativeWork = () => {
       <section id="creative" className="py-24 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <p className="text-xs uppercase tracking-[0.2em] text-accent mb-3 font-medium">Creative R&D</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-accent mb-3 font-medium">Interaction R&D</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">the lab.</h2>
             <p className="text-base text-muted-foreground max-w-xl leading-relaxed">
-              Frame-by-frame animation, sculpture, and physical computing — creative R&D that feeds directly into how I design digital experiences.
+              Physical computing, stop-motion animation, and form studies — experimental R&D that sharpens how I design motion, timing, and tactile interaction.
             </p>
           </div>
 

@@ -16,8 +16,8 @@ const About = () => {
               that only show up when you build the thing for real.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              I work best at early-to-mid-stage companies where design has real ownership — 
-              small teams, high stakes, fast iteration.
+              I've thrived in small teams where design has real ownership 
+              and high iteration velocity.
             </p>
           </div>
 
