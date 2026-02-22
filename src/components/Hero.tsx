@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
 
           <p className="text-xs uppercase tracking-[0.2em] text-accent font-medium mb-3">
-            Available for full-time roles
+            Available for mid-level roles
           </p>
 
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight mb-2">

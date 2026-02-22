@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="max-w-xl">
           <h2 className="text-2xl font-bold text-foreground mb-3">get in touch.</h2>
           <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-            Open to senior IC and lead roles at product-focused teams. 
+            Open to mid-level product and interaction design roles on product-focused teams. 
             Fastest response via email.
           </p>
 
