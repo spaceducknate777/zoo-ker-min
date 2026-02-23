@@ -5,8 +5,8 @@ const Footer = () => {
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Nathan Zukerman. All rights reserved.
         </p>
-        <p className="text-xs text-muted-foreground italic">
-          Made with heart (and a bit of clay) in Woodstock, VA
+        <p className="text-xs text-muted-foreground">
+          Based in Virginia
         </p>
       </div>
     </footer>

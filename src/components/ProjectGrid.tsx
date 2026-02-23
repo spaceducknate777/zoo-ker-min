@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/dot-its-screenshot.png";
-import finavImage from "@/assets/finav-3d-floorplan.webp";
 
 type Category = "Featured" | "Product / UX" | "Creative";
 
@@ -41,14 +40,6 @@ const projects: Project[] = [
     image: usaaImage,
     tag: "Design Systems · Fintech",
     link: "/case-studies/usaa",
-  },
-  {
-    title: "FiNav — Spatial Wayfinding UI",
-    outcome: "3D floor plan interface for real-time indoor navigation.",
-    category: ["Product / UX"],
-    image: finavImage,
-    tag: "Spatial UI · Prototype",
-    link: "/case-studies/monster-aisle",
   },
 ];
 

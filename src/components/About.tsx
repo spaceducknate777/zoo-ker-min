@@ -11,8 +11,8 @@ const About = () => {
               five federal agencies at Booz Allen, a patented gesture system at BMW. 
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              My background in physical prototyping sharpens how I approach motion, 
-              tactile feedback, and edge-case interaction design.
+              My background in prototyping and systems thinking sharpens how I approach motion, 
+              accessibility, and edge-case interaction.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               I've thrived in small teams where design has real ownership 
@@ -24,7 +24,7 @@ const About = () => {
             <div>
               <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">Core Tools</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Figma (Auto Layout, Variables), Framer, Adobe CC, Nomad Sculpt, ZBrush
+                Figma (Auto Layout, Variables, Dev Mode), Framer, Adobe CC
               </p>
             </div>
             <div>
@@ -34,9 +34,9 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">Prototyping</h3>
+              <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">Prototyping & Handoff</h3>
               <p className="text-muted-foreground leading-relaxed">
-                HTML/CSS, Git, Arduino, Physical Computing
+                HTML/CSS, Git, Jira, Dev handoff documentation
               </p>
             </div>
           </div>
