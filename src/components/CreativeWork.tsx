@@ -64,13 +64,6 @@ const CreativeWork = () => {
           images: undefined,
           hero: undefined,
         },
-        {
-          title: "Sequential Illustration",
-          type: "gallery" as const,
-          description: "Visual storyboarding exploring timing, pacing, and narrative — skills applied directly to interaction sequencing.",
-          images: ["/creative/illustration-1.png", "/creative/illustration-2.png", "/creative/illustration-3.png", "/creative/illustration-4.png"],
-          hero: "/creative/illustration-1.png",
-        },
       ],
     },
   ];

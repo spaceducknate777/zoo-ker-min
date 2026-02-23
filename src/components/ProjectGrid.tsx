@@ -37,7 +37,7 @@ const projects: Project[] = [
   {
     title: "USAA — Financial Tools for Military Families",
     outcome: "Iconography adopted sitewide. 25% engagement lift. 12M+ users.",
-    category: ["Product / UX"],
+    category: ["Featured", "Product / UX"],
     image: usaaImage,
     tag: "Design Systems · Fintech",
     link: "/case-studies/usaa",
@@ -49,14 +49,6 @@ const projects: Project[] = [
     image: finavImage,
     tag: "Spatial UI · Prototype",
     link: "/case-studies/monster-aisle",
-  },
-  {
-    title: "[AI Product] — AI-Native [Domain] Tool",
-    outcome: "[Key metric placeholder — e.g. 40% faster task completion]",
-    category: ["Featured", "Product / UX"],
-    image: "",
-    tag: "AI/ML · SaaS · 2025",
-    link: "/case-studies/ai-product",
   },
 ];
 

@@ -11,9 +11,8 @@ const About = () => {
               five federal agencies at Booz Allen, a patented gesture system at BMW. 
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              My physical prototyping background (sculpture, stop-motion, hardware) isn't decorative. 
-              It's why I'm precise about motion timing, tactile feedback, and the edge cases 
-              that only show up when you build the thing for real.
+              My background in physical prototyping sharpens how I approach motion, 
+              tactile feedback, and edge-case interaction design.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
               I've thrived in small teams where design has real ownership 
@@ -37,7 +36,7 @@ const About = () => {
             <div>
               <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-3">Prototyping</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Physical Computing (Arduino, Sensors, Haptics), Stop-Motion, HTML/CSS, Git
+                HTML/CSS, Git, Arduino, Physical Computing
               </p>
             </div>
           </div>
