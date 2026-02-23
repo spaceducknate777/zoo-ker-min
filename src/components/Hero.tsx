@@ -26,9 +26,8 @@ const Hero = () => {
 
           <p className="text-base text-muted-foreground max-w-2xl leading-relaxed mb-6">
             I own interaction design end-to-end — from early research to shipped UI systems. 
-            7+ years across automotive, fintech, and federal platforms. Shipped at scale: 
-            patented gesture interface at BMW, design systems serving 12M+ users at USAA, 
-            five federal agencies at Booz Allen.
+            Shipped at scale: patented gesture interface at BMW, design systems serving 
+            12M+ users at USAA, five federal agencies at Booz Allen.
           </p>
 
           {/* Skim-optimized proof bar */}
