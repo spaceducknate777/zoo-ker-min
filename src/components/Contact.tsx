@@ -20,7 +20,7 @@ const Contact = () => {
               natezukerman@gmail.com
             </a>
             <a
-              href="https://linkedin.com/in/nathanzukerman"
+              href="https://www.linkedin.com/in/nathan-zukerman"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground border border-border rounded-lg px-5 py-2.5 hover:border-accent hover:text-accent transition-colors"
