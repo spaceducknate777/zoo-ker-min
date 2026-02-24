@@ -5,6 +5,7 @@ import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/dot-its-screenshot.png";
 import finavImage from "@/assets/finav-project.jpg";
+import pearlImage from "@/assets/pearl-profile-page.png";
 
 type Category = "Featured" | "Product / UX" | "Creative";
 
@@ -22,9 +23,9 @@ const projects: Project[] = [
     title: "Pearl — Fintech Responsive Redesign",
     outcome: "25% conversion lift. 50+ component design system. 40% faster handoff.",
     category: ["Featured", "Product / UX"],
-    image: finavImage,
+    image: pearlImage,
     tag: "Product Design · Fintech",
-    link: "/case-studies/monster-aisle",
+    link: "/case-studies/pearl",
   },
   {
     title: "BMW — Autonomous Gesture Interface",
