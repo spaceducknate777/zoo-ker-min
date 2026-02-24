@@ -12,6 +12,8 @@ import pearlFlowBuilder from "@/assets/pearl-flow-builder.png";
 import pearlFlowOnboarding from "@/assets/pearl-flow-onboarding.png";
 import pearlPersonaAlex from "@/assets/pearl-persona-alex.png";
 import pearlPersonaSarah from "@/assets/pearl-persona-sarah.png";
+import pearlPersonaMark from "@/assets/pearl-persona-mark.png";
+import pearlPersonaEmily from "@/assets/pearl-persona-emily.png";
 
 const outcomes = [
   { value: "25%", label: "Conversion Lift", context: "Profile completion rate" },
@@ -130,7 +132,7 @@ const PearlCaseStudy = () => {
         <section className="mb-16">
           <h2 className="text-2xl font-bold text-foreground mb-6">Research & Personas</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Collaborated with the research lead on two primary personas representing our core user types — early-career designers seeking their first role, and experienced recruiters matching talent to opportunities.
+            Collaborated with the research lead on four personas spanning our core user types — early-career designers, experienced recruiters, hiring managers, and interns entering the workforce.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="rounded-xl overflow-hidden border border-border">
@@ -138,6 +140,12 @@ const PearlCaseStudy = () => {
             </div>
             <div className="rounded-xl overflow-hidden border border-border">
               <img src={pearlPersonaSarah} alt="Persona — Sarah Reynolds, experienced recruiter matching designers to roles" className="w-full h-auto object-contain" />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img src={pearlPersonaMark} alt="Persona — Mark Johnson, hiring manager identifying top developer talent" className="w-full h-auto object-contain" />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img src={pearlPersonaEmily} alt="Persona — Emily Parker, marketing intern seeking practical experience" className="w-full h-auto object-contain" />
             </div>
           </div>
         </section>
