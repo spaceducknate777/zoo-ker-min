@@ -46,7 +46,7 @@ const BoozAllenCaseStudy = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Overview</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Designed and evaluated mission-critical government and healthcare interfaces used by millions of users, prioritizing accessibility, consistency, error prevention, and policy compliance. Established reference UI standards suitable for high-stakes, regulated environments and AI-driven quality evaluation.
+              Rebuilt fragmented, non-compliant federal interfaces into an accessibility-first design system used across mission-critical platforms serving millions. Worked within extreme constraints — legacy systems, strict compliance mandates, and multi-agency approval cycles — to establish reference UI standards for high-stakes, regulated environments.
             </p>
           </section>
 
@@ -207,6 +207,25 @@ const BoozAllenCaseStudy = () => {
             </p>
           </section>
 
+          {/* Constraints & Tradeoffs */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Constraints & Tradeoffs</h2>
+            <p className="text-muted-foreground text-sm">Government UX has brutal constraints. Every decision balanced competing forces:</p>
+            <div className="space-y-2">
+              {[
+                "Balancing WCAG compliance with dense data requirements",
+                "Modernizing UI without breaking legacy workflows",
+                "Navigating multi-agency approval cycles",
+                "Improving clarity without oversimplifying policy language",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 text-sm">
+                  <AlertTriangle className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span className="text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* Prototyping & Validation */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Prototyping & Validation</h2>
@@ -225,39 +244,40 @@ const BoozAllenCaseStudy = () => {
             </ul>
           </section>
 
-          {/* Quantitative & Organizational Impact */}
+          {/* Before → After */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Quantitative & Organizational Impact</h2>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {[
-                { icon: BarChart3, text: "20% improvement in accessibility scores" },
-                { icon: CheckCircle, text: "Reduced usability-related support issues" },
-                { icon: Users, text: "Design system adopted across multiple teams" },
-                { icon: Building2, text: "Interfaces remain live and in active use" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-accent/5 border border-accent/15">
-                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground font-medium">{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Business & Stakeholder Impact */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Business & Stakeholder Impact</h2>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {[
-                { icon: Users, text: "Improved user satisfaction across public-facing tools" },
-                { icon: ShieldCheck, text: "Increased stakeholder trust through clarity and predictability" },
-                { icon: Wrench, text: "Reduced rework by aligning UI standards early" },
-                { icon: BarChart3, text: "Accelerated development through shared components" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 border border-border">
-                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground">{item.text}</span>
-                </div>
-              ))}
+            <h2 className="text-2xl font-bold text-foreground">The Transformation</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="p-5 rounded-lg bg-destructive/5 border border-destructive/20 space-y-3">
+                <h3 className="text-sm font-semibold text-destructive uppercase tracking-wide">Before</h3>
+                <ul className="space-y-2">
+                  {[
+                    "Inconsistent layouts across agencies",
+                    "Poor accessibility — failed WCAG audits",
+                    "High workflow error rates in critical tasks",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <AlertTriangle className="h-3.5 w-3.5 text-destructive shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="p-5 rounded-lg bg-accent/5 border border-accent/20 space-y-3">
+                <h3 className="text-sm font-semibold text-accent uppercase tracking-wide">After</h3>
+                <ul className="space-y-2">
+                  {[
+                    "20% improvement in accessibility scores",
+                    "Reduced usability-related support issues",
+                    "Design system adopted across multiple teams",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-foreground">
+                      <CheckCircle className="h-3.5 w-3.5 text-accent shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -283,17 +303,31 @@ const BoozAllenCaseStudy = () => {
             </p>
           </section>
 
-          {/* Tools & Methods */}
-          <section className="space-y-3 pb-8">
-            <h2 className="text-2xl font-bold text-foreground">Tools & Methods</h2>
-            <div className="flex flex-wrap gap-2">
+          {/* Business & Stakeholder Impact */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Business & Stakeholder Impact</h2>
+            <div className="grid sm:grid-cols-2 gap-3">
               {[
-                "Figma", "Design systems", "Accessibility audits", "Usability testing",
-                "UI evaluation", "Government design standards",
-              ].map((tool) => (
+                { icon: Users, text: "Improved user satisfaction across public-facing tools" },
+                { icon: ShieldCheck, text: "Increased stakeholder trust through clarity and predictability" },
+                { icon: Wrench, text: "Reduced rework by aligning UI standards early" },
+                { icon: BarChart3, text: "Accelerated development through shared components" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-secondary/50 border border-border">
+                  <item.icon className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Tools */}
+          <section className="pb-8">
+            <div className="flex flex-wrap gap-2">
+              {["Figma", "Design Systems", "WCAG Audits", "Usability Testing"].map((tool) => (
                 <span
                   key={tool}
-                  className="px-3 py-1.5 rounded-full bg-secondary border border-border text-sm text-foreground"
+                  className="px-3 py-1.5 rounded-full bg-secondary border border-border text-xs text-muted-foreground"
                 >
                   {tool}
                 </span>

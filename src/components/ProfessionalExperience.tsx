@@ -6,7 +6,7 @@ const ProfessionalExperience = () => {
       period: "Feb – Oct 2023",
       location: "Remote",
       description:
-        "Improved conversion 25% via responsive redesign of a high-volume fintech platform. Built a unified design system with 50+ components, cutting handoff time 40%.",
+        "25% conversion lift via responsive redesign. Built 50+ component design system across 3 platforms, cutting dev handoff time 40%. Drove 15% performance improvement through streamlined user flows.",
     },
     {
       role: "UX Designer",
