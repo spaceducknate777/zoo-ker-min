@@ -20,7 +20,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Pearl — Fintech Responsive Redesign",
+    title: "Pearl — Career Platform Redesign",
     outcome: "25% conversion lift. 50+ component design system. 40% faster handoff.",
     category: ["Featured", "Product / UX"],
     image: pearlImage,

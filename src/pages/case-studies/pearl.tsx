@@ -49,10 +49,10 @@ const PearlCaseStudy = () => {
         <div className="mb-12">
           <p className="text-sm font-bold text-accent uppercase tracking-widest mb-2">Case Study</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Pearl — Fintech Profile Platform
+            Pearl — Career Platform Redesign
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Redesigning a cross-platform profile and portfolio system for designers and recruiters — from empty-state onboarding to a scalable component library.
+            Helping pivot a career platform from job board to resume and work history previewer — redesigning the profile experience, defining new product direction, and building a scalable component system.
           </p>
         </div>
 
@@ -71,25 +71,25 @@ const PearlCaseStudy = () => {
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
             <Card className="border-border">
               <CardContent className="pt-5">
-                <p className="text-xs text-muted-foreground mb-1">Role</p>
-                <p className="text-sm font-semibold text-foreground">Product Designer</p>
+                <p className="text-xs text-muted-foreground mb-1">Roles</p>
+                <p className="text-sm font-semibold text-foreground">UX Designer · UI Designer · Product Strategist</p>
               </CardContent>
             </Card>
             <Card className="border-border">
               <CardContent className="pt-5">
-                <p className="text-xs text-muted-foreground mb-1">Timeline</p>
-                <p className="text-sm font-semibold text-foreground">2023 · 6 months</p>
+                <p className="text-xs text-muted-foreground mb-1">Engagement</p>
+                <p className="text-sm font-semibold text-foreground">Part-time · 2023</p>
               </CardContent>
             </Card>
             <Card className="border-border">
               <CardContent className="pt-5">
-                <p className="text-xs text-muted-foreground mb-1">Team</p>
-                <p className="text-sm font-semibold text-foreground">2 designers, 4 engineers, PM</p>
+                <p className="text-xs text-muted-foreground mb-1">Tools</p>
+                <p className="text-sm font-semibold text-foreground">Figma · Google Docs</p>
               </CardContent>
             </Card>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Pearl is a career platform that helps designers showcase their work and connect with recruiters. I joined as the product designer responsible for the profile experience — the core surface where candidates present their skills, projects, and career goals to potential employers.
+            Pearl was pivoting from a traditional job board into a resume and work history previewer — a platform where professionals could showcase their career narrative, not just list open roles. I joined part-time to help define the product's new style and features, designing the profile experience that would become the core surface of the redesigned platform.
           </p>
         </section>
 
@@ -99,9 +99,9 @@ const PearlCaseStudy = () => {
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { icon: Layout, title: "Profile System Design", desc: "Designed the end-to-end profile builder — from empty states to fully populated views across experience, portfolio, and career goals." },
-              { icon: Layers, title: "Component Library", desc: "Built 50+ reusable components with consistent spacing, typography, and interaction patterns for cross-platform use." },
-              { icon: Users, title: "User Research", desc: "Collaborated on persona development and usability testing with early-career designers and agency recruiters." },
-              { icon: GitBranch, title: "Dev Handoff", desc: "Created annotated specs and interactive prototypes that reduced implementation ambiguity by 40%." },
+              { icon: Layers, title: "Product Direction", desc: "Contributed to the strategic pivot from job board to work history previewer, helping define new features and visual style." },
+              { icon: Users, title: "User Research", desc: "Collaborated on persona development and usability testing with early-career designers, recruiters, and hiring managers." },
+              { icon: GitBranch, title: "Component System", desc: "Built 50+ reusable components in Figma with consistent spacing, typography, and interaction patterns for cross-platform use." },
             ].map((item, i) => (
               <Card key={i} className="border-border">
                 <CardContent className="pt-5">
