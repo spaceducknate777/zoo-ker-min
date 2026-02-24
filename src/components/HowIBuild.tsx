@@ -2,7 +2,7 @@ const HowIBuild = () => {
   const steps = [
     { num: "01", title: "Frame", description: "Research and stakeholder alignment. Find the real problem before touching the design." },
     { num: "02", title: "Define", description: "Set goals, constraints, and how you'll know it worked. No ambiguous success criteria." },
-    { num: "03", title: "Explore", description: "Wireframes, physical prototypes, UI systems. Move fast at low fidelity, deliberate at high." },
+    { num: "03", title: "Explore", description: "Wireframes, rapid prototypes, UI systems. Move fast at low fidelity, deliberate at high." },
     { num: "04", title: "Ship", description: "Validated, documented, and handed off clean. Design doesn't end at Figma." },
   ];
 

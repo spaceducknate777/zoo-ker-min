@@ -26,7 +26,7 @@ const CreativeWork = () => {
 
   return (
     <>
-      <section id="creative" className="py-24 px-6 lg:px-8">
+      <section id="creative" className="py-16 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
             <p className="text-xs uppercase tracking-[0.2em] text-accent mb-3 font-medium">Interaction R&D</p>
