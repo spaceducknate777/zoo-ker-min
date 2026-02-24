@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/dot-its-screenshot.png";
+import finavImage from "@/assets/finav-project.jpg";
 
 type Category = "Featured" | "Product / UX" | "Creative";
 
@@ -17,6 +18,14 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "Pearl — Fintech Responsive Redesign",
+    outcome: "25% conversion lift. 50+ component design system. 40% faster handoff.",
+    category: ["Featured", "Product / UX"],
+    image: finavImage,
+    tag: "Product Design · Fintech",
+    link: "/case-studies/monster-aisle",
+  },
   {
     title: "BMW — Autonomous Gesture Interface",
     outcome: "Patented. 94% intuitive recognition. $500K+ prototype funding.",
@@ -36,7 +45,7 @@ const projects: Project[] = [
   {
     title: "USAA — Financial Tools for Military Families",
     outcome: "Iconography adopted sitewide. 25% engagement lift. 12M+ users.",
-    category: ["Featured", "Product / UX"],
+    category: ["Product / UX"],
     image: usaaImage,
     tag: "Design Systems · Fintech",
     link: "/case-studies/usaa",
