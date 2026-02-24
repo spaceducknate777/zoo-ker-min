@@ -14,6 +14,9 @@ import pearlPersonaAlex from "@/assets/pearl-persona-alex.png";
 import pearlPersonaSarah from "@/assets/pearl-persona-sarah.png";
 import pearlPersonaMark from "@/assets/pearl-persona-mark.png";
 import pearlPersonaEmily from "@/assets/pearl-persona-emily.png";
+import pearlDesktopOverview from "@/assets/pearl-desktop-overview.webp";
+import pearlButtonLibrary from "@/assets/pearl-button-library.webp";
+import pearlMobileViews from "@/assets/pearl-mobile-views.webp";
 
 const outcomes = [
   { value: "25%", label: "Conversion Lift", context: "Profile completion rate" },
@@ -191,6 +194,25 @@ const PearlCaseStudy = () => {
           </div>
           <div className="rounded-xl overflow-hidden border border-border">
             <img src={pearlProfileExperience} alt="Pearl cross-platform experience view — project detail with platform tags and impact bullets" className="w-full h-auto object-contain" />
+          </div>
+        </section>
+
+        {/* Design System & Responsive */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-foreground mb-4">Design System & Responsive Breakpoints</h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Built a comprehensive component library with style tiles, button variants (light/dark, 40px), and link patterns — all tested across desktop and mobile breakpoints to ensure consistent rendering.
+          </p>
+          <div className="rounded-xl overflow-hidden border border-border mb-4">
+            <img src={pearlDesktopOverview} alt="Pearl desktop overview — view mode, style tile, and button tile side by side" className="w-full h-auto object-contain bg-secondary/20" />
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img src={pearlButtonLibrary} alt="Pearl button library — light and dark button variants with link library" className="w-full h-auto object-contain bg-secondary/20" />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img src={pearlMobileViews} alt="Pearl mobile view mode — experience, pearls, and career goals tabs on mobile" className="w-full h-auto object-contain bg-secondary/20" />
+            </div>
           </div>
         </section>
 
