@@ -20,9 +20,9 @@ import pearlMobileViews from "@/assets/pearl-mobile-views.webp";
 
 const outcomes = [
   { value: "25%", label: "Conversion Lift", context: "Profile completion rate" },
-  { value: "50+", label: "Components Built", context: "Reusable design system" },
+  { value: "50+", label: "Components", context: "Cross-platform design system" },
   { value: "40%", label: "Faster Handoff", context: "Dev implementation time" },
-  { value: "3", label: "Platforms", context: "Web, iOS, Android" },
+  { value: "15%", label: "Performance Lift", context: "Streamlined user flows" },
 ];
 
 const designDecisions = [
@@ -55,7 +55,7 @@ const PearlCaseStudy = () => {
             Pearl — Career Platform Redesign
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Helping pivot a career platform from job board to resume and work history previewer — redesigning the profile experience, defining new product direction, and building a scalable component system.
+            Led the product pivot from job board to career profile platform — delivering a 25% conversion lift, 50+ component design system across 3 platforms, and 15% performance improvement through streamlined user flows.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const PearlCaseStudy = () => {
             </Card>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            Pearl was pivoting from a traditional job board into a resume and work history previewer — a platform where professionals could showcase their career narrative, not just list open roles. I joined part-time to help define the product's new style and features, designing the profile experience that would become the core surface of the redesigned platform.
+            Pearl was pivoting from a traditional job board into a career profile platform. I joined part-time to lead the redesign — defining the product's new direction, designing the profile experience end-to-end, and building a 50+ component system shipped across web, iOS, and Android. The result: a 25% conversion lift in profile completion and 40% faster dev handoff through a scalable, accessible design system.
           </p>
         </section>
 
