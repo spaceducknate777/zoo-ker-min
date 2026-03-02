@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
-import boozAllenImage from "@/assets/dot-its-screenshot.png";
+import boozAllenImage from "@/assets/booz-allen-mockup.png";
 import finavImage from "@/assets/finav-project.jpg";
 import pearlImage from "@/assets/pearl-mockup.png";
 
