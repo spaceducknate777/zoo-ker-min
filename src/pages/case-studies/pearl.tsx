@@ -2,6 +2,7 @@ import { ArrowLeft, Users, Layers, BarChart3, Zap, CheckCircle, Target, Palette,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import pearlProfilePage from "@/assets/pearl-profile-page.png";
 import pearlProfilePearls from "@/assets/pearl-profile-pearls.png";
 import pearlProfileExperience from "@/assets/pearl-profile-experience.png";
@@ -33,6 +34,11 @@ const designDecisions = [
   "Component library enforces accessibility and brand consistency at scale",
 ];
 
+const reveal = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const PearlCaseStudy = () => {
   const navigate = useNavigate();
 
@@ -49,7 +55,7 @@ const PearlCaseStudy = () => {
         </Button>
 
         {/* Hero */}
-        <div className="mb-12">
+        <motion.div className="mb-12" initial="hidden" animate="visible" variants={reveal} transition={{ duration: 0.5 }}>
           <p className="text-sm font-bold text-accent uppercase tracking-widest mb-2">Case Study</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Pearl — Career Platform Redesign
@@ -57,19 +63,19 @@ const PearlCaseStudy = () => {
           <p className="text-lg text-muted-foreground max-w-3xl">
             Led the product pivot from job board to career profile platform — delivering a 25% conversion lift, 50+ component design system across 3 platforms, and 15% performance improvement through streamlined user flows.
           </p>
-        </div>
+        </motion.div>
 
         {/* Hero Image */}
-        <div className="rounded-xl overflow-hidden border border-border mb-12">
+        <motion.div className="rounded-xl overflow-hidden border border-border mb-12" initial="hidden" animate="visible" variants={reveal} transition={{ duration: 0.5, delay: 0.1 }}>
           <img
             src={pearlProfilePage}
             alt="Pearl profile page — designer portfolio view with experience, pearls, and career goals tabs"
             className="w-full h-auto object-contain"
           />
-        </div>
+        </motion.div>
 
         {/* Overview */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Overview</h2>
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
             <Card className="border-border">
@@ -94,10 +100,10 @@ const PearlCaseStudy = () => {
           <p className="text-muted-foreground leading-relaxed">
             Pearl was pivoting from a traditional job board into a career profile platform. I joined part-time to lead the redesign — defining the product's new direction, designing the profile experience end-to-end, and building a 50+ component system shipped across web, iOS, and Android. The result: a 25% conversion lift in profile completion and 40% faster dev handoff through a scalable, accessible design system.
           </p>
-        </section>
+        </motion.section>
 
         {/* What I Did */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-6">What I Did</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -115,10 +121,10 @@ const PearlCaseStudy = () => {
               </Card>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Core Problem */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">The Core Problem</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Designers struggle to present their professional value beyond a portfolio link. Recruiters need structured, scannable profiles to quickly assess fit. The existing Pearl profile was a blank page with no guidance — users dropped off before adding any content.
@@ -129,10 +135,10 @@ const PearlCaseStudy = () => {
               Empty-state anxiety was the #1 barrier. Users didn't know what to add first, so they added nothing. The redesign needed to guide without constraining.
             </p>
           </div>
-        </section>
+        </motion.section>
 
         {/* Personas */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-6">Research & Personas</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Collaborated with the research lead on four personas spanning our core user types — early-career designers, experienced recruiters, hiring managers, and interns entering the workforce.
@@ -151,10 +157,10 @@ const PearlCaseStudy = () => {
               <img src={pearlPersonaEmily} alt="Persona — Emily Parker, marketing intern seeking practical experience" className="w-full h-auto object-contain" />
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Design Process — User Flows */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Design Process</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Mapped the full profile journey across builder/edit mode and view mode — from empty onboarding states through progressive content building to the final "success state" seen by recruiters.
@@ -176,10 +182,10 @@ const PearlCaseStudy = () => {
               <img src={pearlFlowOnboarding} alt="Pearl onboarding flow — start state through setup help to populated profile" className="w-full h-auto object-contain bg-secondary/20" />
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* UI System */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">UI System & Key Screens</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             The profile surfaces three core views — Experience (work history with linked projects), Pearls (curated portfolio highlights), and Career Goals (prompt-based career direction). Each tab was designed as an independent module that renders consistently across web, iOS, and Android.
@@ -195,10 +201,10 @@ const PearlCaseStudy = () => {
           <div className="rounded-xl overflow-hidden border border-border">
             <img src={pearlProfileExperience} alt="Pearl cross-platform experience view — project detail with platform tags and impact bullets" className="w-full h-auto object-contain" />
           </div>
-        </section>
+        </motion.section>
 
         {/* Design System & Responsive */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Design System & Responsive Breakpoints</h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Built a comprehensive component library with style tiles, button variants (light/dark, 40px), and link patterns — all tested across desktop and mobile breakpoints to ensure consistent rendering.
@@ -214,10 +220,10 @@ const PearlCaseStudy = () => {
               <img src={pearlMobileViews} alt="Pearl mobile view mode — experience, pearls, and career goals tabs on mobile" className="w-full h-auto object-contain bg-secondary/20" />
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Design Decisions */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Design Decisions</h2>
           <div className="space-y-3">
             {designDecisions.map((rule, i) => (
@@ -227,10 +233,10 @@ const PearlCaseStudy = () => {
               </div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Outcomes */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-6">Outcomes</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {outcomes.map((stat, i) => (
@@ -243,10 +249,10 @@ const PearlCaseStudy = () => {
               </Card>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Why This Matters */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Why This Matters for Product Teams</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -261,10 +267,10 @@ const PearlCaseStudy = () => {
               </div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Tools */}
-        <section className="mb-16">
+        <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
           <h2 className="text-2xl font-bold text-foreground mb-4">Tools & Methods</h2>
           <div className="flex flex-wrap gap-2">
             {[
@@ -278,7 +284,7 @@ const PearlCaseStudy = () => {
               </span>
             ))}
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );
