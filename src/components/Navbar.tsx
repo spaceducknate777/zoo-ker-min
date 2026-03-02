@@ -41,7 +41,7 @@ const Navbar = () => {
               href="/resume/nathan-zukerman-resume.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-foreground border border-border rounded-md px-3 py-1.5 hover:border-accent hover:text-accent transition-colors"
+              className="text-sm font-semibold text-primary-foreground bg-foreground rounded-md px-4 py-1.5 hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               Resume
             </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               href="/resume/nathan-zukerman-resume.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-sm text-foreground py-2"
+              className="inline-block text-sm font-semibold text-primary-foreground bg-foreground rounded-md px-4 py-1.5 hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               Resume
             </a>

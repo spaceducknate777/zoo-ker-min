@@ -58,7 +58,7 @@ const PearlCaseStudy = () => {
         <motion.div className="mb-12" initial="hidden" animate="visible" variants={reveal} transition={{ duration: 0.5 }}>
           <p className="text-sm font-bold text-accent uppercase tracking-widest mb-2">Case Study</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Pearl — Career Platform Redesign
+            Scaling Pearl: From Fragmented UI to a High-Conversion Design System
           </h1>
           <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 mb-4">
             <p className="text-2xl font-extrabold text-accent">+25% Conversion Lift</p>
@@ -209,9 +209,26 @@ const PearlCaseStudy = () => {
 
         {/* Design System & Responsive */}
         <motion.section className="mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
-          <h2 className="text-2xl font-bold text-foreground mb-4">Design System & Responsive Breakpoints</h2>
+          <h2 className="text-2xl font-bold text-foreground mb-4">Scaling with a 50+ Component Design System</h2>
+          <div className="bg-accent/5 border border-accent/20 rounded-xl p-5 mb-6">
+            <h3 className="text-sm font-semibold text-accent mb-3">The Engine Behind the Screens</h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <Layers className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-muted-foreground"><span className="text-foreground font-semibold">Atomic Foundation:</span> Established foundational tokens for typography, color elevation, and spacing to ensure pixel-perfect handoffs.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <Zap className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-muted-foreground"><span className="text-foreground font-semibold">Interactive Components:</span> Built 50+ reusable Figma components with multiple variants (states, sizes, themes), reducing design-to-dev friction.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <BarChart3 className="h-4 w-4 text-accent mt-0.5 flex-shrink-0" />
+                <p className="text-sm text-muted-foreground"><span className="text-foreground font-semibold">Measurable Impact:</span> The systematic approach directly contributed to a 25% lift in profile completion rates by removing visual noise and cognitive load.</p>
+              </div>
+            </div>
+          </div>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Built a comprehensive component library with style tiles, button variants (light/dark, 40px), and link patterns — all tested across desktop and mobile breakpoints to ensure consistent rendering.
+            Style tiles, button variants (light/dark, 40px), and link patterns — all tested across desktop and mobile breakpoints to ensure consistent rendering.
           </p>
           <div className="rounded-xl overflow-hidden border border-border mb-4">
             <img src={pearlDesktopOverview} alt="Pearl desktop overview — view mode, style tile, and button tile side by side" className="w-full h-auto object-contain bg-secondary/20" />
