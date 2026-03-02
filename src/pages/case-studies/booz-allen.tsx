@@ -321,10 +321,31 @@ const BoozAllenCaseStudy = () => {
             </div>
           </section>
 
+          {/* Accessibility Compliance */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Accessibility Compliance</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              All interfaces were designed and validated against Section 508 and WCAG 2.1 AA standards — a non-negotiable requirement for federal platforms.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                "Screen reader–optimized labeling and ARIA landmarks",
+                "Full keyboard-only navigation on all critical workflows",
+                "Color contrast ratios meeting AA minimums for low vision and color blindness",
+                "Tested with assistive technologies including JAWS, NVDA, and VoiceOver",
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-accent/5 border border-accent/15">
+                  <Accessibility className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
           {/* Tools */}
           <section className="pb-8">
             <div className="flex flex-wrap gap-2">
-              {["Figma", "Design Systems", "WCAG Audits", "Usability Testing"].map((tool) => (
+              {["Figma", "Design Systems", "WCAG Audits", "Section 508", "JAWS", "NVDA", "Usability Testing"].map((tool) => (
                 <span
                   key={tool}
                   className="px-3 py-1.5 rounded-full bg-secondary border border-border text-xs text-muted-foreground"
