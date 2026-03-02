@@ -244,21 +244,29 @@ const BMWCaseStudy = () => {
           <motion.section className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Quantitative Outcomes</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-              {outcomes.map((o, i) => (
-                <Card key={i} className="text-center">
-                  <CardContent className="pt-6">
-                    <p className="text-3xl font-bold text-accent">{o.value}</p>
-                    <p className="text-sm font-semibold text-foreground mt-1">{o.label}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{o.context}</p>
-                  </CardContent>
-                </Card>
-              ))}
+              {outcomes.map((o, i) => {
+                const isHighlight = o.value === "94%" || o.label.toLowerCase().includes("recognition");
+                return (
+                  <Card key={i} className={`text-center ${isHighlight ? "border-accent bg-accent/5 ring-1 ring-accent/20" : ""}`}>
+                    <CardContent className="pt-6">
+                      <p className={`font-bold ${isHighlight ? "text-5xl text-accent" : "text-3xl text-accent"}`}>{o.value}</p>
+                      <p className={`font-semibold text-foreground mt-1 ${isHighlight ? "text-base" : "text-sm"}`}>{o.label}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{o.context}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </motion.section>
 
           {/* Business & Product Impact */}
           <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Business & Product Impact</h2>
+            {/* Patent callout */}
+            <div className="bg-accent/10 border-2 border-accent/30 rounded-xl p-6 text-center">
+              <p className="text-4xl font-extrabold text-accent mb-1">Patented Technology</p>
+              <p className="text-sm text-muted-foreground">Gesture interaction system patented by BMW Group</p>
+            </div>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
                 { icon: Building2, text: "Gesture system patented by BMW" },

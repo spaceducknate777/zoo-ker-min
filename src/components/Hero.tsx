@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            Product Designer · Motion & Interaction Systems
+            Patented Interaction Designer — BMW, USAA & Booz Allen
           </motion.p>
 
           <motion.p
@@ -52,7 +52,7 @@ const Hero = () => {
             transition={{ duration: 0.4, delay: 0.25 }}
           >
             I design interaction systems end-to-end — from early research to shipped UI. 
-            Shipped at scale: patented gesture interface at BMW, design systems serving 
+            Patented gesture interface at BMW, design systems serving 
             12M+ users at USAA, five federal agencies at Booz Allen.
           </motion.p>
 

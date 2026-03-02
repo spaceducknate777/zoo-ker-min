@@ -60,8 +60,12 @@ const PearlCaseStudy = () => {
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Pearl — Career Platform Redesign
           </h1>
+          <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 mb-4">
+            <p className="text-2xl font-extrabold text-accent">+25% Conversion Lift</p>
+            <p className="text-sm text-muted-foreground mt-1">Profile completion rate after redesign — the primary success metric.</p>
+          </div>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Led the product pivot from job board to career profile platform — delivering a 25% conversion lift, 50+ component design system across 3 platforms, and 15% performance improvement through streamlined user flows.
+            Led the product pivot from job board to career profile platform — delivering a 50+ component design system across 3 platforms, 40% faster dev handoff, and 15% performance improvement through streamlined user flows.
           </p>
         </motion.div>
 
