@@ -6,7 +6,7 @@ import bmwImage from "@/assets/bmw-project.jpg";
 import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/dot-its-screenshot.png";
 import finavImage from "@/assets/finav-project.jpg";
-import pearlImage from "@/assets/pearl-profile-page.png";
+import pearlImage from "@/assets/pearl-desktop-view.webp";
 
 type Category = "Featured" | "Product / UX" | "Creative";
 
