@@ -17,8 +17,9 @@ interface Project {
   image: string;
   tag: string;
   link: string;
-  video?: string; // optional hover video — drop .mp4 path here when ready
-  shipped?: string; // e.g. "Shipped 2023"
+  video?: string;
+  shipped?: string;
+  featuredBadge?: string;
 }
 
 const projects: Project[] = [
@@ -30,6 +31,7 @@ const projects: Project[] = [
     tag: "Interaction Design · Automotive",
     link: "/case-studies/bmw",
     shipped: "Shipped 2019",
+    featuredBadge: "⚡ Patented by BMW",
   },
   {
     title: "Pearl — Career Platform Redesign",
@@ -120,6 +122,14 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             <div className="absolute top-3 right-3 z-10">
               <span className="px-2.5 py-1 bg-background/80 backdrop-blur-sm text-foreground text-[10px] font-bold uppercase tracking-wider rounded-full border border-border/50">
                 {project.shipped}
+              </span>
+            </div>
+          )}
+          {/* Featured badge (e.g. Patent) */}
+          {project.featuredBadge && (
+            <div className="absolute top-3 left-3 z-10">
+              <span className="px-3 py-1 bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
+                {project.featuredBadge}
               </span>
             </div>
           )}
