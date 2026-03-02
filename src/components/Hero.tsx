@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            Patented Interaction Designer — BMW, USAA & Booz Allen
+            Interaction Designer @ BMW | Patented Gesture Tech & Scalable Systems
           </motion.p>
 
           <motion.p
