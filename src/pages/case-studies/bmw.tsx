@@ -2,6 +2,7 @@ import { ArrowLeft, Zap, Shield, Eye, Hand, Volume2, Play, Square, ChevronRight,
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import bmwGestureUI from "@/assets/bmw-gesture-ui-concept.jpg";
 import bmwGestureShapes from "@/assets/bmw-gesture-shapes.jpg";
 import bmwHapticPrototype from "@/assets/bmw-haptic-prototype-testing.png";
@@ -34,6 +35,11 @@ const outcomes = [
   { value: "0", label: "Safety incidents", context: "across 500+ test hours" },
 ];
 
+const reveal = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const BMWCaseStudy = () => {
   const navigate = useNavigate();
 
@@ -51,7 +57,7 @@ const BMWCaseStudy = () => {
 
         <div className="space-y-16">
           {/* Hero */}
-          <header className="space-y-4">
+          <motion.header className="space-y-4" initial="hidden" animate="visible" variants={reveal} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
               BMW Autonomous Gesture Interface
             </h1>
@@ -63,18 +69,18 @@ const BMWCaseStudy = () => {
               alt="BMW Gesture Interface - Hand gesture interactions with iDrive radial menu"
               className="w-full h-auto object-contain rounded-lg shadow-xl bg-white p-8 mt-6"
             />
-          </header>
+          </motion.header>
 
           {/* Overview */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Overview</h2>
             <p className="text-muted-foreground leading-relaxed">
               Designed and validated a gesture-based UI system for BMW autonomous vehicles, defining a gold-standard gesture vocabulary optimized for safety, usability, and real-world driving conditions. The system established clear interaction patterns, feedback rules, and accessibility fallbacks suitable for both human use and machine training.
             </p>
-          </section>
+          </motion.section>
 
           {/* What I Did */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">What I Did</h2>
             <ul className="space-y-3">
               {[
@@ -90,10 +96,10 @@ const BMWCaseStudy = () => {
                 </li>
               ))}
             </ul>
-          </section>
+          </motion.section>
 
           {/* Core Interface Problem */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Core Interface Problem</h2>
             <p className="text-muted-foreground leading-relaxed">
               Autonomous vehicles require non-visual, low-cognitive-load interactions that:
@@ -116,36 +122,24 @@ const BMWCaseStudy = () => {
             <p className="text-sm text-muted-foreground italic">
               Touchscreens and voice alone failed to meet these constraints.
             </p>
-          </section>
+          </motion.section>
 
           {/* Research artifacts image grid */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <img
-                  src={bmwGestureTaxonomy}
-                  alt="Gesture taxonomy documenting 24 natural hand positions observed during ethnographic research"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 italic">
-                  Gesture taxonomy: 24 natural hand positions from ethnographic research
-                </p>
+                <img src={bmwGestureTaxonomy} alt="Gesture taxonomy documenting 24 natural hand positions observed during ethnographic research" className="w-full h-auto rounded-lg shadow-lg" />
+                <p className="text-sm text-muted-foreground mt-2 italic">Gesture taxonomy: 24 natural hand positions from ethnographic research</p>
               </div>
               <div>
-                <img
-                  src={bmwGestureShapes}
-                  alt="Shape primitives and gesture testing with paper prototypes"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 italic">
-                  Testing gesture recognition zones with shape primitives
-                </p>
+                <img src={bmwGestureShapes} alt="Shape primitives and gesture testing with paper prototypes" className="w-full h-auto rounded-lg shadow-lg" />
+                <p className="text-sm text-muted-foreground mt-2 italic">Testing gesture recognition zones with shape primitives</p>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Gesture System Design */}
-          <section className="space-y-6">
+          <motion.section className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <div>
               <h2 className="text-2xl font-bold text-foreground mb-1">Gesture System Design</h2>
               <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">Golden Dataset Focus</p>
@@ -158,10 +152,7 @@ const BMWCaseStudy = () => {
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {gestures.map((g, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-accent/5 border border-accent/15"
-                  >
+                  <div key={i} className="flex items-center gap-3 p-3 rounded-lg bg-accent/5 border border-accent/15">
                     <g.icon className="h-4 w-4 text-accent shrink-0" />
                     <div className="text-sm">
                       <span className="font-semibold text-foreground">{g.action}</span>
@@ -175,19 +166,11 @@ const BMWCaseStudy = () => {
               </p>
             </div>
 
-            {/* Armrest concept */}
             <div>
-              <img
-                src={bmwArmrestConcept}
-                alt="Armrest concept sketch with embedded click wheel and haptic feedback annotations"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Design concept: Embedded armrest control with haptic feedback
-              </p>
+              <img src={bmwArmrestConcept} alt="Armrest concept sketch with embedded click wheel and haptic feedback annotations" className="w-full h-auto rounded-lg shadow-lg" />
+              <p className="text-sm text-muted-foreground mt-2 italic">Design concept: Embedded armrest control with haptic feedback</p>
             </div>
 
-            {/* Design Rules */}
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-3">Design Rules & Evaluation Criteria</h3>
               <p className="text-sm text-muted-foreground mb-3">Used consistently across testing and implementation:</p>
@@ -203,31 +186,19 @@ const BMWCaseStudy = () => {
                 These rules formed a repeatable evaluation framework for judging new gesture concepts.
               </p>
             </div>
-          </section>
+          </motion.section>
 
           {/* Prototyping & Validation */}
-          <section className="space-y-6">
+          <motion.section className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Prototyping & Validation</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <img
-                  src={bmwHapticPrototype}
-                  alt="Haptic prototype board with tactile feedback elements"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 italic">
-                  Physical haptic prototype for tactile feedback testing
-                </p>
+                <img src={bmwHapticPrototype} alt="Haptic prototype board with tactile feedback elements" className="w-full h-auto rounded-lg shadow-lg" />
+                <p className="text-sm text-muted-foreground mt-2 italic">Physical haptic prototype for tactile feedback testing</p>
               </div>
               <div>
-                <img
-                  src={bmwUserTesting}
-                  alt="User testing session with BMW stakeholders"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 italic">
-                  User testing with BMW stakeholders evaluating interactions
-                </p>
+                <img src={bmwUserTesting} alt="User testing session with BMW stakeholders" className="w-full h-auto rounded-lg shadow-lg" />
+                <p className="text-sm text-muted-foreground mt-2 italic">User testing with BMW stakeholders evaluating interactions</p>
               </div>
             </div>
             <ul className="space-y-2">
@@ -245,20 +216,14 @@ const BMWCaseStudy = () => {
             </ul>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <img
-                  src={bmwPrototypeCloseup}
-                  alt="Close-up of haptic feedback elements with illuminated touch zones"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-                <p className="text-sm text-muted-foreground mt-2 italic">
-                  Illuminated touch zones with integrated haptic feedback
-                </p>
+                <img src={bmwPrototypeCloseup} alt="Close-up of haptic feedback elements with illuminated touch zones" className="w-full h-auto rounded-lg shadow-lg" />
+                <p className="text-sm text-muted-foreground mt-2 italic">Illuminated touch zones with integrated haptic feedback</p>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Accessibility */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Accessibility & Edge Case Handling</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
@@ -273,10 +238,10 @@ const BMWCaseStudy = () => {
                 </div>
               ))}
             </div>
-          </section>
+          </motion.section>
 
           {/* Quantitative Outcomes */}
-          <section className="space-y-6">
+          <motion.section className="space-y-6" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Quantitative Outcomes</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
               {outcomes.map((o, i) => (
@@ -289,10 +254,10 @@ const BMWCaseStudy = () => {
                 </Card>
               ))}
             </div>
-          </section>
+          </motion.section>
 
           {/* Business & Product Impact */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Business & Product Impact</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
@@ -307,10 +272,10 @@ const BMWCaseStudy = () => {
                 </div>
               ))}
             </div>
-          </section>
+          </motion.section>
 
           {/* Why This Matters for AI */}
-          <section className="space-y-4">
+          <motion.section className="space-y-4" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Why This Matters for AI Systems</h2>
             <p className="text-muted-foreground leading-relaxed">This project produced:</p>
             <ul className="space-y-2">
@@ -329,25 +294,22 @@ const BMWCaseStudy = () => {
             <p className="text-sm text-muted-foreground italic">
               These artifacts are directly applicable to training, validating, and auditing AI-driven interface systems.
             </p>
-          </section>
+          </motion.section>
 
           {/* Tools & Methods */}
-          <section className="space-y-3 pb-8">
+          <motion.section className="space-y-3 pb-8" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={reveal} transition={{ duration: 0.5 }}>
             <h2 className="text-2xl font-bold text-foreground">Tools & Methods</h2>
             <div className="flex flex-wrap gap-2">
               {[
                 "Figma", "Sketching", "Driving simulators", "Wizard-of-Oz prototyping",
                 "Usability testing", "Comparative evaluation", "Accessibility heuristics",
               ].map((tool) => (
-                <span
-                  key={tool}
-                  className="px-3 py-1.5 rounded-full bg-secondary border border-border text-sm text-foreground"
-                >
+                <span key={tool} className="px-3 py-1.5 rounded-full bg-secondary border border-border text-sm text-foreground">
                   {tool}
                 </span>
               ))}
             </div>
-          </section>
+          </motion.section>
         </div>
       </div>
     </div>
