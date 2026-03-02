@@ -23,15 +23,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Pearl — Career Platform Redesign",
-    outcome: "25% conversion lift. 50+ component design system. 40% faster handoff.",
-    category: ["Featured", "Product / UX"],
-    image: pearlImage,
-    tag: "Product Design · Fintech",
-    link: "/case-studies/pearl",
-    shipped: "Shipped 2023",
-  },
-  {
     title: "BMW — Autonomous Gesture Interface",
     outcome: "Patented. 94% intuitive recognition. $500K+ prototype funding.",
     category: ["Featured", "Product / UX"],
@@ -39,6 +30,15 @@ const projects: Project[] = [
     tag: "Interaction Design · Automotive",
     link: "/case-studies/bmw",
     shipped: "Shipped 2019",
+  },
+  {
+    title: "Pearl — Career Platform Redesign",
+    outcome: "25% conversion lift. 50+ component design system. 40% faster handoff.",
+    category: ["Featured", "Product / UX"],
+    image: pearlImage,
+    tag: "Product Design · Fintech",
+    link: "/case-studies/pearl",
+    shipped: "Shipped 2023",
   },
   {
     title: "Booz Allen — Federal Platform Redesign",
@@ -162,9 +162,9 @@ const ProjectGrid = () => {
               <button
                 key={f}
                 onClick={() => setActive(f)}
-                className={`text-sm px-4 py-1.5 rounded-md border transition-colors ${
+                className={`text-sm px-4 py-1.5 rounded-md border transition-all duration-200 font-medium ${
                   active === f
-                    ? "border-foreground text-foreground"
+                    ? "bg-foreground text-background border-foreground shadow-sm"
                     : "border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground"
                 }`}
               >
