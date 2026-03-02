@@ -42,7 +42,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            Product Designer — Interaction & Motion
+            Product Designer · Motion & Interaction Systems
           </motion.p>
 
           <motion.p
