@@ -19,7 +19,7 @@ const ProfessionalExperience = () => {
     {
       role: "UX Design Intern",
       company: "BMW Group",
-      period: "Sept – Nov 2019",
+      period: "Sept – Nov 2018",
       location: "Savannah, GA",
       description:
         "Designed a natural gesture interface for autonomous vehicles with 94% intuitive recognition. Contributed to $500K+ prototype funding via C-suite presentation.",
