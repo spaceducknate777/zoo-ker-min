@@ -4,71 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathan Zukerman — Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    @page { size: letter; margin: 0.5in 0.6in; }
+    @page { size: letter; margin: 0.5in; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 10pt;
+      font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 9.5pt;
       line-height: 1.45;
       color: #1a1a1a;
       max-width: 7.5in;
       margin: 0 auto;
-      padding: 0.5in 0.6in;
+      padding: 0.5in;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
 
     /* ── Header ── */
-    header { text-align: center; margin-bottom: 4px; }
-    h1 { font-size: 20pt; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1px; display: inline; }
-    .header-pipe { font-size: 14pt; color: #999; margin: 0 6px; font-weight: 300; }
-    .header-role { font-size: 14pt; color: #444; font-weight: 500; }
-    .contact-bar { font-size: 9pt; color: #555; margin-top: 4px; }
+    header { text-align: center; margin-bottom: 6px; }
+    h1 { font-size: 20pt; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 1px; display: inline; }
+    .header-pipe { font-size: 14pt; color: #999; margin: 0 8px; font-weight: 300; }
+    .header-role { font-size: 13pt; color: #444; font-weight: 500; letter-spacing: -0.01em; }
+    .contact-bar { font-size: 8.5pt; color: #555; margin-top: 5px; letter-spacing: 0.01em; }
     .contact-bar a { color: #2a5a8a; text-decoration: none; }
-    .contact-bar .sep { margin: 0 6px; color: #bbb; }
+    .contact-bar .sep { margin: 0 8px; color: #bbb; }
 
     /* ── Sections ── */
     h2 {
-      font-size: 10pt;
+      font-size: 9.5pt;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       color: #2a5a8a;
       border-bottom: 1.5px solid #2a5a8a;
       padding-bottom: 3px;
       margin-top: 14px;
       margin-bottom: 6px;
     }
-    .summary { font-size: 9.5pt; color: #333; margin-top: 4px; line-height: 1.5; }
+    .summary { font-size: 9pt; color: #333; margin-top: 4px; line-height: 1.5; }
 
     /* ── Skills columns ── */
     .skills-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 8px;
-      font-size: 9.5pt;
-      margin-top: 2px;
+      gap: 12px;
+      font-size: 9pt;
+      margin-top: 3px;
     }
-    .skills-col strong { display: block; color: #2a5a8a; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+    .skills-col strong { display: block; color: #2a5a8a; font-size: 8.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
     .skills-col span { color: #1a1a1a; }
     .skill-highlight { font-weight: 700; }
 
     /* ── Jobs ── */
     .job { margin-bottom: 10px; }
     .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
-    .job-title { font-weight: 700; font-size: 10pt; }
-    .job-company { font-weight: 600; color: #2a5a8a; }
-    .job-date { font-size: 9pt; color: #666; white-space: nowrap; }
+    .job-title { font-weight: 600; font-size: 9.5pt; }
+    .job-company { font-weight: 600; color: #2a5a8a; font-size: 9.5pt; }
+    .job-date { font-size: 8.5pt; color: #666; white-space: nowrap; }
     ul { padding-left: 16px; margin-top: 2px; }
-    li { margin-bottom: 2px; font-size: 9.5pt; color: #333; }
+    li { margin-bottom: 2px; font-size: 9pt; color: #333; }
     li::marker { color: #2a5a8a; }
     .metric { font-weight: 700; color: #1a1a1a; }
 
     /* ── Education ── */
-    .education .school { font-weight: 700; font-size: 10pt; }
-    .education .degree { font-size: 9.5pt; color: #333; }
-    .education .honors { font-size: 9.5pt; color: #2a5a8a; font-weight: 600; }
+    .education .school { font-weight: 700; font-size: 9.5pt; }
+    .education .degree { font-size: 9pt; color: #333; }
+    .education .honors { font-size: 9pt; color: #2a5a8a; font-weight: 600; }
 
     @media print { body { padding: 0; } }
   </style>
