@@ -18,7 +18,17 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-    h1 { font-size: 20pt; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2px; }
+
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 4px; }
+    h1 { font-size: 20pt; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1px; display: inline; }
+    .header-pipe { font-size: 14pt; color: #999; margin: 0 6px; font-weight: 300; }
+    .header-role { font-size: 14pt; color: #444; font-weight: 500; }
+    .contact-bar { font-size: 9pt; color: #555; margin-top: 4px; }
+    .contact-bar a { color: #2a5a8a; text-decoration: none; }
+    .contact-bar .sep { margin: 0 6px; color: #bbb; }
+
+    /* ── Sections ── */
     h2 {
       font-size: 10pt;
       font-weight: 700;
@@ -30,14 +40,21 @@
       margin-top: 14px;
       margin-bottom: 6px;
     }
-    .subtitle { font-size: 11pt; color: #444; font-weight: 500; }
-    .contact { font-size: 9pt; color: #555; margin-top: 3px; }
-    .contact a { color: #2a5a8a; text-decoration: none; }
     .summary { font-size: 9.5pt; color: #333; margin-top: 4px; line-height: 1.5; }
 
-    .skills-group { margin-bottom: 4px; font-size: 9.5pt; }
-    .skills-group strong { color: #1a1a1a; }
+    /* ── Skills columns ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      font-size: 9.5pt;
+      margin-top: 2px;
+    }
+    .skills-col strong { display: block; color: #2a5a8a; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+    .skills-col span { color: #1a1a1a; }
+    .skill-highlight { font-weight: 700; }
 
+    /* ── Jobs ── */
     .job { margin-bottom: 10px; }
     .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
     .job-title { font-weight: 700; font-size: 10pt; }
@@ -46,7 +63,9 @@
     ul { padding-left: 16px; margin-top: 2px; }
     li { margin-bottom: 2px; font-size: 9.5pt; color: #333; }
     li::marker { color: #2a5a8a; }
+    .metric { font-weight: 700; color: #1a1a1a; }
 
+    /* ── Education ── */
     .education .school { font-weight: 700; font-size: 10pt; }
     .education .degree { font-size: 9.5pt; color: #333; }
     .education .honors { font-size: 9.5pt; color: #2a5a8a; font-weight: 600; }
@@ -56,13 +75,16 @@
 </head>
 <body>
 
+  <!-- ── Horizontal Header ── -->
   <header>
-    <h1>NATHAN ZUKERMAN</h1>
-    <div class="subtitle">Product Designer — Interaction & Systems</div>
-    <div class="contact">
-      Woodstock, VA &nbsp;|&nbsp;
-      <a href="mailto:natezukerman@gmail.com">natezukerman@gmail.com</a> &nbsp;|&nbsp;
-      <a href="https://zoo-ker-min.lovable.app" target="_blank">zoo-ker-min.lovable.app</a>
+    <div>
+      <h1>Nathan Zukerman</h1><span class="header-pipe">|</span><span class="header-role">Product Designer</span>
+    </div>
+    <div class="contact-bar">
+      Woodstock, VA<span class="sep">•</span>
+      <a href="mailto:natezukerman@gmail.com">natezukerman@gmail.com</a><span class="sep">•</span>
+      <a href="https://zoo-ker-min.lovable.app" target="_blank">zoo-ker-min.lovable.app</a><span class="sep">•</span>
+      <a href="https://linkedin.com/in/nathanzukerman" target="_blank">LinkedIn</a>
     </div>
   </header>
 
@@ -71,17 +93,24 @@
     Patented Product Designer specializing in high-fidelity interaction systems and human-machine interfaces. Proven track record at BMW, USAA, and Booz Allen in translating complex data into scalable, accessible UI. Expert in bridging the gap between hardware and software through haptic R&D and motion-driven design. Summa Cum Laude graduate with a 4.0 Major GPA.
   </p>
 
+  <!-- ── 3-Column Skills ── -->
   <h2>Core Skills</h2>
-  <div class="skills-group">
-    <strong>Specialized:</strong> Interaction Design (HCI), Patented Gesture Systems, Design Systems (Tokens/Variables), WCAG 2.1 AA Accessibility, Haptic Prototyping.
-  </div>
-  <div class="skills-group">
-    <strong>Strategy:</strong> Ethnographic Research, Stakeholder Management, Jobs-to-be-Done (JTBD), Agile/Scrum, Design Thinking.
-  </div>
-  <div class="skills-group">
-    <strong>Tools:</strong> Figma (Advanced Auto Layout), Framer, Adobe CC, Arduino/Physical Computing, HTML/CSS, Git, Jira.
+  <div class="skills-grid">
+    <div class="skills-col">
+      <strong>Design</strong>
+      <span>Interaction Design (HCI), <span class="skill-highlight">Patented Gesture Systems</span>, Design Systems (Tokens/Variables), WCAG 2.1 AA, <span class="skill-highlight">Haptic Prototyping</span></span>
+    </div>
+    <div class="skills-col">
+      <strong>Strategy</strong>
+      <span>Ethnographic Research, Stakeholder Management, Jobs-to-be-Done (JTBD), Agile/Scrum, Design Thinking</span>
+    </div>
+    <div class="skills-col">
+      <strong>Technical</strong>
+      <span>Figma (Advanced Auto Layout), Framer, Adobe CC, Arduino/Physical Computing, HTML/CSS, Git, Jira</span>
+    </div>
   </div>
 
+  <!-- ── Experience: Pearl first, R&D clearly labeled ── -->
   <h2>Professional Experience</h2>
 
   <div class="job">
@@ -90,9 +119,20 @@
       <div class="job-date">Feb 2023 – Oct 2023</div>
     </div>
     <ul>
-      <li>Drove 25% conversion lift via a comprehensive mobile-first redesign of a high-volume fintech platform.</li>
-      <li>Architected a 50+ component design system using Figma variables and tokens; reduced design-to-dev handoff time by 40%.</li>
+      <li>Drove <span class="metric">25% conversion lift</span> via a comprehensive mobile-first redesign of a high-volume fintech platform.</li>
+      <li>Architected a <span class="metric">50+ component</span> design system using Figma variables and tokens; reduced design-to-dev handoff time by <span class="metric">40%</span>.</li>
       <li>Led end-to-end design for 3 major product releases, conducting discovery, wireframing, and hi-fi prototyping in rapid Agile sprints.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div><span class="job-company">Interaction Design Lab</span> &nbsp;|&nbsp; <span class="job-title">Independent Researcher &middot; Studio/Lab</span></div>
+      <div class="job-date">Oct 2021 – Present</div>
+    </div>
+    <ul>
+      <li>Developed "SNAPPED," a physical-digital interface exploring haptic feedback and information hierarchy in 3D spaces.</li>
+      <li>Built sensor-based prototypes using Arduino to test spatial reasoning and motion timing for AR/VR environments.</li>
     </ul>
   </div>
 
@@ -102,9 +142,9 @@
       <div class="job-date">Sept 2019 – Oct 2021</div>
     </div>
     <ul>
-      <li>Overhauled 5 federal platforms (NASA, NIH, DOT), achieving a 30% average lift in accessibility and usability scores.</li>
-      <li>Reduced NIH researcher search time by 45% by redesigning complex metadata schemas into intuitive, faceted filtering systems.</li>
-      <li>Managed 50+ stakeholder interviews to map complex workflows for life-critical scientific research tools.</li>
+      <li>Overhauled 5 federal platforms (NASA, NIH, DOT), achieving a <span class="metric">30% average lift</span> in accessibility and usability scores.</li>
+      <li>Reduced NIH researcher search time by <span class="metric">45%</span> by redesigning complex metadata schemas into intuitive, faceted filtering systems.</li>
+      <li>Managed <span class="metric">50+ stakeholder interviews</span> to map complex workflows for life-critical scientific research tools.</li>
     </ul>
   </div>
 
@@ -114,9 +154,9 @@
       <div class="job-date">Sept 2019 – Nov 2019</div>
     </div>
     <ul>
-      <li>Engineered a patented gesture interface for autonomous vehicles; achieved 94% intuitive recognition during testing.</li>
-      <li>Secured $500K+ in C-suite R&D funding by delivering a high-fidelity prototype demonstrating future-state cabin interactions.</li>
-      <li>Executed 50+ hours of ethnographic research to define a safety-first interaction vocabulary for Level 3 autonomy.</li>
+      <li>Engineered a patented gesture interface for autonomous vehicles; achieved <span class="metric">94% intuitive recognition</span> during testing.</li>
+      <li>Secured <span class="metric">$500K+</span> in C-suite R&D funding by delivering a high-fidelity prototype demonstrating future-state cabin interactions.</li>
+      <li>Executed <span class="metric">50+ hours</span> of ethnographic research to define a safety-first interaction vocabulary for Level 3 autonomy.</li>
     </ul>
   </div>
 
@@ -126,19 +166,8 @@
       <div class="job-date">June 2018 – Aug 2018</div>
     </div>
     <ul>
-      <li>Standardized iconography system adopted into the global USAA design library, serving 12M+ active users.</li>
-      <li>Increased mobile engagement by 25% through the design of financial well-being tools for military families.</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-header">
-      <div><span class="job-company">Interaction Design Lab (R&D)</span> &nbsp;|&nbsp; <span class="job-title">Independent Researcher</span></div>
-      <div class="job-date">Oct 2021 – Present</div>
-    </div>
-    <ul>
-      <li>Developed "SNAPPED," a physical-digital interface exploring haptic feedback and information hierarchy in 3D spaces.</li>
-      <li>Built sensor-based prototypes using Arduino to test spatial reasoning and motion timing for AR/VR environments.</li>
+      <li>Standardized iconography system adopted into the global USAA design library, serving <span class="metric">12M+ active users</span>.</li>
+      <li>Increased mobile engagement by <span class="metric">25%</span> through the design of financial well-being tools for military families.</li>
     </ul>
   </div>
 

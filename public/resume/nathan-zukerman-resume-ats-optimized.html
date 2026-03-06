@@ -16,7 +16,9 @@
             margin: 0 auto;
             padding: 0.4in 0.5in;
         }
-        h1 { font-size: 20pt; font-weight: bold; margin-bottom: 2pt; }
+        h1 { font-size: 20pt; font-weight: bold; margin-bottom: 0; display: inline; }
+        .header-pipe { font-size: 14pt; color: #666; margin: 0 6px; }
+        .header-role { font-size: 14pt; color: #333; font-weight: bold; }
         h2 {
             font-size: 10pt;
             font-weight: bold;
@@ -27,35 +29,45 @@
             text-transform: uppercase;
         }
         .header { text-align: center; margin-bottom: 6pt; }
-        .subtitle { font-size: 11pt; font-weight: bold; margin-bottom: 2pt; color: #333; }
-        .contact { font-size: 9pt; margin-bottom: 2pt; }
-        .location { font-size: 9pt; color: #333; }
+        .contact { font-size: 9pt; margin-top: 3pt; margin-bottom: 2pt; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6pt; font-size: 9pt; margin-top: 2pt; }
+        .skills-col strong { display: block; font-weight: bold; margin-bottom: 1pt; text-transform: uppercase; font-size: 8.5pt; }
         .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1pt; margin-top: 6pt; }
         .job-title { font-weight: bold; font-size: 10pt; }
         .company { font-weight: bold; }
         .date { font-size: 9pt; color: #333; }
         ul { margin-left: 14pt; margin-bottom: 0; }
         li { margin-bottom: 1pt; }
-        .skills-row { font-size: 9pt; margin-bottom: 2pt; }
-        .skill-label { font-weight: bold; }
+        b { font-weight: bold; }
         @media print { body { padding: 0.3in 0.4in; } }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Nathan Zukerman</h1>
-        <div class="subtitle">Product Designer — Interaction & Systems</div>
-        <div class="contact"><div class="contact">natezukerman@gmail.com | 602-400-6519 | linkedin.com/in/nathanzukerman | zoo-ker-min.lovable.app</div></div>
-        <div class="location">Woodstock, VA</div>
+        <div>
+            <h1>Nathan Zukerman</h1><span class="header-pipe">|</span><span class="header-role">Product Designer</span>
+        </div>
+        <div class="contact">Woodstock, VA • natezukerman@gmail.com • 602-400-6519 • linkedin.com/in/nathanzukerman • zoo-ker-min.lovable.app</div>
     </div>
 
     <h2>Professional Summary</h2>
     <p>Patented Product Designer specializing in high-fidelity interaction systems and human-machine interfaces. Proven track record at BMW, USAA, and Booz Allen in translating complex data into scalable, accessible UI. Expert in bridging the gap between hardware and software through haptic R&D and motion-driven design. Summa Cum Laude graduate with a 4.0 Major GPA.</p>
 
     <h2>Core Skills</h2>
-    <div class="skills-row"><span class="skill-label">Specialized:</span> Interaction Design (HCI), Patented Gesture Systems, Design Systems (Tokens/Variables), WCAG 2.1 AA Accessibility, Haptic Prototyping</div>
-    <div class="skills-row"><span class="skill-label">Strategy:</span> Ethnographic Research, Stakeholder Management, Jobs-to-be-Done (JTBD), Agile/Scrum, Design Thinking</div>
-    <div class="skills-row"><span class="skill-label">Tools:</span> Figma (Advanced Auto Layout), Framer, Adobe CC, Arduino/Physical Computing, HTML/CSS, Git, Jira</div>
+    <div class="skills-grid">
+        <div class="skills-col">
+            <strong>Design</strong>
+            Interaction Design (HCI), <b>Patented Gesture Systems</b>, Design Systems (Tokens/Variables), WCAG 2.1 AA, <b>Haptic Prototyping</b>
+        </div>
+        <div class="skills-col">
+            <strong>Strategy</strong>
+            Ethnographic Research, Stakeholder Management, Jobs-to-be-Done (JTBD), Agile/Scrum, Design Thinking
+        </div>
+        <div class="skills-col">
+            <strong>Technical</strong>
+            Figma (Advanced Auto Layout), Framer, Adobe CC, Arduino/Physical Computing, HTML/CSS, Git, Jira
+        </div>
+    </div>
 
     <h2>Professional Experience</h2>
 
@@ -64,9 +76,18 @@
         <div class="date">Feb 2023 - Oct 2023</div>
     </div>
     <ul>
-        <li>Drove 25% conversion lift via a comprehensive mobile-first redesign of a high-volume fintech platform</li>
-        <li>Architected a 50+ component design system using Figma variables and tokens; reduced design-to-dev handoff time by 40%</li>
+        <li>Drove <b>25% conversion lift</b> via a comprehensive mobile-first redesign of a high-volume fintech platform</li>
+        <li>Architected a <b>50+ component</b> design system using Figma variables and tokens; reduced design-to-dev handoff time by <b>40%</b></li>
         <li>Led end-to-end design for 3 major product releases, conducting discovery, wireframing, and hi-fi prototyping in rapid Agile sprints</li>
+    </ul>
+
+    <div class="job-header">
+        <div><span class="job-title">Independent Researcher · Studio/Lab</span> | <span class="company">Interaction Design Lab (R&D)</span></div>
+        <div class="date">Oct 2021 - Present</div>
+    </div>
+    <ul>
+        <li>Developed "SNAPPED," a physical-digital interface exploring haptic feedback and information hierarchy in 3D spaces</li>
+        <li>Built sensor-based prototypes using Arduino to test spatial reasoning and motion timing for AR/VR environments</li>
     </ul>
 
     <div class="job-header">
@@ -74,9 +95,9 @@
         <div class="date">Sep 2019 - Oct 2021</div>
     </div>
     <ul>
-        <li>Overhauled 5 federal platforms (NASA, NIH, DOT), achieving a 30% average lift in accessibility and usability scores</li>
-        <li>Reduced NIH researcher search time by 45% by redesigning complex metadata schemas into intuitive, faceted filtering systems</li>
-        <li>Managed 50+ stakeholder interviews to map complex workflows for life-critical scientific research tools</li>
+        <li>Overhauled 5 federal platforms (NASA, NIH, DOT), achieving a <b>30% average lift</b> in accessibility and usability scores</li>
+        <li>Reduced NIH researcher search time by <b>45%</b> by redesigning complex metadata schemas into intuitive, faceted filtering systems</li>
+        <li>Managed <b>50+ stakeholder interviews</b> to map complex workflows for life-critical scientific research tools</li>
     </ul>
 
     <div class="job-header">
@@ -84,9 +105,9 @@
         <div class="date">Sep - Nov 2019</div>
     </div>
     <ul>
-        <li>Engineered a patented gesture interface for autonomous vehicles; achieved 94% intuitive recognition during testing</li>
-        <li>Secured $500K+ in C-suite R&D funding by delivering a high-fidelity prototype demonstrating future-state cabin interactions</li>
-        <li>Executed 50+ hours of ethnographic research to define a safety-first interaction vocabulary for Level 3 autonomy</li>
+        <li>Engineered a patented gesture interface for autonomous vehicles; achieved <b>94% intuitive recognition</b> during testing</li>
+        <li>Secured <b>$500K+</b> in C-suite R&D funding by delivering a high-fidelity prototype demonstrating future-state cabin interactions</li>
+        <li>Executed <b>50+ hours</b> of ethnographic research to define a safety-first interaction vocabulary for Level 3 autonomy</li>
     </ul>
 
     <div class="job-header">
@@ -94,17 +115,8 @@
         <div class="date">Jun - Aug 2018</div>
     </div>
     <ul>
-        <li>Standardized iconography system adopted into the global USAA design library, serving 12M+ active users</li>
-        <li>Increased mobile engagement by 25% through the design of financial well-being tools for military families</li>
-    </ul>
-
-    <div class="job-header">
-        <div><span class="job-title">Independent Researcher</span> | <span class="company">Interaction Design Lab (R&D)</span></div>
-        <div class="date">Oct 2021 - Present</div>
-    </div>
-    <ul>
-        <li>Developed "SNAPPED," a physical-digital interface exploring haptic feedback and information hierarchy in 3D spaces</li>
-        <li>Built sensor-based prototypes using Arduino to test spatial reasoning and motion timing for AR/VR environments</li>
+        <li>Standardized iconography system adopted into the global USAA design library, serving <b>12M+ active users</b></li>
+        <li>Increased mobile engagement by <b>25%</b> through the design of financial well-being tools for military families</li>
     </ul>
 
     <h2>Education</h2>
