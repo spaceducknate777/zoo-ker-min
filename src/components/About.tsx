@@ -15,6 +15,9 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Figma · Framer · Adobe CC
               </p>
+              <p className="text-muted-foreground leading-relaxed mt-1">
+                <span className="text-foreground font-medium">3D:</span> Rhino · KeyShot
+              </p>
             </div>
             <div>
               <h3 className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Craft</h3>
