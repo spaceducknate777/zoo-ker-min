@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/nathan-zukerman/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
             <Linkedin className="h-4 w-4" />
           </a>
-          <a href="mailto:nathanzukerman@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
+          <a href="mailto:natezukerman@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
             <Mail className="h-4 w-4" />
           </a>
           <span className="text-xs text-muted-foreground">Based in Virginia</span>

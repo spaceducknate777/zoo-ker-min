@@ -56,6 +56,20 @@ const Hero = () => {
             12M+ users at USAA, five federal agencies at Booz Allen.
           </motion.p>
 
+          <motion.div
+            className="flex flex-wrap gap-3 mb-8"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+          >
+            <a href="#projects" className="inline-flex items-center rounded-md bg-foreground px-5 py-2.5 text-sm font-semibold text-background hover:opacity-90 transition-opacity">
+              View Selected Work
+            </a>
+            <a href="#contact" className="inline-flex items-center rounded-md border border-foreground px-5 py-2.5 text-sm font-semibold text-foreground hover:bg-foreground hover:text-background transition-colors">
+              Let's work together
+            </a>
+          </motion.div>
+
           {/* Skim-optimized proof bar */}
           <motion.div
             className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground border-t border-border pt-6"
@@ -69,7 +83,7 @@ const Hero = () => {
             <span className="text-border">|</span>
             <span><span className="text-foreground font-semibold">Booz Allen</span> — 5 federal agencies</span>
             <span className="text-border">|</span>
-            <span><span className="text-foreground font-semibold">SCAD</span> — 4.0 / Summa Cum Laude</span>
+            <span><span className="text-foreground font-semibold">SCAD</span> — Major GPA 4.0 / Summa Cum Laude</span>
           </motion.div>
         </div>
       </div>
