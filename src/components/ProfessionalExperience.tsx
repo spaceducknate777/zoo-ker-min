@@ -1,6 +1,14 @@
 const ProfessionalExperience = () => {
   const experiences = [
     {
+      role: "Art Manufacturing and Mechanical Production Technician",
+      company: "Framebridge",
+      period: "June 2026 – Present",
+      location: "Winchester, VA",
+      description:
+        "Operate CNC routers and nesting software to cut frame components, acrylic, and mat board to exact measurements while maximizing material usage under lean manufacturing guidelines. Prepare, stain, and join wood moulding and inspect finished frame parts for the assembly teams.",
+    },
+    {
       role: "Interaction Designer",
       company: "Pearl",
       period: "Feb – Oct 2023",
