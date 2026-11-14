@@ -7,6 +7,7 @@ import usaaImage from "@/assets/usaa-sketches-journey.jpg";
 import boozAllenImage from "@/assets/booz-allen-mockup.png";
 import finavImage from "@/assets/finav-project.jpg";
 import pearlImage from "@/assets/pearl-mockup.png";
+import pseImage from "@/assets/pse/hero.webp.asset.json";
 
 type Category = "Featured" | "Product / UX" | "Creative";
 
@@ -59,6 +60,15 @@ const projects: Project[] = [
     tag: "Product Design · Fintech",
     link: "/case-studies/pearl",
     shipped: "Shipped 2023",
+  },
+  {
+    title: "PSE Designs — Website Redesign",
+    outcome: "Research, brand, and coded build. Landed the TDC Marketing job.",
+    category: ["Featured", "Product / UX"],
+    image: pseImage.url,
+    tag: "Website Design · Engineering",
+    link: "/case-studies/pse-designs",
+    shipped: "September 2025",
   },
 ];
 
