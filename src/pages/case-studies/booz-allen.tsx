@@ -8,6 +8,91 @@ import fiscalDataScreenshot from "@/assets/fiscal-data-screenshot.png";
 import wireframeBefore from "@/assets/booz-allen-wireframe-before.png";
 import wireframeLo from "@/assets/booz-allen-wireframe-lo.png";
 import wireframeHi from "@/assets/booz-allen-wireframe-hi.png";
+import nlmAgileProcess from "@/assets/booz-allen/nlm-agile-process.png.asset.json";
+import nlmAccessibilityResearch from "@/assets/booz-allen/nlm-accessibility-research.png.asset.json";
+import nlmContrastRatio from "@/assets/booz-allen/nlm-contrast-ratio.png.asset.json";
+import nlmStyleGuide from "@/assets/booz-allen/nlm-style-guide.png.asset.json";
+import nlmDropdownHoverStates from "@/assets/booz-allen/nlm-dropdown-hover-states.png.asset.json";
+import nlmDropdownMenus from "@/assets/booz-allen/nlm-dropdown-menus.png.asset.json";
+import nlmBannerStates from "@/assets/booz-allen/nlm-banner-states.png.asset.json";
+import nlmNavigationStates from "@/assets/booz-allen/nlm-navigation-states.png.asset.json";
+import fdgAbout from "@/assets/booz-allen/fdg-about.png.asset.json";
+import fdgReleaseCalendar from "@/assets/booz-allen/fdg-release-calendar.png.asset.json";
+import fdgMobileReleaseCalendar from "@/assets/booz-allen/fdg-mobile-release-calendar.png.asset.json";
+
+const processSteps = [
+  {
+    number: "01",
+    title: "My Agile Process",
+    text: "The work followed an Agile process: interviewing the client, daily scrum, competitive analysis, and client presentations.",
+    image: nlmAgileProcess,
+    caption: "My Agile process: interviewing the client, daily scrum, competitive analysis, and client presentations.",
+  },
+  {
+    number: "02",
+    title: "Accessibility Research",
+    text: "Government websites need to meet Web Content Accessibility Guidelines (WCAG). Research into the current National Library of Medicine theme showed it was not color safe: any graphical element that conveys information needs a contrast ratio of at least 3:1.",
+    image: nlmAccessibilityResearch,
+    caption: "Accessibility research into why the current National Library of Medicine theme is not color safe: the WCAG 3:1 contrast requirement, NLM Blue #326295, the focus indicator, and the #015FCC hover color.",
+  },
+  {
+    number: "03",
+    title: "The Current Contrast Ratio",
+    text: "The header, navigation, and footer were all affected by poor contrast. The #015FCC hover color on the NLM Blue #326295 background measured just 1.05:1 — well below the 3:1 requirement.",
+    image: nlmContrastRatio,
+    caption: "The current contrast ratio: #015FCC on #326295 measures 1.05:1.",
+  },
+  {
+    number: "04",
+    title: "Style Guide for Developers",
+    text: "I created a style guide with hex codes and font names so developers could code exactly what I designed, including the navigation bar specification in Roboto 16pt.",
+    image: nlmStyleGuide,
+    caption: "The style guide for developers: navigation bar specification, Roboto 16pt, and hex codes.",
+  },
+  {
+    number: "05",
+    title: "Dropdown Hover States",
+    text: "Hover states were specified for each dropdown item so the interaction behavior was unambiguous in development.",
+    image: nlmDropdownHoverStates,
+    caption: "Dropdown hover states.",
+  },
+  {
+    number: "06",
+    title: "Dropdown Menus",
+    text: "The full dropdown menus were documented with developer specifications, including hover blue and NLM blue color values.",
+    image: nlmDropdownMenus,
+    caption: "Dropdown menus with developer specifications.",
+  },
+  {
+    number: "07",
+    title: "Required Elements: Banner States",
+    text: "Government websites require a standard set of elements. The banner states were specified as part of those required elements.",
+    image: nlmBannerStates,
+    caption: "Required elements: banner states.",
+  },
+  {
+    number: "08",
+    title: "Required Elements: Navigation States",
+    text: "The required elements also included default and hover states for the navigation, along with header navigation and focus indicators.",
+    image: nlmNavigationStates,
+    caption: "Required elements: default and hover states for navigation.",
+  },
+];
+
+const fdgScreens = [
+  {
+    image: fdgAbout,
+    caption: "The Fiscal Data Group project: a datasets site for policy-makers at the U.S. Department of the Treasury.",
+  },
+  {
+    image: fdgReleaseCalendar,
+    caption: "The release calendar user flow for the site's 31 datasets, sortable by Date or Name.",
+  },
+  {
+    image: fdgMobileReleaseCalendar,
+    caption: "The mobile release calendar.",
+  },
+];
 
 const BoozAllenCaseStudy = () => {
   const navigate = useNavigate();
@@ -67,6 +152,37 @@ const BoozAllenCaseStudy = () => {
                 </li>
               ))}
             </ul>
+          </section>
+
+          {/* Process */}
+          <section className="space-y-10">
+            <h2 className="text-2xl font-bold text-foreground">Process</h2>
+            {processSteps.map(({ number, title, text, image, caption }) => (
+              <div key={number} className="space-y-4">
+                <h3 className="text-lg font-semibold text-foreground">{number} — {title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{text}</p>
+                <figure>
+                  <img src={image.url} alt={caption} loading="lazy" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                  <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">{caption}</figcaption>
+                </figure>
+              </div>
+            ))}
+          </section>
+
+          {/* Also at Booz Allen — Fiscal Data Group */}
+          <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-foreground">Also at Booz Allen — Fiscal Data Group, U.S. Department of the Treasury</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              The Department of the Treasury's Fiscal Data Group (FDG) shares public datasets through an open-information website. The client wanted an updated website where policy-makers could easily find the datasets and information to download them. I worked on the release calendar for the site's 31 datasets, including the user flow for sorting by Date or Name and the mobile release calendar.
+            </p>
+            <div className="space-y-8">
+              {fdgScreens.map(({ image, caption }) => (
+                <figure key={caption}>
+                  <img src={image.url} alt={caption} loading="lazy" className="w-full h-auto rounded-lg shadow-lg border border-border" />
+                  <figcaption className="text-sm text-muted-foreground mt-2 italic text-center">{caption}</figcaption>
+                </figure>
+              ))}
+            </div>
           </section>
 
           {/* Core Interface Problem */}
